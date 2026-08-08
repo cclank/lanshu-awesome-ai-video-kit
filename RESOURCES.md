@@ -171,6 +171,7 @@
 - **OpenAI Playground** — Sora 在线体验
 - **Replicate Playground** — 多模型快速对比
 - **AlchemyStudio / Leonardo.Ai** — 集成多模型 + 提示词市场
+- **[Vivideo](https://vivideo.ai)** — 集成多模型的文生/图生视频工作台,自动配音
 
 ---
 
