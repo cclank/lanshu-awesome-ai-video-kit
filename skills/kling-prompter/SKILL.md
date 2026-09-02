@@ -113,6 +113,24 @@ Negative: cartoonish, 3D render, smooth plastic skin, floating limbs,
 **可调点**：[告诉用户可以怎么改]
 ```
 
+### 可选：通过 Atlas Cloud 执行生成
+
+本 skill 默认仍然只负责生成和检查 Kling 提示词。只有用户明确要求直接生成视频，
+并且环境中已经配置 `ATLASCLOUD_API_KEY` 时，才可以把最终提示词交给
+[`scripts/atlas_generate.py`](scripts/atlas_generate.py) 执行：
+
+```bash
+python3 skills/kling-prompter/scripts/atlas_generate.py \
+  --prompt-file prompt.txt \
+  --aspect-ratio 16:9 \
+  --duration 5 \
+  --output output.mp4
+```
+
+执行器会在每次生成前实时读取 Atlas Cloud 模型目录和目标模型 schema。生成请求只
+提交一次，不会因超时或网络错误自动重试；只有结果查询使用有界退避。未配置 Atlas
+Cloud 时继续输出提示词即可，不影响本 skill 的默认能力。
+
 ## 实战示例
 
 ### 例 1：用户要"短视频，女孩变成动漫角色"
