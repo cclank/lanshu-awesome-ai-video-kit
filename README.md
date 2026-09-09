@@ -167,6 +167,8 @@ done
 | [`happyhorse-prompter`](skills/happyhorse-prompter/SKILL.md) | "5/10/15 秒紧凑短片" | 30-55 词 + 原生音频路径 |
 | [`kling-prompter`](skills/kling-prompter/SKILL.md) | "可灵 / 图生视频 / 中文剧情" | 三套写法自适应 |
 
+> **可选的外部 skill(非本 kit 自带)**:需要把参考视频脚本 / PDF / 扫描件 / 其他网页解析成文本再进 prompt 工作流时,可另行安装 **cue-omni-reader**(上游 [`sensedeal/cue-skills`](https://github.com/sensedeal/cue-skills) 的 [`cue-omni-reader`](https://github.com/sensedeal/cue-skills/tree/main/cue-omni-reader),MIT)——纯指令层,驱动官方 Cue Omni Reader MCP 把 HTTP(S) 与已授权的本地文档/音频/视频解析为 Markdown。安装:`npx skills add sensedeal/cue-skills --skill cue-omni-reader`。本 kit 不内置它,安装与使用以上游说明为准。
+
 ---
 
 ## 📖 21 篇方法论 SOP

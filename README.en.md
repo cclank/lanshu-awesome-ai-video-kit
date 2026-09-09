@@ -208,6 +208,8 @@ Read [methodology/](methodology/) in order:
 
 See [skills/README.md](skills/README.md) for the decision tree.
 
+> **Optional external skill (not shipped with this kit)**: to parse a reference video script / PDF / scan / other web page into text before feeding your prompt workflow, you can additionally install **cue-omni-reader** ([`sensedeal/cue-skills`](https://github.com/sensedeal/cue-skills) → [`cue-omni-reader`](https://github.com/sensedeal/cue-skills/tree/main/cue-omni-reader), MIT) — an instruction-only layer that drives the official Cue Omni Reader MCP to parse an HTTP(S) URL or an authorized local document, audio, or video source into Markdown. Install: `npx skills add sensedeal/cue-skills --skill cue-omni-reader`. This kit does not bundle it; follow the upstream README for install and usage.
+
 ---
 
 ## 🌐 Web Tools
