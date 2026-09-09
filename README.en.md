@@ -208,6 +208,8 @@ Read [methodology/](methodology/) in order:
 
 See [skills/README.md](skills/README.md) for the decision tree.
 
+> Before storyboard/prompt skills, the reference is often a PDF or a page, not a finished script. [cue-omni-reader](https://github.com/sensedeal/cue-skills/tree/main/cue-omni-reader) extracts Markdown first. `npx skills add sensedeal/cue-skills --skill cue-omni-reader` (MIT, not bundled).
+
 ---
 
 ## 🌐 Web Tools

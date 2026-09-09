@@ -167,6 +167,8 @@ done
 | [`happyhorse-prompter`](skills/happyhorse-prompter/SKILL.md) | "5/10/15 秒紧凑短片" | 30-55 词 + 原生音频路径 |
 | [`kling-prompter`](skills/kling-prompter/SKILL.md) | "可灵 / 图生视频 / 中文剧情" | 三套写法自适应 |
 
+> 分镜和 prompt 之前，参考材料经常是一份 PDF 或一个网页，而不是已经写好的词。 [cue-omni-reader](https://github.com/sensedeal/cue-skills/tree/main/cue-omni-reader) 先抽出 Markdown，再进本 kit 的 7 个 skill。`npx skills add sensedeal/cue-skills --skill cue-omni-reader`（MIT，非本 kit）。
+
 ---
 
 ## 📖 21 篇方法论 SOP
