@@ -1,4 +1,4 @@
-# Gemini Omni · 提示词索引（10 条）
+# Gemini Omni · 提示词索引（12 条）
 
 > **Gemini Omni / Omni Flash**(Google AI / DeepMind,2026-05-19 发布)是 Google 的跨模态统一模型 — any input(text/image/video/audio/script)→ any output,starting with video。已上线 Gemini App / Flow / GoogleFlowMusic / YouTube Shorts / Create 多平台。
 
@@ -16,6 +16,7 @@
 - [🧠 Real-World 锚点(极简 prompt)](#-real-world-锚点极简-prompt) (2)
 - [✂️ 迭代编辑(targeted updates)](#-迭代编辑targeted-updates) (3)
 - [🎬 动作即时修改](#-动作即时修改) (2)
+- [🆕 2026-10 新增](#🆕-2026-10-新增) (2)
 
 ---
 
@@ -133,6 +134,28 @@ Have them leap into the air
   - [Flow by Google](https://flow.google.com/)
   - [Google Flow Music](https://flow.google.com/music)
   - YouTube Shorts(Create 入口)
+
+## 🆕 2026-10 新增（2 条）
+
+### gm-011 · Gemini Omni 一句话转绘
+`gemini-omni` `video-edit` · [explainx.ai](https://explainx.ai/blog/runway-aleph-2-vs-gemini-omni-video-2026)
+
+```
+Turn this cooking video into a Studio Ghibli animation
+```
+
+> 💡 Gemini Omni “remix”重绘范式代表：一句话整体转绘，与 Aleph 精确编辑形成对照
+
+### gm-012 · Gemini Omni Vids 航拍雪山
+`gemini-omni` `nature` `aerial` · [aitoolharbor.blogspot.com](http://aitoolharbor.blogspot.com/2026/09/google-vids-ai-video-generator-2026.html)
+
+```
+A cinematic aerial view of snow-covered mountains at sunrise, with clouds moving slowly through the valley and warm golden lighting.
+```
+
+> 💡 Google Vids 9-23 免费开放 Gemini Omni 1.1 Flash 后的官方写法示例，配合 exact duration 与 scene extension 新功能
+
+---
 
 ## 一句话总结
 

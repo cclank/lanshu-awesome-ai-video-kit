@@ -2,6 +2,17 @@
 
 按 [Keep a Changelog](https://keepachangelog.com/zh-CN/1.1.0/) 规范。
 
+## [Unreleased]
+
+### Added · 2026-10-06 prompt 集中收录（近 3 个月，重点 9-06 ~ 10-06）
+- **+44 条提示词**（477 条分散 prompt；另修复 9 条历史分类断裂引用 `dialogue`→`dialogue-driven`、`character-animation`→`portrait`）
+- **+6 新模型**：Kling 4.0（k4-001..012）、MiniMax H3（mx-001..010）、Seedance 2.5（se-001..004）、Wan 2.6（w2-001）、Runway Aleph 2.0（ra-001..002）、Luma Ray 3.2（lu-001..002）
+- **存量模型补充**：Veo 3（ve-021..027）、Sora 2（so-021..023）、Gemini Omni（gm-011..012）、Higgsfield Soul（hg-009）
+- **+1 新分类**：`technique-snippet`（技巧片段与提示词语法）
+- 10 条附官方/作者演示视频链接（见各条 notes）
+- 各模型 README 新增"🆕 2026-10 新增"区；6 个新模型各建独立索引页
+
+
 ## [0.8.0] — 2026-05-25 · 4 大开源模型完整收录 + 英文化 + awesome 投稿
 
 ### Added · 4 大开源 / 开源友好模型(11 → 15)

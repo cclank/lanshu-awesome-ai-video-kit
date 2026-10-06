@@ -1,7 +1,7 @@
 {
   "schema_version": "1.14",
-  "updated": "2026-05-30",
-  "total": 433,
+  "updated": "2026-10-06",
+  "total": 477,
   "models": {
     "seedance-2.0": {
       "name": "Doubao Seedance 2.0",
@@ -233,6 +233,78 @@
         "Gemini App / Flow / YouTube Shorts 多平台"
       ],
       "notice": "2026-05-19 发布 · 跨模态统一模型,从视频开始(Google AI 官方介绍 5 个 prompting tips)"
+    },
+    "kling-4.0": {
+      "name": "Kling 4.0 (可灵)",
+      "vendor": "快手",
+      "max_duration": "15s（社区案例 8–15s）",
+      "prompt_length": "结构化长文本（[OUTPUT]/[REFERENCE ROLES]/[CONTINUITY ANCHORS] 区块）",
+      "audio": "原生对白 + 9 语言 lip sync",
+      "strengths": [
+        "omni reference 多引用叙事",
+        "match-cut 藏转场",
+        "多语言对白口型同步"
+      ]
+    },
+    "minimax-h3": {
+      "name": "MiniMax H3",
+      "vendor": "MiniMax",
+      "max_duration": "4s（社区案例 3–4s）",
+      "prompt_length": "短文本 + 音视频统一 reference",
+      "audio": "原生音频：角色音色授权 + 环境音分离 + 口型自动同步",
+      "strengths": [
+        "音视频统一 reference",
+        "精准台词生成",
+        "多角色音色区分"
+      ]
+    },
+    "seedance-2.5": {
+      "name": "Seedance 2.5（即梦）",
+      "vendor": "字节跳动",
+      "max_duration": "15s（一镜到底叙事）",
+      "prompt_length": "中英文自由文本",
+      "audio": "原生对白 + 配乐时间轴",
+      "strengths": [
+        "微表情连续变化",
+        "一镜到底叙事",
+        "情绪表演"
+      ]
+    },
+    "wan-2.6": {
+      "name": "Wan 2.6（万相）",
+      "vendor": "阿里",
+      "max_duration": "见官方 R2V 文档",
+      "prompt_length": "多 reference 联合驱动描述",
+      "audio": "多人对白",
+      "strengths": [
+        "reference-to-video（R2V）",
+        "视频+图片+音频多引用",
+        "多人对白表演"
+      ]
+    },
+    "runway-aleph-2.0": {
+      "name": "Runway Aleph 2.0",
+      "vendor": "Runway",
+      "max_duration": "见官方文档",
+      "prompt_length": "变化描述 + anchor frame reference",
+      "audio": "—",
+      "strengths": [
+        "anchor-frame 精确编辑",
+        "只命名变化、首帧定外观",
+        "品牌级精确替换"
+      ]
+    },
+    "luma-ray-3.2": {
+      "name": "Luma Ray 3.2",
+      "vendor": "Luma AI",
+      "max_duration": "见官方文档",
+      "prompt_length": "shot-direction 公式（机位+主体+动作+场景+光影+风格+一致性约束）",
+      "audio": "—",
+      "strengths": [
+        "shot-direction 公式",
+        "单动作聚焦",
+        "一致性约束写法"
+      ]
     }
   },
   "categories": [
@@ -379,6 +451,11 @@
     {
       "id": "chinese-native",
       "zh": "中文原生创作",
+      "model": "both"
+    },
+    {
+      "id": "technique-snippet",
+      "zh": "技巧片段与提示词语法",
       "model": "both"
     }
   ],
@@ -2575,7 +2652,7 @@
     {
       "id": "hh-066",
       "model": "happyhorse-1.0",
-      "category": "character-animation",
+      "category": "portrait",
       "title": "GPT Image 2 角色生成 — 2D 动画肖像",
       "prompt": "A high-quality 2D stylized digital animation portrait, strictly flat 2D illustration aesthetic with no 3D depth or CGI realism. The character is a young girl with an extremely sharp, geometric jawline and angular facial features defined by straight lines rather than curves. She has wild, wind-swept vibrant orange hair (#E67E22) with painterly textures and fair freckled skin. She looks directly forward with wide, intense blue eyes. She is wearing oversized octagonal thin-frame glasses with complex, multi-faceted gem-cut crystal lenses that refract a brilliant iridescent rainbow spectrum (cyan, magenta, yellow) across the eyes. Clothing: A simple dark charcoal grey hoodie. Background: Solid, seamless white background for a clean character isolate. Art Style: Hard-edged 2D line work, graphic cel-shading, and bold geometric shapes. The lighting is soft and flat with minimal angular graphic shadows under the chin. Professional character concept art style, symmetrical composition.",
       "tags": [
@@ -2719,7 +2796,7 @@
     {
       "id": "hh-072",
       "model": "happyhorse-1.0",
-      "category": "dialogue",
+      "category": "dialogue-driven",
       "title": "三语 Lip-Sync 测试（英 / 普通话 / 西班牙语）",
       "prompt": "You shouldn't have come here tonight. It was a mistake.\nNǐ yǐwéi nǐ neng táo diào ma? Bié tài tiānzhēn le.\nAhora, el silencio es lo único que te queda.",
       "tags": [
@@ -3980,7 +4057,7 @@
     {
       "id": "kl-005",
       "model": "kling-3.0",
-      "category": "dialogue",
+      "category": "dialogue-driven",
       "title": "厨房晨间混乱（四角色定向发声）",
       "prompt": "Scene: A busy kitchen at morning light, toast crumbs on the counter, coffee machine steaming. Cereal pouring SFX, kids running footsteps, backpack zippers. Characters: Mom (mid-30s, stressed, fast urgent voice), Little Daughter (6, crying), Older Brother (early teens, sarcastic), Dad (40s, sleepy amused). Action: Shot 1 (0-3s) wide shot, mom flipping toast — Mom: \"Shoes on! We're leaving in five minutes!\" Shot 2 (3-5s) hallway, daughter searching frantically — Little Daughter: \"I can't find my sweater!\" Shot 3 (5-7s) doorway, brother arms crossed — Older Brother: \"Because you never put it away.\" Shot 4 (7-9s) back to mom, heavy sigh — Mom (shouting): \"Nobody is fighting before 8 AM!\" Shot 5 (9-11s) dad walks in calmly with mug — Dad: \"Good morning, team.\" Shot 6 (11-13s) mom turns sharply, exhausted — Mom: \"Help.\" Camera: Tight handheld between rooms, single coverage per character, last beat held on mom. Audio & Style: Naturalistic kitchen ambience, no music, mumblecore family sitcom grade.\nNegative: synthetic dubbed voices, lip-sync drift, watermark.",
       "tags": [
@@ -4189,7 +4266,7 @@
     {
       "id": "kl-035",
       "model": "kling-3.0",
-      "category": "dialogue",
+      "category": "dialogue-driven",
       "title": "深夜厨房争吵（情感对白）",
       "prompt": "Scene: A dim kitchen late at night, only the refrigerator hum filling the silence, single overhead pendant casting a warm pool of light on a cluttered countertop. Characters: Exhausted Partner (30s, trembling frustrated voice) and Defensive Partner (30s, sharp defensive then regretful voice). Action: A plate is set down too hard with a sharp ceramic clink — Exhausted Partner: \"You never listen to me.\" The other partner turns immediately, eyes wide — Defensive Partner (shouting): \"Because you never stop blaming!\" Exhausted Partner exhales shakily — Exhausted Partner (voice cracking): \"I'm not blaming… I'm begging.\" Beat of silence. Defensive Partner sighs heavily, looks down — Defensive Partner (softly, regretful): \"I don't know how to fix this.\" Camera: Tight singles alternating between the two, brief two-shot on the final regret, soft handheld drift. Audio & Style: Refrigerator hum bed, ceramic clink hit, a single sad piano chord entering on the last beat.\nNegative: melodramatic underscoring, smiling, floating limbs, watermark.",
       "tags": [
@@ -4387,7 +4464,7 @@
     {
       "id": "kl-106",
       "model": "kling-3.0",
-      "category": "dialogue",
+      "category": "dialogue-driven",
       "title": "咖啡馆对话(原生音频)",
       "prompt": "Scene: A cozy cafe with warm pendant lights, ambient chatter, ceramic clinks. Characters: Two friends in their 30s seated across a small wooden table, both with coffee cups. Action: Two friends sitting in a cozy cafe. One asks, \"Did you ever finish that novel?\" The other replies, \"Almost, I just can't seem to write the ending.\" Camera: Slow medium two-shot, soft punch-in on the speaker for each line. Audio & Style: Soft ambient cafe audio, warm lighting; understated indie-cinema tone.",
       "tags": [
@@ -4862,7 +4939,7 @@
     {
       "id": "kl-125",
       "model": "kling-3.0",
-      "category": "dialogue",
+      "category": "dialogue-driven",
       "title": "Multi-Shot 三镜头 Hollywood 自嘲",
       "prompt": "Scene: A neutral interior with cool key light, professional cinematic frame; same actor across all three angles. Characters: A man in casual sharp attire, mid-30s, deadpan delivery. Action: Shot 1: Man says \"Hollywood is officially cooked.\" Shot 2: Change angle to side profile. Man says \"because now you can have multi-shot videos.\" Shot 3: Change the angle again to a front closeup of the man. He says \"from a single image.\" Camera: Shot 1 front medium; Shot 2 side profile medium; Shot 3 front close-up. Audio & Style: Clear vocal recording, slight room tone, no music; tech-demo cinematic.",
       "tags": [
@@ -5137,7 +5214,7 @@
     {
       "id": "kl-136",
       "model": "kling-3.0",
-      "category": "dialogue",
+      "category": "dialogue-driven",
       "title": "Brooklyn Bridge 情侣争吵(文生视频)",
       "prompt": "Scene: Brooklyn Bridge at night; warm sodium and cool moonlight; foot traffic faint in the background. Characters: A couple in their late 20s; the woman near tears, the man clenching jaw. Action: \"Don't do this. I am begging you.\" Shot 1: Brooklyn Bridge, couple arguing, close-up on woman's face, 5s. Shot 2: reverse angle on man, 5s. Shot 3: wide establishing shot, 5s. Camera: Shot 1 close-up; Shot 2 reverse close-up; Shot 3 wide establishing. Audio & Style: Ambient bridge traffic, footsteps, no music, no background dialogue.",
       "tags": [
@@ -5337,7 +5414,7 @@
     {
       "id": "kl-144",
       "model": "kling-3.0",
-      "category": "dialogue",
+      "category": "dialogue-driven",
       "title": "三段 Multi-Shot 围栏旁夜对话",
       "prompt": "Scene: An apartment courtyard at night; warm window light spilling onto a wooden fence; cool sky behind. Characters: A young man and woman, both early 30s, emotional tension. Action: Scene 1: Medium shot of the young man and woman standing by the fence at night. The man is speaking earnestly, his face illuminated by the warm light from the apartment building. Scene 2: Reverse angle over the shoulder shot, focusing on the woman. She listens with a serious expression, then looks down and sighs before looking back up to respond. Scene 3: Over the shoulder shot focusing on the man, he listens as the woman responds. Camera: Scene 1 medium; Scene 2 OTS woman; Scene 3 OTS man. Audio & Style: Crickets, distant TV through a window, soft voices; emotional drama cinematic.",
       "tags": [
@@ -6240,7 +6317,7 @@
         "viral",
         "close-up"
       ],
-      "category": "character-animation",
+      "category": "portrait",
       "params": {
         "aspect": "9:16",
         "duration": "5s",
@@ -10672,6 +10749,946 @@
         "url": "https://www.alibabacloud.com/help/en/model-studio/text-to-video-prompt",
         "tier": "official"
       }
+    },
+    {
+      "id": "k4-001",
+      "model": "kling-4.0",
+      "category": "technique-snippet",
+      "title": "Kling 4.0 四世界罗盘 Match Cut",
+      "prompt": "[OUTPUT]\n\n12 seconds, 16:9, four-scene cinematic match-cut montage, crisp realistic materials, exactly four shots.\n\n[REFERENCE ROLES]\n\nObject reference locks one palm-sized scratched copper compass with a dark blue needle and plain lid. Environment references control only: coastal cliff at dawn, night train table, desert survey camp, snowy observatory. Do not transfer people or objects between environment references.\n\n[MATCH-CUT RULE]\n\nThe compass center remains at 52% frame width and 58% frame height, same apparent size and same 35-degree lid angle at every cut. Each transition occurs during the final six frames of a hand closing the lid; motion direction stays right-to-left.\n\n[TIMED SHOTS]\n\n0–3s — Coastal cliff macro. Weathered adult hand opens the compass; needle settles north, salt mist crosses left-to-right, slow 5cm push-in.\n\n3–6s — Cut under closing fingers to the same compass on a night-train table. Different sleeve, same hand path. Passing lights sweep across copper; needle trembles once with rail vibration.\n\n6–9s — Cut under the lid to a desert survey cloth. Fine sand moves around, never onto, the hinge. Hand rotates the whole compass 20 degrees clockwise; needle independently returns north.\n\n9–12s — Cut under closing fingers to snowy observatory stone. Gloved hand opens the lid fully; camera tilts from compass toward a clear polar star, ending with the compass still visible at lower center.\n\n[AUDIO]\n\nOne continuous low musical note bridges all cuts. Distinct layers: surf and lid click; rail rhythm; dry wind; high mountain air. The same metal click lands exactly at 2.8s, 5.8s and 8.8s.\n\n[CONSTRAINTS]\n\nOne compass only. Preserve scratches, hinge, needle color, scale and screen position. Cuts happen only behind fingers and lid; no dissolve, portal, morphing map, readable text, logo or watermark.",
+      "tags": [
+        "kling-4.0",
+        "technique-snippet",
+        "match-cut",
+        "reference",
+        "night",
+        "rain"
+      ],
+      "params": {
+        "aspect": "16:9",
+        "duration": "12s"
+      },
+      "source": {
+        "name": "flaqai/awesome-kling-4-0",
+        "url": "https://github.com/flaqai/awesome-kling-4-0/blob/main/prompts/reference-editing-and-control.md",
+        "tier": "reputable-3rd-party"
+      },
+      "notes": "omni reference 范式：一个物体 reference 加四个环境 reference 各司其职，match-cut 全部藏进合盖动作，是 4.0 多引用叙事的标杆写法。"
+    },
+    {
+      "id": "k4-002",
+      "model": "kling-4.0",
+      "category": "quiet-moments",
+      "title": "Kling 4.0 三代人午餐",
+      "prompt": "[OUTPUT]\n\n15 seconds, 16:9, intimate family lunch scene, naturalistic cinema, three connected shots with native dialogue.\n\n[REFERENCE ROLES]\n\nImage 1 locks Mei, adult grandmother with short white curls and burgundy cardigan. Image 2 locks adult daughter An, chin-length black hair and olive shirt. Image 3 locks adult grandson Leo, curly dark hair and mustard sweater. Image 4 supplies only the small sunlit dining room and oval wooden table; ignore any people in it.\n\n[GEOGRAPHY]\n\nMei sits frame left, An frame right, Leo centered on far side. One blue serving bowl in the table center. Their seats, wardrobe and eyelines never swap.\n\n[TIMED SHOTS]\n\n0–5s — Wide locked master. Mei lifts the blue bowl with both hands and passes it clockwise to An. Leo watches the bowl, then glances at Mei.\n\n5–10s — Medium two-shot across table. An receives the bowl from below, sets it down once and says in Mandarin: “还是这个味道。” Mei is soft foreground left, listening without speaking.\n\n10–15s — Close on Mei. She smiles with restrained pride, looks toward An and answers in English: “You remembered.” Focus shifts to Leo quietly taking one dumpling from the bowl; end on all three sharing a small laugh.\n\n[AUDIO]\n\nQuiet midday room, ceramic contact, chair fabric and distant neighborhood birds. Only An speaks the Mandarin line; only Mei speaks the English line. No narrator or subtitles.\n\n[CONSTRAINTS]\n\nExactly three adults, one bowl and one dumpling lifted. Natural hand contact and table occlusion. Preserve identity, age, hair, clothing, seat and screen direction. No face blending, duplicate people, extra dishes appearing, generated wall text, logo or watermark.",
+      "tags": [
+        "kling-4.0",
+        "quiet-moments",
+        "dialogue",
+        "reference",
+        "rain"
+      ],
+      "params": {
+        "aspect": "16:9",
+        "duration": "15s"
+      },
+      "source": {
+        "name": "flaqai/awesome-kling-4-0",
+        "url": "https://github.com/flaqai/awesome-kling-4-0/blob/main/prompts/reference-editing-and-control.md",
+        "tier": "reputable-3rd-party"
+      },
+      "notes": "三人物 reference 加一房间 reference 的身份锁定写法，中英双语原生对白，展示多角色一致性控制。"
+    },
+    {
+      "id": "k4-003",
+      "model": "kling-4.0",
+      "category": "cinematic",
+      "title": "Kling 4.0 末班车归家",
+      "prompt": "[OUTPUT]\n\n15 seconds, 16:9, three-shot contemporary drama, restrained naturalism, cool winter night with warm practical bus light.\n\n[CONTINUITY ANCHORS]\n\nEli: adult man in his early 30s, narrow face, short curly dark hair, charcoal wool coat, faded red scarf, tired eyes.\n\nJune: adult woman in her late 50s, silver bob, moss-green quilted jacket, canvas grocery bag, small brass house key in her right hand.\n\nKeep faces, ages, wardrobe, bag, key and left-to-right screen direction unchanged.\n\n[WORLD]\n\nNearly empty suburban bus at night. Rain tracks down the windows. Eli sits frame left near the rear door; June stands in the aisle frame right. Sodium streetlights sweep across the interior as the bus moves.\n\n[TIMED SHOTS]\n\n0–5s — Medium two-shot from the opposite seat, camera locked with gentle vehicle vibration. June notices the red scarf, stops one step away and tightens her hand around the key. Eli looks up slowly. Neither speaks.\n\n5–10s — Over June’s shoulder into Eli’s close-up; keep his eyeline toward frame right. The passing streetlight reveals recognition. He removes one earbud and says, quietly: “You still have the key.”\n\n10–15s — Reverse close-up on June, eyeline frame left. Her guarded expression softens; she opens her palm to show the brass key and answers: “You never asked for it back.” Hold one second after the line as the bus brakes gently and both sway in the same direction.\n\n[AUDIO]\n\nContinuous engine hum, soft rain on glass and two distant stop-request chimes. Eli (English, low and hesitant), then June (English, warm but controlled). No music until the final second, when one low cello note enters beneath the bus brake.\n\n[CONSTRAINTS]\n\nOnly the named speaker’s mouth moves. Preserve the red scarf and brass key. Natural blinking and breathing; no crying, embrace or exaggerated smile. No subtitles, signage text, logos, face drift, age change, jump in seat positions or sudden weather change.",
+      "tags": [
+        "kling-4.0",
+        "cinematic",
+        "close-up",
+        "night",
+        "rain"
+      ],
+      "params": {
+        "aspect": "16:9",
+        "duration": "15s"
+      },
+      "source": {
+        "name": "flaqai/awesome-kling-4-0",
+        "url": "https://github.com/flaqai/awesome-kling-4-0/blob/main/prompts/cinematic-and-dialogue.md",
+        "tier": "reputable-3rd-party"
+      },
+      "notes": "三镜头情感短片：道具（钥匙/围巾）锚定一致性，眼神线和环境声床贯穿全片，电影感叙事的完整模板。"
+    },
+    {
+      "id": "k4-004",
+      "model": "kling-4.0",
+      "category": "dialogue-driven",
+      "title": "Kling 4.0 站台纸鹤（韩西双语）",
+      "prompt": "[OUTPUT]\n\n15 seconds, 16:9, four-shot independent-film reunion, Korean and Spanish dialogue, native audio, subtle film grain.\n\n[CHARACTER MAP]\n\nMina: adult Korean woman, shoulder-length wet black hair, rust-red raincoat, small kraft-paper crane in both hands, low warm voice.\n\nÁlex: adult Spanish man, wavy dark hair, short beard, navy railway work jacket with one pale reflective stripe and no logo, soft tenor voice.\n\nThe paper crane has one blue ink dot on its left wing; preserve it in every shot.\n\n[WORLD]\n\nSmall covered coastal train platform at blue hour. Cream-and-teal local train is stationary frame right; rough sea frame left. Warm overhead lamps reflect on wet tiles. Rain blows diagonally beyond the roof.\n\n[TIMED SHOTS]\n\n0–4s — Wide symmetrical platform shot. Mina enters from frame left and stops; Álex steps down from the train at frame right. They recognize each other across six meters. Camera makes a very slow push forward.\n\n4–7s — Close-up on Mina, Álex remains a soft silhouette deep frame right. She unfolds her fingers to reveal the paper crane. Her inhale catches; she says in Korean, almost a whisper: “늦었네.”\n\n7–10s — Shot/reverse-shot close-up on Álex, eyeline frame left. He exhales, gives one small relieved nod and replies in Spanish: “Pero llegué.”\n\n10–15s — Medium-wide two-shot from the side. They each take one step closer but do not embrace. Mina extends the crane; Álex reaches out and stops just before touching it. Hold on the charged gap between their hands.\n\n[AUDIO]\n\nContinuous coastal rain, distant surf and low idling-train hum. No station announcement. Keep Mina’s Korean and Álex’s Spanish exactly in their written languages; no translation. A sparse two-note piano motif begins only after Álex finishes.\n\n[CONSTRAINTS]\n\nOne speaking mouth at a time. Preserve faces, coat colors, train position, rain direction and matched eyelines. The paper crane never changes shape, color or hand. Restrained adult emotion; no melodrama. No subtitles, readable signs, logos, extra passengers, facial drift, dry wardrobe between shots or camera-axis reversal.",
+      "tags": [
+        "kling-4.0",
+        "dialogue-driven",
+        "dialogue",
+        "close-up",
+        "rain"
+      ],
+      "params": {
+        "aspect": "16:9",
+        "duration": "15s"
+      },
+      "source": {
+        "name": "flaqai/awesome-kling-4-0",
+        "url": "https://github.com/flaqai/awesome-kling-4-0/blob/main/prompts/cinematic-and-dialogue.md",
+        "tier": "reputable-3rd-party"
+      },
+      "notes": "韩语加西班牙语双语对白、逐发话人绑定声线与台词，是 4.0 九语言 lip sync 能力的典型用法。"
+    },
+    {
+      "id": "k4-005",
+      "model": "kling-4.0",
+      "category": "product-commercial",
+      "title": "Kling 4.0 植物气泡饮品广告",
+      "prompt": "[OUTPUT]\n\n9 seconds, 16:9, premium non-alcoholic sparkling botanical drink commercial, photorealistic macro finish, three shots.\n\n[PRODUCT LOCK]\n\nOne smoked-green glass bottle with a narrow shoulder, silver knurled cap and blank embossed oval on the front. No printed label or text. Preserve bottle silhouette, cap, oval, glass color and fill level exactly across all shots.\n\n[WORLD]\n\nWet black basalt surface in a dark studio. Deep emerald rim light from frame left, cool silver key light overhead, narrow warm beam from frame right. Fine mist moves left to right.\n\n[TIMED SHOTS]\n\n0–3s — 100mm macro, low three-quarter angle. Camera slides slowly right while staying focused on condensation. One droplet forms at the shoulder and runs straight down; bottle remains motionless and vertical.\n\n3–6s — Match cut to overhead close-up. A single pale-green citrus peel enters from frame left and completes one smooth clockwise spiral around the bottle without touching it. Fine bubbles rise inside the liquid at constant speed.\n\n6–9s — Medium hero shot. Camera performs a slow 25-degree clockwise orbit at constant distance. The cap lifts two millimeters with a clean pressure release; a controlled halo of cold vapor blooms and clears. End with bottle centered and oval facing camera.\n\n[AUDIO]\n\n0–3s: low studio silence plus individual water drops. 3.1s: crisp peel swish. 6.4s: short cap click and delicate carbonation release. 8s: two warm glass-marimba notes, then silence.\n\n[CONSTRAINTS]\n\nThe bottle never floats, bends, rotates independently or changes scale. Keep contact shadow attached to basalt. Physically plausible refraction, droplets, vapor and peel trajectory. No splash covering the product, alcohol cues, glassware, people, text, logo, watermark, label mutation or duplicate bottle.",
+      "tags": [
+        "kling-4.0",
+        "product-commercial",
+        "close-up",
+        "rain",
+        "product"
+      ],
+      "params": {
+        "aspect": "16:9",
+        "duration": "9s"
+      },
+      "source": {
+        "name": "flaqai/awesome-kling-4-0",
+        "url": "https://github.com/flaqai/awesome-kling-4-0/blob/main/prompts/commercial-and-ugc.md",
+        "tier": "reputable-3rd-party"
+      },
+      "notes": "产品锁定写法：瓶身几何、冷凝水滴、柑橘皮各有独立运动指令，结尾开盖蒸汽有精确时间点，电商级广告模板。"
+    },
+    {
+      "id": "k4-006",
+      "model": "kling-4.0",
+      "category": "music-video",
+      "title": "Kling 4.0 屋顶打击乐",
+      "prompt": "[OUTPUT]\n\n15 seconds, 16:9, live rooftop percussion performance at dawn, documentary concert energy, original rhythm, four shots.\n\n[PERFORMER MAP]\n\nAya: adult Japanese woman, red windbreaker, short hair, frame left, plays one shallow metal handpan.\n\nMalik: adult British man, blue overshirt, shaved head, center, plays one wooden cajón.\n\nCamila: adult Colombian woman, yellow knit top, long braid, frame right, plays two small seed shakers.\n\nPreserve faces, instruments, clothing colors and left-center-right positions.\n\n[RHYTHM AND SHOTS]\n\n0–4s — Wide locked shot, pale sunrise behind city roofs. Malik starts a steady low cajón pulse: four evenly spaced hits. The others listen and sway naturally.\n\n4–8s — Medium side track from Aya to Malik. Aya adds a three-note handpan phrase after every second cajón hit. Her fingers contact visible tone fields; each note aligns exactly to contact.\n\n8–12s — Close-up on Camila’s hands and face. She adds a soft double-shake pattern, wrists moving compactly. Camera rack-focuses from seeds inside the translucent shaker to her smile.\n\n12–15s — Return to wide. All three play one synchronized final accent, then freeze their hands while the metal note decays. A flock of ordinary birds crosses far background after the final hit.\n\n[AUDIO]\n\nNative performance only: dry low cajón, warm resonant handpan, fine seed texture, rooftop wind and distant city. No sampled song, vocals, cheering or added orchestra. Maintain room-free outdoor acoustics and realistic decay.\n\n[CONSTRAINTS]\n\nOne instrument per performer; accurate hand-to-sound synchronization; fixed stage positions. No extra sticks, changing instruments, impossible hand speed, duplicated fingers, lip movement, visible brand, skyline text or watermark.",
+      "tags": [
+        "kling-4.0",
+        "music-video",
+        "close-up",
+        "rain"
+      ],
+      "params": {
+        "aspect": "16:9",
+        "duration": "15s"
+      },
+      "source": {
+        "name": "flaqai/awesome-kling-4-0",
+        "url": "https://github.com/flaqai/awesome-kling-4-0/blob/main/prompts/style-and-performance.md",
+        "tier": "reputable-3rd-party"
+      },
+      "notes": "原生音频音乐表演：三乐器的节奏全部写进时间轴、每个音符对应可见的接触动作，声画同步的标杆写法。"
+    },
+    {
+      "id": "k4-007",
+      "model": "kling-4.0",
+      "category": "sports",
+      "title": "Kling 4.0 湿地赛道精准圈速",
+      "prompt": "[OUTPUT]\n\n15 seconds, 21:9, realistic closed-course driver-training film at dawn, four shots, high energy without collisions.\n\n[VEHICLE AND DRIVER]\n\nOne compact cobalt-blue track car with white roof, black seven-spoke wheels, blank number panel and no logo. Adult professional driver wears a white certified helmet, blue suit and secured six-point harness. Preserve vehicle panels, wheel design and driver throughout.\n\n[TRACK GEOGRAPHY]\n\nPrivate wet handling circuit, right-hand hairpin marked by six orange cones and a white apex line. Empty runoff, barriers and marshals safely behind fence. Car travels left-to-right before turning away from camera.\n\n[TIMED SHOTS]\n\n0–4s — Interior footwell insert. Right foot releases brake progressively and applies throttle; left foot stays on dead pedal. Water beads move backward on side window. Engine note rises smoothly.\n\n4–8s — Low exterior side tracking. Car approaches left-to-right at controlled speed; tire spray trails behind wheels, never ahead. Camera remains outside barriers.\n\n8–12s — High fixed hairpin view. Driver brakes before cone one, turns once toward the apex and follows the white line without sliding or hitting cones. Brake lights illuminate during deceleration only.\n\n12–15s — Rear three-quarter from safe long lens. Car straightens, accelerates away and spray narrows as it reaches drier pavement. End with all six cones standing.\n\n[AUDIO]\n\nAuthentic single engine layer matched across cuts, wet tire hiss, two gear changes and no music until a restrained pulse enters at 12s. No dialogue.\n\n[CONSTRAINTS]\n\nPrivate course, one car, trained adult, correct harness and intact safety zone. No public traffic, passenger, collision, drift, jump, hydroplane, cone strike, speed claim, dashboard text, badge or watermark.",
+      "tags": [
+        "kling-4.0",
+        "sports",
+        "dialogue",
+        "rain"
+      ],
+      "params": {
+        "aspect": "21:9",
+        "duration": "15s"
+      },
+      "source": {
+        "name": "flaqai/awesome-kling-4-0",
+        "url": "https://github.com/flaqai/awesome-kling-4-0/blob/main/prompts/genre-action-and-sound.md",
+        "tier": "reputable-3rd-party"
+      },
+      "notes": "21:9 宽画幅赛车短片：赛道地理、喷水方向、刹车灯时机、锥桶数量全部量化，高速动作的稳定写法。"
+    },
+    {
+      "id": "k4-008",
+      "model": "kling-4.0",
+      "category": "social-viral",
+      "title": "Kling 4.0 归来的地铁卡",
+      "prompt": "[OUTPUT]\n\n15 seconds, 9:16, contemporary vertical micro-drama, restrained realism, four fast but readable shots, episode-one cliffhanger.\n\n[CONTINUITY ANCHORS]\n\nMina: adult woman, short black bob, camel coat, canvas tote on left shoulder. Theo: adult station attendant, shaved head, navy uniform with no badge. Prop: one scratched green transit card with a small crescent-shaped corner chip; no readable printing.\n\n[GEOGRAPHY]\n\nQuiet underground station after the evening rush. Mina stands outside the closed service window, Theo inside. The card begins in Mina's right hand. Camera never crosses the service-window axis.\n\n[TIMED SHOTS]\n\n0–4s — Tight handheld medium. Mina slides the green card through the tray and says in Mandarin: “这张卡不是我的。” Theo looks down, then freezes before touching it.\n\n4–8s — Insert from Mina's side. Theo turns the card over with one gloved fingertip. The crescent chip is clearly visible. He asks quietly in English: “Where did you find this?”\n\n8–12s — Close on Mina. Her defensive expression softens; she answers: “Inside my locked apartment.” A train passes behind camera, briefly sweeping light across her face without hiding the cut.\n\n12–15s — Close behind Theo's shoulder. He opens a shallow drawer containing one second, identical chipped green card in a clear evidence sleeve. He does not remove it. Mina sees it and steps back once. Cut to black before either speaks.\n\n[AUDIO]\n\nStation ventilation, distant train, tray scrape and drawer rail. Only Mina speaks the Mandarin line and final English line; only Theo asks the question. One low tonal hit when the drawer opens; no subtitles.\n\n[CONSTRAINTS]\n\nTwo adults and exactly two matching cards by the final shot. Preserve chip position, wardrobe, tote shoulder, window axis and eyelines. No police insignia, threat, weapon, supernatural glow, generated text, logo or watermark.",
+      "tags": [
+        "kling-4.0",
+        "social-viral",
+        "rain"
+      ],
+      "params": {
+        "aspect": "9:16",
+        "duration": "15s"
+      },
+      "source": {
+        "name": "flaqai/awesome-kling-4-0",
+        "url": "https://github.com/flaqai/awesome-kling-4-0/blob/main/prompts/short-drama-and-viral-social.md",
+        "tier": "reputable-3rd-party"
+      },
+      "notes": "竖屏 9:16 微剧悬念：缺口地铁卡道具贯穿四镜、中英对白、切黑收尾，短剧第一集病毒式模板。"
+    },
+    {
+      "id": "k4-009",
+      "model": "kling-4.0",
+      "category": "nature",
+      "title": "Kling 4.0 茶杯里的风暴",
+      "prompt": "[OUTPUT]\n\n8 seconds, 1:1, one locked macro shot, photorealistic tabletop surrealism, physically coherent miniature storm.\n\n[SCENE]\n\nPlain white porcelain teacup on a worn oak table beside a closed book. Tea surface visible from a high three-quarter angle. Warm afternoon window light from frame left; cup handle points right. No branding or text.\n\n[ACTION TIMELINE]\n\n0–2s — Tea is almost still. One tiny circular cloud forms two centimeters above the liquid, rotating clockwise. The room outside the cup remains calm.\n\n2–5s — Cloud darkens and releases localized rain only into the cup. Concentric ripples spread to the porcelain edge. Three miniature lightning filaments illuminate the tea from within, each separated by half a second; no bolt leaves the cup.\n\n5–7s — A thumb-sized waterspout rises from the center and rotates once, pulling three loose tea leaves into orbit without spilling liquid over the rim.\n\n7–8s — Storm collapses into one soft puff; surface settles toward stillness. A final single droplet falls into the exact center for a loopable end.\n\n[AUDIO]\n\nQuiet room, magnified rain taps, three delicate electrical ticks synchronized to light, low water swirl, final droplet. No thunder boom, dialogue or music.\n\n[CONSTRAINTS]\n\nCup, handle, book, table, camera and room light remain fixed. Weather is contained entirely within cup boundaries. Realistic reflections and ripple propagation. No overflow, broken cup, fire, giant ocean, camera movement, text, logo or watermark.",
+      "tags": [
+        "kling-4.0",
+        "nature",
+        "dialogue",
+        "rain"
+      ],
+      "params": {
+        "aspect": "1:1",
+        "duration": "8s"
+      },
+      "source": {
+        "name": "flaqai/awesome-kling-4-0",
+        "url": "https://github.com/flaqai/awesome-kling-4-0/blob/main/prompts/action-and-vfx.md",
+        "tier": "reputable-3rd-party"
+      },
+      "notes": "微观天气奇观：风暴能量严格限定在杯内并按时间衰减，结尾可循环，尺度反差的 VFX 写法。"
+    },
+    {
+      "id": "k4-010",
+      "model": "kling-4.0",
+      "category": "documentary",
+      "title": "Kling 4.0 极光之上的静默对接",
+      "prompt": "[OUTPUT]\n\n15 seconds, 21:9, realistic near-future orbital docking visualization, calm procedural tone, three shots.\n\n[VEHICLE LOCKS]\n\nService craft: small white cylinder, four folded rectangular solar panels, black circular docking ring at nose, no crew visible. Station: gray research module with matching axial port and two long blue solar arrays. Blank surfaces, no national or company marks.\n\n[ORIENTATION]\n\nStation docking axis runs screen left-to-right. Station port faces frame left; service craft approaches from frame left nose-first. Earth limb remains low background with a faint auroral band. Sunlight direction stays upper right.\n\n[TIMED SHOTS]\n\n0–5s — Long-lens side view. Craft closes distance slowly at less than one body length over five seconds. Two tiny lateral thruster pulses correct upward drift; exhaust is brief and subtle. Station remains inertially steady.\n\n5–10s — Camera cuts to station-port view looking outward. Craft nose stays centered using one short roll correction under five degrees, then stops all visible rotation. No rapid zoom.\n\n10–15s — Exterior three-quarter. Docking rings meet at near-zero relative speed, compress slightly and lock with one small mechanical movement. Solar arrays do not flex. End with both vehicles moving as one while Earth drifts slowly behind.\n\n[AUDIO]\n\nExterior shots have no diegetic sound. A restrained non-diegetic tonal bed continues. At contact, cut briefly to an interior structural microphone perspective for one muted latch thump and two confirmation clicks; no voice-over.\n\n[CONSTRAINTS]\n\nVisualization, not operational instruction. Preserve ports, axes, solar panels, light and low relative speed. No explosion, debris, visible exterior sound wave, large flame, astronaut, flag, readable UI, mission claim, logo or watermark.",
+      "tags": [
+        "kling-4.0",
+        "documentary",
+        "rain",
+        "explosion"
+      ],
+      "params": {
+        "aspect": "21:9",
+        "duration": "15s"
+      },
+      "source": {
+        "name": "flaqai/awesome-kling-4-0",
+        "url": "https://github.com/flaqai/awesome-kling-4-0/blob/main/prompts/genre-action-and-sound.md",
+        "tier": "reputable-3rd-party"
+      },
+      "notes": "轨道对接物理可视化：固定轴线、低相对速度、接触瞬间切内部麦克风视角收音，硬科幻纪录片模板。"
+    },
+    {
+      "id": "k4-011",
+      "model": "kling-4.0",
+      "category": "fantasy-scifi",
+      "title": "Kling 4.0 玻璃蝠鲼盐峡追逐",
+      "prompt": "[OUTPUT]\n\n12 seconds, ultra-wide science-fantasy pursuit, photorealistic materials, three shots, fast but readable action, no weapons.\n\n[CONTINUITY ANCHORS]\n\nCourier Nara: adult rider, sand-colored protective suit, compact backpack, opaque bronze visor.\n\nSkimmer: one-seat rectangular solar skimmer, weathered cream shell, two dark solar panels on its nose, no wheels or logo.\n\nSky creature: colossal translucent manta-shaped cloud organism, glasslike membrane with slow internal light currents.\n\nPreserve all designs, scale relationships and travel direction left-to-right.\n\n[WORLD]\n\nPale salt canyon after a storm. Hard slope descends left-to-right toward mirrored pools. Late sun frame left; wind carries loose crystalline dust downhill.\n\n[TIMED SHOTS]\n\n0–4s — Low parallel tracking shot on Nara’s left side, camera and skimmer moving downhill at equal speed. Skimmer banks 20 degrees into one right curve; Nara leans with it. The rear edge throws one continuous dust ribbon that follows the curve and settles under gravity.\n\n4–8s — Wide aerial trailing shot, never crossing the travel axis. The glass manta glides overhead in the same direction but slower, casting a broad moving shadow that overtakes Nara. Its wings complete one heavy downstroke; canyon dust reacts half a second later.\n\n8–12s — Front three-quarter low shot moving backward at matched speed. A narrow salt ridge breaks ahead. Nara pulls the skimmer nose upward and clears one two-meter gap; suspension compresses visually on landing through a brief body dip and dense dust burst. The manta passes above, filling the sky as camera holds horizon level.\n\n[AUDIO]\n\nSteady electric turbine whine, granular salt hiss and strong crosswind. Wing downstroke produces a deep airy pressure pulse at 6s. Landing has one low impact plus settling crystals. No dialogue or music.\n\n[CONSTRAINTS]\n\nSkimmer remains in ground effect, never becomes an aircraft. Rider stays seated with both hands on controls. Physically delayed dust and shadow reaction. One gap, one jump, one creature. No collision, explosion, weapon, duplicate vehicle, changing visor, impossible camera teleport, backwards dust, logos, text or watermark.",
+      "tags": [
+        "kling-4.0",
+        "fantasy-scifi",
+        "dialogue",
+        "aerial",
+        "rain",
+        "explosion"
+      ],
+      "params": {
+        "duration": "12s"
+      },
+      "source": {
+        "name": "flaqai/awesome-kling-4-0",
+        "url": "https://github.com/flaqai/awesome-kling-4-0/blob/main/prompts/action-and-vfx.md",
+        "tier": "reputable-3rd-party"
+      },
+      "notes": "科幻追逐：每拍只做一个特技、尘埃与阴影延迟半秒反应，三镜头保持轴线，动作可读性的写作方法。"
+    },
+    {
+      "id": "k4-012",
+      "model": "kling-4.0",
+      "category": "portrait",
+      "title": "Kling 4.0 未发送的语音备忘",
+      "prompt": "[OUTPUT]\n\n12 seconds, 9:16 vertical, one uninterrupted handheld close-up, natural smartphone night footage, no cuts.\n\n[CONTINUITY ANCHOR]\n\nNoor: adult woman in her late 20s, warm brown skin, short coiled hair, oversized gray sweatshirt, tiny silver stud earrings. She sits on a kitchen floor against pale cabinets. Plain phone in her left hand; right thumb hovers above an unmarked send area.\n\n[CAMERA]\n\nPhone-camera viewpoint from a friend sitting on the opposite floor, chest-height close-up. Small breathing drift only; lens and distance remain constant. Focus stays on Noor’s eyes, then briefly shifts to her hovering thumb at 8s and returns to her face.\n\n[PERFORMANCE TIMELINE]\n\n0–3s — Noor listens to the end of her own recorded message through one earbud. Her jaw is held tight; breathing shallow.\n\n3–7s — She mouths the first word of a reply but makes no sound. Her eyes become wet without tears falling. She gives a tiny self-conscious laugh and looks away.\n\n7–10s — Her right thumb lowers toward the phone, pauses one centimeter above it, then deliberately moves away. The phone stays supported in her left palm.\n\n10–12s — Shoulders release on a slow exhale. She locks the phone with one soft click and looks directly into the camera, calm rather than defeated.\n\n[AUDIO]\n\nRefrigerator hum, faint traffic through a closed window, sweatshirt fabric and breath. A barely audible voice-note tail from the earbud is unintelligible. One phone lock click at 10.7s. No dialogue, music or notification sound.\n\n[CONSTRAINTS]\n\nNo visible app UI, readable text, tears falling, beauty filter or theatrical sobbing. Preserve face, earrings, phone, hands and floor position. Natural fingers and phone contact; no screen glow changing color; no cuts, zoom, orbit or background change.",
+      "tags": [
+        "kling-4.0",
+        "portrait",
+        "dialogue",
+        "close-up",
+        "night",
+        "rain"
+      ],
+      "params": {
+        "aspect": "9:16",
+        "duration": "12s"
+      },
+      "source": {
+        "name": "flaqai/awesome-kling-4-0",
+        "url": "https://github.com/flaqai/awesome-kling-4-0/blob/main/prompts/cinematic-and-dialogue.md",
+        "tier": "reputable-3rd-party"
+      },
+      "notes": "一镜到底竖屏微表演：情绪按秒渐进的时间轴加焦点调度，手机夜拍质感的肖像叙事上限。"
+    },
+    {
+      "id": "mx-001",
+      "model": "minimax-h3",
+      "category": "dialogue-driven",
+      "title": "韩式黑色电影预告：原生韩语对白",
+      "prompt": "16:9, 15s, hyper-realistic Korean noir crime teaser.\n\nA rain-soaked Korean woman (late 20s, trench coat) enters an abandoned underground nightclub searching for her missing sister. A scarred crime boss (40s), presumed dead for years, emerges from the shadows with a lit cigarette. Atmosphere: 90s Korean noir, practical neon, rain, smoke, film grain, tactile realism, no CGI gloss.\n\nShots:\n\n1. She enters: \"언니... 여기 있어?\"\n\n2. Lighter ignites, revealing his scar. \"오랜만이네.\"\n\n3. She freezes: \"당신... 죽은 줄 알았는데.\"\n\n4. Slow push-in. He smiles: \"네 언니가 날 죽였다고 생각했겠지.\"\n\n5. They lock eyes. Thunder. Cut to black.\n\nAudio: Rain, thunder, jazz crackle, lighter click, intimate silence during dialogue. #MiniMaxH3",
+      "tags": [
+        "minimax-h3",
+        "dialogue-driven",
+        "dialogue",
+        "night",
+        "rain",
+        "neon"
+      ],
+      "params": {
+        "aspect": "16:9"
+      },
+      "source": {
+        "name": "imaginevid/awesome-minimax-h3-prompts-and-skills",
+        "url": "https://github.com/imaginevid/awesome-minimax-h3-prompts-and-skills",
+        "tier": "reputable-3rd-party"
+      },
+      "notes": "H3 首批原生对话验证案例：直接在 prompt 里写韩语对白并配音轨描述，展示 H3 生成精准台词+环境音的原生音频能力"
+    },
+    {
+      "id": "mx-002",
+      "model": "minimax-h3",
+      "category": "music-video",
+      "title": "面无表情热舞：音频波形驱动节奏",
+      "prompt": "Use the supplied 15-second audio slice as the exact rhythm reference. When the parcel arrives, the character's body begins dancing in perfect synchronization with the waveform: fully committed on every beat, while the face remains completely deadpan and the eyes stay locked on camera. Preserve this trigger, contrast, timing rule, and character behavior in every scene so the repeated mechanism gives the film one coherent energy.",
+      "tags": [
+        "minimax-h3",
+        "music-video",
+        "reference"
+      ],
+      "params": {},
+      "source": {
+        "name": "imaginevid/awesome-minimax-h3-prompts-and-skills",
+        "url": "https://github.com/imaginevid/awesome-minimax-h3-prompts-and-skills",
+        "tier": "reputable-3rd-party"
+      },
+      "notes": "H3 独有音频 reference 用法：把 15 秒音频切片当作精确节奏参考，触发式舞蹈机制可跨场景复用\n演示视频：https://video.twimg.com/amplify_video/2083031810494324736/vid/avc1/1920x1440/ep8hqWhyscuF42MY.mp4?tag=29"
+    },
+    {
+      "id": "mx-003",
+      "model": "minimax-h3",
+      "category": "action",
+      "title": "五参考追车大战：沙丘越野车逃脱无人机",
+      "prompt": "Create a 15-second, 16:9 photoreal cinematic action sequence with native stereo audio. Treat the five images as coordinated multimodal references for identity, vehicle design, environment, performance, action, cinematography, and sound.\n\nUse Image 1 as the strict facial-identity reference for the female racer. Preserve her exact face, dark tied-back hair, amber goggles, dusty skin, black tactical suit, shoulder armor, gloves, and focused expression.\n\nUse Image 2 as the strict reference for her full costume, body proportions, armored black dune buggy, tire scale, exposed suspension, cyan headlights, roll cage, desert lighting, and industrial-outpost background.\n\nUse Image 3 as the action reference for the pursuing drones, vehicle speed, dust trails, fire, debris, chase intensity, and camera proximity.\n\nUse Image 4 as the location reference for Outpost 07, including its rusted towers, pipelines, bridges, rocky terrain, distant mountains, warm sunset atmosphere, and industrial scale.\n\nUse Image 5 as the cockpit and performance reference. Preserve the same steering wheel, open roll cage, goggles, gloves, facial identity, driving posture, and vehicle interior.\n\nSequence\n\n[0–2.5 seconds]\n\nOpen on Image 4 with an extreme-wide aerial establishing shot of Outpost 07 at sunset. The industrial complex fills the right side of frame while an empty desert route curves through the rocky foreground.\n\nThe camera dives rapidly toward the road as a small black dune buggy bursts from beneath an elevated pipeline, throwing a long dust plume behind it.\n\nKeep the vehicle moving consistently from left to right toward the outpost. No direction reversal.\n\nAudio begins with dry desert wind, distant industrial machinery, a low cinematic pulse, and the buggy engine approaching rapidly.\n\n[2.5–5 seconds]\n\nCut at peak engine sound to Image 5.\n\nTight frontal cockpit shot mounted just ahead of the driver. The vehicle shakes naturally over rough ground. Her hands hold the steering wheel firmly while she makes small, physically accurate corrections.\n\nHer amber goggles remain on top of her head. Loose strands of hair and fabric straps react to wind and vibration. Her eyes briefly check the left mirror, then return immediately to the road.\n\nA red warning light reflects across her face as a targeting alarm begins.\n\nDo not make her turn the steering wheel excessively. Her body, wheel movement, and vehicle direction must remain mechanically connected.\n\n[5–8 seconds]\n\nCut to a low front three-quarter tracking shot based on Image 3.\n\nThree pursuit drones descend behind the buggy in a triangular formation. Their rotors, stabilizers, and body movement respond realistically to speed and turbulence.\n\nThe lead drone fires into the sand beside the buggy. The impact creates a narrow eruption of dirt, sparks, and fragmented rock rather than an oversized fireball.\n\nThe racer steers sharply around the impact. The buggy's front wheels turn first, the suspension compresses, the body leans, and the rear tires slide outward before regaining traction.\n\nThe camera tracks beside the vehicle without spinning or overtaking it.\n\n[8–11 seconds]\n\nContinue the same drift into a rear three-quarter shot.\n\nThe buggy races toward a narrowing passage between a rock wall and the outer structures of Outpost 07. The racer pulls a mechanical handbrake lever for one brief moment, rotating the vehicle through the opening.\n\nOne drone follows too closely and clips a rusted overhead pipe. Its wing breaks, sending the drone tumbling into the sand behind her.\n\nShow the collision in the background while keeping the buggy dominant and moving forward. No slow motion.\n\nAudio: tire scrape, suspension impact, metal tearing, drone rotors failing, engine rev rising.\n\n[11–13 seconds]\n\nCut to a wheel-level macro shot.\n\nThe right rear tire bites into loose sand. Stones fire backward while the suspension rebounds. The camera rises naturally along the buggy's side and reveals the two remaining drones closing in.\n\nThe racer presses a guarded switch beside the steering wheel.\n\nA compact rear-mounted electromagnetic pulse discharges as a restrained blue-white distortion wave, briefly disrupting the drones' lights and stabilizers.\n\nNo magical energy, lightning storm, or giant explosion.\n\n[13–15 seconds]\n\nCut to a low frontal hero shot as the buggy clears the outpost gate at full speed.\n\nThe two disabled drones fall into the dust behind it while the vehicle launches from a shallow ridge. Keep the jump low, heavy, and physically believable.\n\nDuring the brief airborne moment, cut to Image 1 for a tight close-up of the racer. Preserve her exact identity as warm firelight and cool dashboard light cross her face. Her expression remains controlled and determined.\n\nThe buggy lands hard beyond the gate. The suspension compresses, the engine roars, and the vehicle continues directly into the desert.\n\nEnd with a sharp cut to black on the landing impact.\n\nVisual Direction\n\nPremium live-action science-fiction action trailer with realistic CGI integration, warm orange sunset light, restrained steel-blue technology accents, dusty atmosphere, hard surface detail, cinematic contrast, subtle film grain, realistic motion blur, and 24 FPS movement.\n\nUse wide shots to establish scale, cockpit close-ups for tension, low tracking shots for speed, and mechanical macro shots for physical detail.\n\nKeep the editing fast but readable. Every shot must begin from the physical state established by the previous shot.\n\nAudio Direction\n\nNative stereo sound with:\n\nAggressive combustion engine\n\nTire friction over sand and rock\n\nSuspension rattles and chassis vibration\n\nDrone rotors and targeting alarms\n\nSand impacts, metal collisions, and falling debris\n\nLow percussion and rising electronic tension\n\nOne heavy bass impact on the final landing\n\nKeep music underneath the vehicle and environmental sounds. No dialogue or voice-over.\n\nRestrictions\n\nNo subtitles, titles, logos, watermarks, additional racers, pedestrians, creatures, motorcycles, futuristic city skyline, nighttime transition, costume changes, facial changes, vehicle redesign, additional wheels, floating vehicle parts, distorted hands, incorrect steering, reversed wheel rotation, teleportation, random explosions, oversized fireballs, weightless motion, impossible jumps, camera spins, circular camera moves, rapid zooms, fluid morphs, soft dissolves, or changes in travel direction. #MiniMaxH3",
+      "tags": [
+        "minimax-h3",
+        "action",
+        "dialogue",
+        "reference",
+        "close-up",
+        "aerial"
+      ],
+      "params": {
+        "aspect": "16:9"
+      },
+      "source": {
+        "name": "imaginevid/awesome-minimax-h3-prompts-and-skills",
+        "url": "https://github.com/imaginevid/awesome-minimax-h3-prompts-and-skills",
+        "tier": "reputable-3rd-party"
+      },
+      "notes": "H3 多模态 reference 范式标杆：5 张图片各司其职（身份/载具/动作/场景/座舱）+ 原生立体声音轨描述，附结果视频"
+    },
+    {
+      "id": "mx-004",
+      "model": "minimax-h3",
+      "category": "image-to-video",
+      "title": "孟买季风 FPV：手绘路线图引导航拍",
+      "prompt": "Reference: Use the attached @ Image1 1 as the exact first frame and environment reference. The green drawn line is only the camera flight-path guide. Do not show the green line in the final video.\n\nCreate a 15-second hyper-real cinematic FPV drone video over Mumbai in heavy monsoon weather, using the same skyline, interchange, sea edge, road geometry, dense buildings, rainy morning atmosphere, grey clouds, and wet surfaces from the reference image. Keep everything realistic and grounded. The drone must follow the green guideline path as a smooth continuous move: begin near the left side of the interchange, rise and sweep across the middle highway corridor, continue through the right-side city edge, then climb higher into the skyline, perform a tight spiral/orbit near the upper tower cluster, descend back toward the interchange, curve around the large circular loop, and finally glide out toward the lower-right water edge. The move should feel fast, elegant, immersive, and controlled — like a premium FPV drone shot, not a random flyover.\n\nTIMELINE\n\n 0:00–0:03 Start low near the left feeder ramp above the wet interchange. Heavy rain falls across the lens. The drone accelerates forward and slightly upward, revealing slick roads, tiny moving traffic, dark sea barriers, and the circular loop ahead.\n\n0:03–0:06 Follow the path upward across the mid-frame highway corridor. Keep the skyline growing larger. Wet roads shimmer, rain haze softens the distance, and the sea remains visible to the right. Motion is quick but readable.\n\n0:06–0:09 Sweep along the right-side city edge and climb higher. Dense towers, mid-rise blocks, and dark green patches below feel soaked and monsoon-heavy. The camera begins rising toward the upper skyline.\n\n0:09–0:11 Reach the upper skyline cluster and perform a tight spiral/orbit around the central high-rises. Storm clouds loom above, rain streaks rush past, and the city beneath feels deep, layered, and cinematic.\n\n0:11–0:13 Exit the spiral and descend in a smooth arc back toward the interchange. The circular loop becomes dominant again. Maintain realistic drone inertia and readable geography.\n\n0:13–0:15 Curve around the large circular flyover loop and finish with a fast glide toward the lower-right over the water, ending on a dramatic monsoon reveal of wet infrastructure, dark sea, and rain-washed Mumbai.\n\nCAMERA LANGUAGE FPV drone POV, smooth stabilized flight, realistic banking turns, slight motion blur from speed and rain, believable acceleration and inertia, one continuous shot, no teleporting, no abrupt cuts, no impossible passes through buildings.\n\nVISUAL STYLE Hyper-real cinematic realism, heavy monsoon rain, grey storm clouds, wet roads, reflective flyovers, rain haze, cool blue-grey morning light, dark sea, atmospheric depth, realistic Mumbai scale, premium documentary-film look.\n\nAUDIO No voiceover. No dialogue. Use heavy rainfall, rushing wind, distant thunder, soft drone motor whirr, faint traffic hum, sea movement, and subtle cinematic tension music building with the motion.\n\nIMPORTANT Do not show the green route line. No text, captions, logos, or watermark. Keep Mumbai realistic, monsoon-heavy, and geographically believable.",
+      "tags": [
+        "minimax-h3",
+        "image-to-video",
+        "dialogue",
+        "reference",
+        "drone",
+        "rain"
+      ],
+      "params": {},
+      "source": {
+        "name": "imaginevid/awesome-minimax-h3-prompts-and-skills",
+        "url": "https://github.com/imaginevid/awesome-minimax-h3-prompts-and-skills",
+        "tier": "reputable-3rd-party"
+      },
+      "notes": "巧妙的图生视频技巧：在参考图上画绿色引导线定义无人机航线，明确要求隐藏路线线——路线可控性范式"
+    },
+    {
+      "id": "mx-005",
+      "model": "minimax-h3",
+      "category": "comedy",
+      "title": "1980s 复古机器人家庭喜剧：开场图转视频",
+      "prompt": "Use the supplied image as the exact opening frame. Create a hilarious, high-budget 1980s live-action family comedy movie scene, photographed on a real soundstage with practical robot costumes, animatronics, handmade props, vintage wardrobe, and authentic 35mm film color.\n\nThe entire group suddenly hears something above them. Everyone's eyes dart upward at the same moment. The men, women, children, and robots dramatically tilt their heads back, point toward the ceiling, and erupt into chaotic celebration. They gasp, scream, laugh, jump, wave their arms, slap each other on the shoulder, and completely lose their minds with exaggerated 1980s comedy reactions. The children bounce excitedly. The adults stumble into one another. The robots flash their eyes, flap their mechanical arms, spin clumsily, and celebrate with funny practical animatronic movements.\n\nOne man shouts:\n\n“OPEN SOURCE?!”\n\nThe entire crowd answers together:\n\n“MINIMAX H3!”\n\nThey cheer wildly as one robot attempts a victory dance, loses its balance, and is caught by the shocked family at the final second.\n\nFast, energetic comic timing with believable ensemble choreography. Begin with a brief locked group shot, then a subtle handheld push-in as the chaos escalates. Keep every original person, robot, shirt design, and the large headline clearly recognizable. Preserve facial identity, wardrobe, composition, lighting, and 1980s production design.\n\nAuthentic optical softness, warm tungsten lighting, rich film grain, slight gate weave, practical effects, natural motion blur, expressive physical acting, polished studio-comedy sound mix, triumphant synthesizer sting, cheering, robot beeps, and comedic percussion.\n\nNo CGI, no digital-looking robots, no morphing, no extra people, no duplicated characters, no distorted faces, no rewritten text, no spelling changes, no modern clothing, no style shifts, and do not turn the scene into animation.",
+      "tags": [
+        "minimax-h3",
+        "comedy",
+        "rain",
+        "dance",
+        "product",
+        "crowd"
+      ],
+      "params": {},
+      "source": {
+        "name": "imaginevid/awesome-minimax-h3-prompts-and-skills",
+        "url": "https://github.com/imaginevid/awesome-minimax-h3-prompts-and-skills",
+        "tier": "reputable-3rd-party"
+      },
+      "notes": "图生视频喜剧范例：锁定开场图身份/服装/文字，靠群戏调度+喜剧音效设计驱动笑点，展示 H3 原生音频与群戏一致性"
+    },
+    {
+      "id": "mx-006",
+      "model": "minimax-h3",
+      "category": "music-video",
+      "title": "七色 K-pop 回归预告：精准排版字效",
+      "prompt": "Create a 15-second, 16:9, 2K, high-budget K-pop girl-group comeback teaser. The group consists of seven original Korean female idols, all aged 22 or older; they must not resemble real celebrities. Give each member a distinct face, hairstyle, outfit, and signature color while maintaining a photorealistic live-action appearance.\n\nMembers: MIA uses purple-and-black styling with violet electricity. IVY uses emerald-and-black styling with green luminous vines. NIA uses ice-blue styling with glass fragments and icy mist. IRIS uses silver-and-white styling with iridescent light. MAY uses black-and-red styling with red sparks. ARI uses gold-and-black styling with golden particles. XENA uses deep-blue styling with blue lasers. Their initials spell MINIMAX.\n\nOnly the following text may appear: MIA, IVY, NIA, IRIS, MAY, ARI, XENA, and MINIMAX. Present each name as premium character-introduction typography with condensed uppercase letters, geometric cuts, metallic outlines, translucent echoes, scan lines, small HUD circles, letter fragments, and energy trails. Keep every name accurate and legible without covering a face.\n\nTimeline: 0.0-0.5s, seven colored light trails sweep across black and form an incomplete MINIMAX outline. 0.5-2.0s, MIA in a violet mirrored corridor as the camera pushes in. 2.0-3.5s, violet electricity transforms into green vines and IVY emerges. 3.5-5.0s, green light freezes into ice-blue glass and NIA emerges through cold mist. 5.0-6.5s, glass refracts into iridescent light and IRIS turns in a silver-white mirrored space. 6.5-8.0s, red sparks ignite and MAY swings translucent red fabric toward camera. 8.0-9.5s, sparks become gold particles and ARI walks out from a black-and-gold stage. 9.5-11.0s, the gold ring becomes a deep-blue laser corridor and XENA steps forward. Briefly decelerate each introduction for 0.3s while hair, clothing, mist, and light continue moving; hold each name for at least 0.5s.\n\nFrom 11.0-15.0s, a blue laser reveals a large black mirrored stage. All seven members enter from different directions and form a clear three-front, four-back formation with every face visible. Pull back slowly from a low angle. Contract each name to its first letter, M I N I M A X, then combine the letters into a large MINIMAX title built from structural lines, geometric cuts, metallic fill, translucent echoes, and a final seven-color sweep. Hold the group looking into camera for one second. Use native stereo sound: electronic bass, percussion, electricity, glass, airflow, sparks, lasers, and typographic lock-on effects. No dialogue. Avoid celebrities, minors, gibberish, misspellings, extra text, text over faces, identity changes, similar-looking members, revealing outfits, anime, game CGI, cheap neon, excessive particles, and unnecessary 3D rotation.",
+      "tags": [
+        "minimax-h3",
+        "music-video",
+        "dialogue",
+        "neon",
+        "anime"
+      ],
+      "params": {
+        "aspect": "16:9"
+      },
+      "source": {
+        "name": "imaginevid/awesome-minimax-h3-prompts-and-skills",
+        "url": "https://github.com/imaginevid/awesome-minimax-h3-prompts-and-skills",
+        "tier": "reputable-3rd-party"
+      },
+      "notes": "H3 文字渲染能力的硬核演示：7 位成员名+MINIMAX 标题逐字排版，每段 0.3s 减速持名 0.5s，七色光效随音乐变奏"
+    },
+    {
+      "id": "mx-007",
+      "model": "minimax-h3",
+      "category": "product-commercial",
+      "title": "抹茶新手礼盒晨间 UGC 广告",
+      "prompt": "Use the uploaded reference image as the exact character reference. Preserve her facial identity, hairstyle, eye color, skin tone, body proportions, and facial consistency throughout every shot.\n\nCreate a 15-second ultra-realistic UGC-style lifestyle advertisement featuring a realistic young woman sharing her favorite premium Matcha Starter Kit in a bright, minimalist Japanese-inspired kitchen with warm morning sunlight, natural wood textures, soft neutral décor, ceramic tableware, and a calm luxury aesthetic.\n\nShe smiles naturally while holding an elegant matcha tin and says this has become her favorite way to start every morning. She opens the premium matcha container, carefully scoops vibrant green matcha powder into a handcrafted ceramic bowl, pours warm water, and whisks it smoothly using a traditional bamboo whisk until a rich, creamy foam forms. She lifts the bowl, takes a small sip, closes her eyes with a genuine smile, and enjoys the peaceful morning moment.\n\nCapture authentic handheld smartphone shots, over-the-shoulder angles, cinematic macro close-ups of the vivid green matcha powder, the bamboo whisk creating silky foam, the handcrafted ceramic bowl, rising steam, natural hand movements, and warm sunlight reflecting across the table. Finish with her holding the completed bowl beside her face, smiling warmly into the camera.\n\nAuthentic creator-style content, natural facial expressions, healthy glowing skin, cozy morning atmosphere, luxury lifestyle aesthetic, subtle depth of field, premium color grading, smartphone-shot realism, vertical 9:16, 4K HDR, no text, subtitles, logos, or watermarks.",
+      "tags": [
+        "minimax-h3",
+        "product-commercial",
+        "reference",
+        "close-up",
+        "one-shot"
+      ],
+      "params": {},
+      "source": {
+        "name": "imaginevid/awesome-minimax-h3-prompts-and-skills",
+        "url": "https://github.com/imaginevid/awesome-minimax-h3-prompts-and-skills",
+        "tier": "reputable-3rd-party"
+      },
+      "notes": "H3 的参考身份锁定做带货 UGC：角色身份严格锁定+抹茶打制触感特写，手持手机美学对电商内容有直接参考价值"
+    },
+    {
+      "id": "mx-008",
+      "model": "minimax-h3",
+      "category": "dialogue-driven",
+      "title": "纸鸟避雨计划：双语音参考定音配对白",
+      "prompt": "Create a tactile stop-motion paper-craft scene beginning from Image 1. Preserve exactly two characters: the broad indigo bird stays screen left with one folded wing held close; the smaller saffron bird stays screen right with a long pointed tail. Preserve paper colors, fold patterns, fiber texture, scale difference, seed tray, warm lantern, greenhouse structure, rain direction, and open door at far right.\n\n0–3 seconds: establishing medium-wide shot with Audio 3 prominent. A gust rattles the greenhouse; both birds look toward the right-hand door, then at each other. No dialogue. 3–7 seconds: close on the indigo bird using Audio 1, low and steady: “The roof will hold if we brace the west hinge.” Its beak movement is minimal and synchronized; the saffron bird listens without speaking. 7–11 seconds: reverse close-up using Audio 2, quick but clear: “Then I'll tie the twine. You keep the lantern dry.” The indigo bird listens and lowers its tense shoulder fold. 11–15 seconds: return to the two-shot. They each take one end of a loose natural-fiber twine and move together toward the exit; the lantern remains inside. End before they enter the rain.\n\nUse slight stop-motion cadence, consistent eye lines, and one speaker at a time. Sound hierarchy: dialogue first, rain and wooden creaks below, no music. Avoid extra birds, human hands, realistic feathers, changing folds, swapped voices, subtitles, speech bubbles, a repaired roof not yet shown, exaggerated panic, franchise resemblance, logos, or watermark.",
+      "tags": [
+        "minimax-h3",
+        "dialogue-driven",
+        "dialogue",
+        "close-up",
+        "rain"
+      ],
+      "params": {
+        "duration": "3s"
+      },
+      "source": {
+        "name": "aivideoweb/awesome-minimax-h3-prompts",
+        "url": "https://github.com/aivideoweb/awesome-minimax-h3-prompts/blob/HEAD/prompts/21-character-dialogue-performance.md",
+        "tier": "reputable-3rd-party"
+      },
+      "notes": "H3 音视频统一 reference 的教科书：图像定角色场景，Audio 1/2 分别授权两个角色的音色，Audio 3 只管雨声环境，一人一句配对口型"
+    },
+    {
+      "id": "mx-009",
+      "model": "minimax-h3",
+      "category": "technique-snippet",
+      "title": "相机语法迁移：借运镜节奏不借画面",
+      "prompt": "Create an original studio advertisement for the fictional graphite-and-cork portable speaker in Image 1. Transfer only the abstract camera grammar from Video 1: shot lengths, direction of travel, acceleration curve, focal transitions, and cut timing. Do not copy its subject, setting, colors, props, lighting design, composition, campaign idea, text, or recognizable effects.\n\n0–3 seconds: slow three-quarter push toward the full speaker on a charcoal plinth; amber rim light reveals the cork edge. 3–6 seconds: cut on Audio 1's second downbeat to a controlled lateral macro move across the cork pores and metal seam. 6–9 seconds: repeat Video 1's orbit speed around the circular woven grille while the product remains stationary and physically intact. The amber status light turns on once at the final beat of this section. 9–12 seconds: pull back to the original three-quarter product view; a shallow pattern of light crosses the acoustic panel behind it and settles, leaving clean negative space for typography added later.\n\nPreserve the exact silhouette, circular grille, cork panels, seam placement, amber indicator, scale, and material response from Image 1. Sound intent: Audio 1 plus restrained tactile clicks and low room tone; do not imply measured loudness or acoustic performance. Avoid logos, generated copy, extra controls, duplicate speakers, pulsing geometry, visible sound waves, floating product, copied reference-video scenery, or watermark.",
+      "tags": [
+        "minimax-h3",
+        "technique-snippet",
+        "reference",
+        "rain",
+        "product"
+      ],
+      "params": {
+        "duration": "3s"
+      },
+      "source": {
+        "name": "aivideoweb/awesome-minimax-h3-prompts",
+        "url": "https://github.com/aivideoweb/awesome-minimax-h3-prompts/blob/HEAD/prompts/20-multireference-camera-transfer.md",
+        "tier": "reputable-3rd-party"
+      },
+      "notes": "H3 视频 reference 的新玩法：只迁移参考视频的抽象运镜语法（景别/加速度/切点），不复制其内容——解决版权风险的实用技巧"
+    },
+    {
+      "id": "mx-010",
+      "model": "minimax-h3",
+      "category": "music-video",
+      "title": "车站双语二重唱：中西歌声对答",
+      "prompt": "Create an intimate, fictional musical exchange on an almost-empty covered station platform at blue hour. Preserve Performer A from Image 1 in a charcoal coat on screen left and Performer B from Image 2 in a rust scarf on screen right. Preserve the platform roof and bench geometry from Image 3; no real rail operator marks.\n\n0–4 seconds: medium two-shot, distant train hum. Performer A sings one soft Mandarin line, “下一站，我们还会再见,” with a calm, hopeful expression. Performer B listens without lip movement. 4–8 seconds: cut on a station-light flicker to Performer B, who answers in Spanish, “La próxima vez, llegaré temprano.” Performer A now listens. 8–12 seconds: return to the two-shot as they sing a wordless two-note harmony; a train light passes behind them and the camera gently pushes in.\n\nKeep exact voice-to-face ownership, natural breathing, intelligible pronunciation, stable eyelines, consistent platform geography, and modest performance. Sound intent: voices foreground, light rail ambience, no additional lyrics, no non-diegetic music. Avoid translated subtitles baked into the image, overlapping mouth movement, voice swapping, melodramatic gestures, real transit logos, or watermark.",
+      "tags": [
+        "minimax-h3",
+        "music-video",
+        "rain"
+      ],
+      "params": {
+        "duration": "4s"
+      },
+      "source": {
+        "name": "aivideoweb/awesome-minimax-h3-prompts",
+        "url": "https://github.com/aivideoweb/awesome-minimax-h3-prompts/blob/HEAD/prompts/13-music-performance-audio.md",
+        "tier": "reputable-3rd-party"
+      },
+      "notes": "H3 多语音色绑定的音乐用法：中文+西班牙语两段歌声各有授权音色，规定发声者归属与聆听者闭嘴——双语演唱的可复现模板"
+    },
+    {
+      "id": "se-001",
+      "model": "seedance-2.5",
+      "category": "dialogue-driven",
+      "title": "出租车分手戏：微表情连续情绪演变",
+      "prompt": "人设女性：年轻漂亮，长发披肩，坐在出租车后排。角色状态：与男友分手告别，表面强撑微笑、内心悲伤压抑，最终情绪崩溃嚎啕大哭。场景出租车内部的后排车厢作为空间环境参考，前排副驾驶空位（前景局部失焦虚化）；侧车窗与后车窗均被雨水打湿；车窗外为城市街道夜景、霓虹灯光、淅淅沥沥的小雨。画面风格真人实拍质感的青春恋爱电视剧，现代都市写实服化道，细腻情感戏审美，情绪戏节奏克制。影调车内整体偏暗，窗外城市夜景与霓虹灯光透过雨打车窗，在车内形成流动的彩色光斑与明暗切片，勾勒女性面部轮廓与长发边缘；车窗玻璃上雨珠反光；夜景冷调为主，霓虹光斑冷暖交织。全局约束无字幕、禁止生成字幕。画面内容分镜\n\n1，0s-6s，车内中景，固定机位，摄像机位于前排副驾驶位置朝后方拍摄；前景左下方为副驾驶空座椅背局部（失焦虚化），女性位于画面右侧三分线位置。她侧着脸望向右侧车窗外，轻咬下唇，微笑着与窗外人道别，窗外站着一名身穿灰色夹克黑色牛仔裤的男性，透过车窗只能看见男性的局部身体：对白：女性（轻咬下唇，微笑）：「就这样，不用送了。」随后她转头面向镜头，对前排司机说：对白：女性：「司机，开车。」说完她不经意地带出一声压抑的细微啜泣，随即轻轻舒了一口气，脸上仍保持着刚才的微笑。出租车随即启动，车身轻微震动一下，车辆起步向前开动，窗外男性朝着车窗挥手再见（局部入画），男性与窗外雨幕与霓虹灯光快速向后掠过。音效：淅沥雨声打在车顶与车窗，城市夜晚低缓的环境底噪；对白期间人声清晰突出；一声压抑的细微啜泣；轻舒气声；发动机启动声与车身轻微震动；轮胎碾过湿路面的起步声。分镜\n\n2，6s-15s，切换车内后排近景，手持拍摄，轻微仰拍，镜头随行驶中的车身轻微晃动；焦点在女性肩部以上正面，她背后隔着被雨打湿而模糊的后车窗，城市街景与霓虹灯光逐渐远去。一开始女性脸上仍带着微笑，没有皱眉也没有哭，慢慢地她开始轻微皱起眉头，小幅摇了摇头，像是反悔刚才说出口的话；接着她的嘴角微微下压，抿紧双唇，眼眶开始泛红；她稍稍仰起头试图忍住，眼神有些游离地瞥向旁边车窗外；接着她终于再也压抑不住——嘴角明显下垂，眉毛内收收紧，鼻子开始抽搐，眼神黯淡，眼眶湿润，泪水开始流出；然后她垂下头、微微蜷缩着肩膀，随即猛然仰头，嚎啕大哭，一边哭一边抬手擦去脸上止不住的泪水。整段为逞强微笑→压抑情绪→悲伤外泄→情绪大爆发的连续情绪变化，一镜到底。音效：雨声持续；行驶中发动机低鸣与轮胎碾过湿路面的沙沙声；呼吸渐重、吸鼻声；压抑啜泣转为放声大哭；手背擦拭泪水的摩擦声与衣料声。全局配乐雨夜分手情绪戏（15s 配乐轨，无歌词）0-6s 无BGM，只保留对白和环境声；6-8s 微笑→轻微皱眉 | 钢琴单音/两音动机从雨声里渗出，极弱 pad 垫底，像回忆浮上来；8-10s 摇头反悔→抿唇→眼眶泛红 | 钢琴变叹息式下行音型，大提琴长音进入；10-12s 仰头忍泪→眼神游离 | 小提琴组加入，和声加厚，钢琴分解和弦铺开；12-13.5s 嘴角下压→鼻翼抽动→泪落 | 情绪临界：弦乐揉弦+力度加强，钢琴和弦加重；13.5-15s 垂头蜷缩→仰头嚎啕大哭 | 段落峰值：弦乐齐奏主题，钢琴八度重音。",
+      "tags": [
+        "seedance-2.5",
+        "dialogue-driven"
+      ],
+      "params": {},
+      "source": {
+        "name": "kafanxx/awesome-seedance",
+        "url": "https://github.com/kafanxx/awesome-seedance/blob/HEAD/docs/gallery-seedance-2-5-part-4.zh.md",
+        "tier": "reputable-3rd-party"
+      },
+      "notes": "Seedance 2.5 微表情断档领先的实测案例：15 秒一镜到底完成逞强微笑→崩溃大哭的连续情绪变化，还附了配乐时间轴\n演示视频：https://goodcase.ai/cases/seedance-2-5-8d136b59e95a"
+    },
+    {
+      "id": "se-002",
+      "model": "seedance-2.5",
+      "category": "fantasy-scifi",
+      "title": "一张照片飞天：科幻史诗升空短片",
+      "prompt": "中国人能飞✈️\n\n想飞吗？只需输入自己的照片，加上下面的提示词，你也能飞✈️😄\n\nSeedance 2.5 prompt 👇\n\n科幻史诗真人电影（Sci-fi Epic Live-Action），ARRI Alexa 35 机身 + Panavision Ultra Vintage 变形宽银幕镜头（Anamorphic），2.39:1 宽银幕画幅，Tiffen Black Pro-Mist 1/4 柔光镜，Kodak 250D 胶片质感、可见但细腻的颗粒，高光边缘带红橙渗色光晕（Halation），180°快门角自然运动模糊，暗部保留细节不死黑，8K超清，真实摄影（Photorealistic），无动漫感、无CG塑料感\n\n30秒\n\n从地球荒原一路上升，穿雷暴云 → 平流层 → 近地轨道 → 月球 → 小行星带 → 太阳表面\n\n主角（全片同一人，服装与外形完全以参考图为准）\n\n[00:00-00:02] 镜头1：负手而立（85mm 长焦 / Slow Dolly In）\n\n广角远景：主角@图片1背对镜头站在枯黄草原上，双手背在身后，一动不动。天顶被一整片巨大的乳状积云压满，远处地平线只有一条明亮的逆光带。\n\n画面：风吹得草浪成片倒伏，逆光把草叶边缘描出一圈毛茸茸的金边。\n\n机位：85mm 长焦压缩空间，镜头缓慢向前推进。\n\n[00:02-00:04] 镜头2：起飞冲击（40mm / Speed Ramp + Whip Tilt Up）\n\n0.3秒慢动作：主角@图片1脚下一圈环形冲击波贴地扩散出去，方圆几十米的草被压平成一个同心圆，碎草和沙尘垂直腾起。\n\n随即切全速：他猛然垂直升空，画面只剩他的腿从上方出画。镜头急速上摇跟随，被气浪震了一下（Camera Shake），穿过尘土冲进云层。\n\n[00:04-00:07] 镜头3：雷暴云中心（40mm）\n\n主角@图片1缩成一个小黑点在云柱中垂直上升，负手姿态没有改变。四周云里的蓝白色闪电一道道炸开，每次闪把周围的云照亮一瞬，他的剪影在亮起的云幕上被压成一个黑点。\n\n机位：跟随上升，云层向画面下方飞速倒退，变形镜头把画面边缘轻微拉长。\n\n[00:07-00:09] 镜头4：冲出云顶（50mm / Backlit Emergence）\n\n主角@图片1逆光穿出金色云层，身后的云被撞出一个漏斗形的空洞，暖金色光晕从他背后爆开。\n\n画面：强逆光在他轮廓外缘烧出一圈红橙色渗色光晕（Halation），高光被柔光镜化开但不过曝。\n\n[00:09-00:13] 镜头5：平流层360°环绕（50mm / Full 360° Orbit）\n\n画面：主角@图片1在云海上方静止悬停，双手垂在身侧一动不动，全程不转身。天空上半部已是深棕黑的临近太空，下方是被夕阳染成金色的积云海。\n\n机位（00:09-00:12）：50mm 镜头从他背后起，绕着他匀速环绕一整圈——依次经过他的侧面、正面、另一侧，最后转回他的背后。环绕全程机位与他的距离保持不变，他在画面里的大小也不变。\n\n机位（00:12-00:13）：镜头停在他背后不动，他从这个背面视角猛然加速垂直上升，瞬间缩成一个小点飞离画面，只剩空荡荡的金色云海。\n\n节奏：这一段要慢，是全片的呼吸点。\n\n[00:13-00:15] 镜头6：地球轨道冲刺（40mm / Side Tracking + Vapor Cone）\n\n硬切超近景：主角@图片1俯冲飞行姿态，身体水平前倾、手臂前伸，衣物被气流抽打得剧烈变形，布料褶皱清晰。背景是地球弧面和一整个台风漩涡云系。\n\n特效：他身体周围炸开一圈白色音爆云环。",
+      "tags": [
+        "seedance-2.5",
+        "fantasy-scifi",
+        "dance"
+      ],
+      "params": {},
+      "source": {
+        "name": "goodcase.ai",
+        "url": "https://goodcase.ai/cases/johnagi168-seedance-ai-8424f361fbe0",
+        "tier": "unverified-3rd-party"
+      },
+      "notes": "中文社区火爆的 2.5 模板：四段式中文格式，单张照片换脸飞行，30 秒跨度荒原→太阳\n演示视频：https://goodcase.ai/cases/johnagi168-seedance-ai-d704aa5a63ac"
+    },
+    {
+      "id": "se-003",
+      "model": "seedance-2.5",
+      "category": "sports",
+      "title": "偶像女孩 HIIT 训练日志：DV 磁带机实录",
+      "prompt": "CAMERA: DV 16mm tape camcorder, handheld POV/self-shot by CHASE. Occasional propped shots on bench/floor. Shaky framing, soft focus, clumsy zooms, face cutoffs, chaotic movement during exercise, steadier during recovery. Camcorder never visible.\n\nLOOK: Soft blurry tape quality, faint noise, bloomed gym lights, flickering exposure, muted contrast, realistic skin tones. Sweat progressively builds.\n\nSTYLE: High-energy, breathless HIIT vlog. Intense exercise bursts → short recovery beats. Genuine exhaustion and determination.\n\nCHASE: Korean idol in her 20s, long black high ponytail becoming damp, expressive eyes, flushed cheeks, slim athletic build. Modest long-sleeve athletic top, joggers/leggings, sneakers, towel, no jewelry.\n\nSETTING: Evening gym open floor, mats, mirrors, small speaker/phone, water bottle, soft overhead lighting.\n\n30s / 9 CUTS:\n\n1. 3s Propped: Ready on mat, bouncing. “Okay, HIIT round thirty seconds on, let’s go!”\n2. 3s Handheld: Fast jumping jacks. “Okayalready feeling this”\n3. 2.5s Propped: Hands on knees, recovering. “Okay five seconds that’s it”\n4. 3s Low/propped: Intense mountain climbers, sweat visible. Heavy breathing only.\n5. 2.5s Propped: Sitting back, wiping sweat. “Okay, that one’s brutal”\n6. 3.5s Handheld: Burpees, increasing motion blur. “Why did Ipick burpees”\n7. 2.5s Macro: Hands gripping mat, sweat dripping, chest heaving. No dialogue.\n8. 3s Propped: Collapses onto back, laughing breathlessly. “Okay I think I’m dying”",
+      "tags": [
+        "seedance-2.5",
+        "sports",
+        "dialogue"
+      ],
+      "params": {},
+      "source": {
+        "name": "kafanxx/awesome-seedance",
+        "url": "https://github.com/kafanxx/awesome-seedance/blob/HEAD/docs/gallery-seedance-2-5-part-3.zh.md",
+        "tier": "reputable-3rd-party"
+      },
+      "notes": "2.5 长单镜头+多分镜能力：30 秒 9 个切镜的运动 vlog，DV 磁带机质感与汗水渐进细节展现物理一致性\n演示视频：https://goodcase.ai/cases/doctorwasif-seedance-ai-653b4911153b"
+    },
+    {
+      "id": "se-004",
+      "model": "seedance-2.5",
+      "category": "quiet-moments",
+      "title": "深夜厨房手机实录：做饭 30 秒",
+      "prompt": "FORMAT: 30-second horizontal 16:9 realistic smartphone video.\nCreate an authentic, imperfect everyday late-night kitchen phone recording, as if a friend casually left a phone recording on the counter. Use a standard smartphone camera with mild autofocus hunting, subtle exposure shifts, natural motion blur, compression artifacts, and slightly uneven handheld framing. No polished commercial look.\n00–05s — WALKING IN\nThe character walks into a quiet home kitchen carrying a small grocery bag. They set it on the counter, sigh quietly, and pull out a few simple ingredients. They glance at the phone for a second before turning back toward the counter.\nCamera remains several feet away at counter height, as if casually recording from a nearby surface.\n05–10s — GETTING STARTED\nThey wash their hands, turn on the kitchen light, and begin preparing the ingredients.\nA cutting board shifts slightly against the counter. They pause to move it into a better position.\nThe character looks tired but relaxed, occasionally brushing their hair away from their forehead.\n10–15s — COOKING\nThey place a pan on the stove and begin cooking.\nSteam gradually becomes visible. The phone autofocus briefly shifts between the character and the foreground pan before settling again.\nThey stir the food, taste a tiny amount, think for a moment, then add a little more seasoning.\nNo readable labels or packaging should be visible.\n15–20s — SMALL MISTAKE\nThe character gets distracted for a moment and notices the food starting to cook more quickly than expected.\nThey immediately lower the heat and give a small amused shake of their head.\nThey quietly mutter something like:\n“Yeah… almost forgot about that.”\nThe delivery should feel spontaneous and understated.\n20–25s — FINISHING\nThey finish preparing the food, turn off the stove, and carefully transfer the meal onto a plate.\nThey wipe a small splash from the counter with a paper towel.\nNatural movements only—nothing overly choreographed.",
+      "tags": [
+        "seedance-2.5",
+        "quiet-moments",
+        "night",
+        "food"
+      ],
+      "params": {
+        "aspect": "16:9"
+      },
+      "source": {
+        "name": "kafanxx/awesome-seedance",
+        "url": "https://github.com/kafanxx/awesome-seedance/blob/HEAD/docs/gallery-seedance-2-5-part-2.zh.md",
+        "tier": "reputable-3rd-party"
+      },
+      "notes": "2.5 的反精致真实感美学：明确要求自动对焦漂移、压缩伪影、手持不稳和小失误——让 AI 视频摆脱广告味的关键 prompt 写法\n演示视频：https://goodcase.ai/cases/seedance-2-5-eba905fedcff"
+    },
+    {
+      "id": "ve-021",
+      "model": "veo-3",
+      "category": "dialogue-driven",
+      "title": "Veo 3.1 原生对白与口型同步写法（120ms lip-sync）",
+      "prompt": "Dialogue Structure: \"Character [Description] says '[Exact Quote],' [Tone Adjective], [Sync Timing].\"\n\nExample: A middle-aged detective says 'I told you not to come here,' weary and gravelly tone, 120ms lip-sync delay.\n\nUse quotation marks for spoken lines: putting the exact dialogue in quotes (says, \"...\") gives the model a clear start and stop point. List ambient sounds (like rain tapping or cafe murmur) at the end of the prompt so the engine does not blend environmental noise into the main speech track.",
+      "tags": [
+        "veo-3",
+        "dialogue-driven",
+        "dialogue",
+        "lip-sync",
+        "rain"
+      ],
+      "params": {},
+      "source": {
+        "name": "www.atlascloud.ai",
+        "url": "https://www.atlascloud.ai/blog/ai-updates/veo-3.1-prompt-guide",
+        "tier": "unverified-3rd-party"
+      },
+      "notes": "Veo 3.1 的 48kHz native audio 对白标准写法：角色描述+says+精确引语+语气+lip-sync 时延；与已有 Veo 3 对白条目不同，这是 3.1 专属的同步语法。\n演示视频：https://www.youtube.com/embed/48jtRE42Bw0"
+    },
+    {
+      "id": "ve-022",
+      "model": "veo-3",
+      "category": "technique-snippet",
+      "title": "Veo 3.1 85mm 跟拍 + 脚步重量物理与音效绑定",
+      "prompt": "Cinematography: 85mm medium tracking shot, smooth eye-level dolly backward, shallow depth of field.\n\nSubject & Action: A handsome man... walks forward... His boots firmly contact the rain-slicked asphalt with clear weight and friction...\n\nEnvironment: Rain-soaked cinematic urban alleyway, vibrant neon lights...\n\n(原文含省略号为来源作者删节) Native audio note: explicit physical-contact wording (boots firmly contact... with clear weight and friction) forces the physics engine to render grounded weight and lets the native audio engine snap footstep sounds to the visual contact frames.",
+      "tags": [
+        "veo-3",
+        "technique-snippet",
+        "rain",
+        "neon"
+      ],
+      "params": {},
+      "source": {
+        "name": "www.atlascloud.ai",
+        "url": "https://www.atlascloud.ai/blog/ai-updates/veo-3.1-prompt-guide",
+        "tier": "unverified-3rd-party"
+      },
+      "notes": "新技巧：用物理接触动词（firmly contact with clear weight and friction）消除“太空步”并实现 action-sound binding；机位参数前置锁定空间一致性。\n演示视频：https://www.youtube.com/embed/I6RMl43E37I"
+    },
+    {
+      "id": "ve-023",
+      "model": "veo-3",
+      "category": "social-viral",
+      "title": "吉祥物慢步入场（便利店夜晚病毒版）",
+      "prompt": "A short cinematic video clip: the camera holds steady on the subject standing outside a dimly lit convenience store at night. After a beat, a tall, slender, pastel-purple cartoon rabbit-like mascot character with oversized round eyes, a wide friendly cartoon grin, and smooth, toy-like 3D-rendered proportions slowly walks into frame from just outside the light, taking three or four unhurried steps until it comes to a stop beside the subject, its shadow growing and shifting realistically as it moves under the same storefront light source. Quiet, deliberate pacing, no jump cuts, no distorted motion, no readable signage text, no logos.",
+      "tags": [
+        "veo-3",
+        "social-viral",
+        "night"
+      ],
+      "params": {},
+      "source": {
+        "name": "miraflow.ai",
+        "url": "https://miraflow.ai/blog/digital-circus-cartoon-real-life-ai-photo-trend-prompts-2026",
+        "tier": "unverified-3rd-party"
+      },
+      "notes": "2026 年 9 月 TikTok/Reels 病毒趋势 Digital Circus 的视频版 prompt（通用型，可用于 Veo 3/Sora 2）；写法要点：卡通角色的阴影随步伐实时变化、光影与真人严格匹配。"
+    },
+    {
+      "id": "ve-024",
+      "model": "veo-3",
+      "category": "social-viral",
+      "title": "自拍转场：吉祥物突然现身",
+      "prompt": "A short cinematic video clip: the subject holds up a phone taking a normal selfie in an ordinary daylight room, alone in frame. The camera then pushes in slightly and, in one smooth transition, a tall, slender, pastel-purple cartoon rabbit-like mascot character with oversized round eyes, a wide friendly cartoon grin, and smooth, toy-like 3D-rendered proportions is revealed standing directly behind the subject in the reflection or background where nothing was visible a moment before. Keep the lighting on the mascot consistent with the room's existing light source through the transition, smooth and deliberate pacing, no jarring cuts, no distorted motion, no readable text, no logos.",
+      "tags": [
+        "veo-3",
+        "social-viral"
+      ],
+      "params": {},
+      "source": {
+        "name": "miraflow.ai",
+        "url": "https://miraflow.ai/blog/digital-circus-cartoon-real-life-ai-photo-trend-prompts-2026",
+        "tier": "unverified-3rd-party"
+      },
+      "notes": "同一病毒趋势的另一视频版：一镜式自拍 reveal 转场，通用写法，适合 Shorts/Reels 的惊吓式 hook。"
+    },
+    {
+      "id": "hg-009",
+      "model": "higgsfield-soul",
+      "category": "technique-snippet",
+      "title": "Higgsfield Genjutsu 运动迁移换角：主角+群演身份锁写法",
+      "prompt": "CHARACTER AND BACKGROUND REPLACEMENT TASK\n\n@[Video 1]. Image 1 defines the lead's appearance, and Image 2 defines the supporting cast.\n\n1. MAIN CHARACTER:\nReplace ONLY the original lead with the man from @[Image 1]. Track this same person throughout the video, including close-ups, walking, turns, interactions and the finale. Preserve the source lead's screen position, action timing and apparent body scale. Image 1's full-body and facial views depict ONE man. Use his exact identity, body proportions and wardrobe; ignore the image background. He appears only once.\n\n2. SURROUNDING CHARACTERS:\nReplace EVERY OTHER PERSON with the complete masked red-jumpsuit character from @[Image 2], repeated as identical copies. Include front, side, middle and background rows, blurred figures and contact partners. Preserve the source crowd count, formation and individual positions. Leave no original supporting person unchanged. Ignore the image background.\n\n3. IDENTITY LOCK:\nImage 1 alone defines the lead's entire head and facial anatomy: facial width, eyes, nose, cheeks, jaw, hair, beard and the exact size, placement and angle of his ears. Do not inherit or blend the source actor's head geometry, face, tattoos or clothing.\nThe video supplies movement, head orientation, gaze and expression timing. Reproduce expression intent using the reference man's own facial structure, without reshaping his features.\nSupporting characters retain Image 2's complete mask and costume throughout. Masks remain rigid, with fixed painted expressions, and stay attached. No identity drift, costume blending, exposed crowd faces or duplicate leads.\n\n4. MOTION AND TIMING:\nPreserve the source duration, every cut and the original human choreography at its original timestamps. Each replacement follows the gestures, head turns, facing direction, walking speed and limb movements of the person it replaces. Preserve interactions with coherent hands and genuine shoulder contact. Do not add, remove or retime human actions.\n\n5. CAMERA AND FRAMING — VIDEO PRIORITY:\nVideo 1 alone defines camera angle, height, trajectory, lens perspective, framing, focus transitions and shot duration at every timestamp. Preserve the source pull-back and all other camera movements exactly as they occur; add none.\nKeep the lead's head and body the same apparent size and position within the frame as the source lead. Preserve supporting performers' relative screen scale, spacing, depth and occlusion.\nPreserve the source cropping of foreground bodies. Do not widen the shot to reveal full bodies, the complete crowd, more floor, the entire staircase or the vault. Do not add zoom, reframe, stabilize or change the source camera path. Maintain the source composition in 16:9.\n\n6. BANKNOTES:\nAdd only a few loose paper banknotes gently fluttering near the outer frame edges, with believable gravity and motion blur. Keep the lead's face, contact interactions and central route clear. No dense money rain. The vault door, architecture and staircase remain stationary in world space, showing only the perspective changes caused by the original camera.\n\nAVOID:\nAltered shot sizes, extra pull-back, smaller lead, wider crowd composition, additional floor revealed, Image 3 framing copied into the video, source-actor identity blending, exaggerated ears, warped faces, animated masks, original crowd remnants, extra or missing people, malformed hands, floating feet, flicker, excessive flying money, added scenes, text or logos.\n\n(作者注：示例里的 masked red-jumpsuit 角色和 banknotes 按自己角色/群演替换；若不换背景则删掉位置/灯光指令，改为保留原背景。)",
+      "tags": [
+        "higgsfield-soul",
+        "technique-snippet",
+        "reference",
+        "close-up",
+        "rain",
+        "crowd"
+      ],
+      "params": {},
+      "source": {
+        "name": "beingovee (Substack)",
+        "url": "https://beingovee.substack.com/p/viral-ai-video-prompt-25-ft-gener8ion",
+        "tier": "reputable-3rd-party"
+      },
+      "notes": "Higgsfield Genjutsu（Motion transfer）的新玩法：视频提供动作与机位，Image 1 换主角、Image 2 批量替换所有群演，含 identity lock / anti-drift / camera-priority 的完整防崩清单，是现有 hg- 条目没有的写法。"
+    },
+    {
+      "id": "so-021",
+      "model": "sora-2",
+      "category": "cinematic",
+      "title": "孔雀岛延时巨变：从热带荒岛到璀璨都市",
+      "prompt": "Theme: A lush tropical island shaped like a peacock undergoes rapid urbanization into a glittering megacity\n\nVisuals: Aerial view of a peacock-shaped island with natural vegetation forming tail-feather patterns, surrounded by turquoise ocean and blue sky. The island transforms through deforestation, construction, city-building, sunset, and finally a luminous night metropolis with a jewel-encrusted peacock head structure.\n\nCamera: Wide high-angle aerial drone view throughout, ending with a rapid zoom-in through the city streets to a low-angle close-up of the glowing peacock head.\n\nStyle: Photorealistic, cinematic time-lapse, vibrant tropical colors shifting to warm sunset tones and finally cool night illumination.\n\nAction + Sound Design:\n[0-2s] Wide aerial shot of the pristine green peacock-shaped island, vegetation forming detailed eye-spot tail patterns, turquoise water and bright blue sky — calm orchestral strings, gentle ocean waves cut\n[2-7s] The island rapidly transforms: green vegetation recedes into brown earth, logging operations begin, heavy machinery and cargo ships appear, construction cranes rise across the landscape — sounds of chainsaws, heavy machinery, building ambience cut\n[7-10s] Skyscrapers and city infrastructure rise rapidly across the island, roads and buildings take shape, the peacock head structure begins forming, daylight shifts to late afternoon — construction sounds intensifying, uplifting orchestral build cut\n[10-13s] The city is fully built as the sun sets, casting fiery orange and gold light across the water and buildings, the peacock tail pattern now defined by roads and districts, a cruise ship passes in the background — warm sunset orchestral swell, distant city hum cut\n[13-16s] Night falls, the city lights turn on illuminating the peacock tail pattern with golden streetlights, the diamond peacock head structure glows brilliantly against the dark sky — nocturnal orchestral score, gentle ocean waves, distant traffic cut\n[16-18s] The camera rapidly zooms forward from the wide aerial view, flying through illuminated skyscrapers and busy highways toward the glowing peacock head — rushing wind, building orchestral crescendo cut\n[18-20s] Low-angle close-up of the intricate jewel-encrusted peacock head structure glowing magnificently against the night sky, city lights and ocean in the background — powerful orchestral finale, shimmering magical tone",
+      "tags": [
+        "sora-2",
+        "cinematic",
+        "close-up",
+        "aerial",
+        "drone",
+        "night"
+      ],
+      "params": {},
+      "source": {
+        "name": "sifuyik (Substack)",
+        "url": "https://sifuyik.substack.com/p/726-viral-video-prompt-timelapse",
+        "tier": "reputable-3rd-party"
+      },
+      "notes": "9 月病毒社区爆款：20 秒分段时间轴 + 全程音效同步的延时转场写法（通用型，Ve o 3/Sora 2 均可）；以异形岛屿形状做贯穿视觉锚点。"
+    },
+    {
+      "id": "ve-025",
+      "model": "veo-3",
+      "category": "creative",
+      "title": "iPhone 叠塔上放火球熔化爆裂",
+      "prompt": "(来源仅给出描述，按其给出的完整描述转录) First Frame Image Prompt: a man behind a white kitchen island with a tall stack of about 15 copper-colored smartphones. Static frontal medium shot, 9:16 vertical, photoreal product-demo look, cool white room.\n\nImage-to-Video Prompt: A glowing fiery orb is placed on top of the stack of phones. It melts through the phones layer by layer, then explodes into charred, blackened metal. Warm orb light against the cool white room. Timed sound cues: classical music bed, energy hum, sizzle, explosion, fading crackle across about 10-12 seconds.",
+      "tags": [
+        "veo-3",
+        "creative",
+        "product",
+        "explosion"
+      ],
+      "params": {
+        "aspect": "9:16",
+        "duration": "12s"
+      },
+      "source": {
+        "name": "sifuyik (Substack)",
+        "url": "https://sifuyik.substack.com/p/10-top-viral-ai-tools-and-tips-today-6b4",
+        "tier": "reputable-3rd-party"
+      },
+      "notes": "首帧图 + I2V 的产品 VFX 演示爆款写法（通用型）：铜色手机叠塔被火球逐层熔穿后爆成焦黑金属，带 10-12 秒定时的音效分层。"
+    },
+    {
+      "id": "ve-026",
+      "model": "veo-3",
+      "category": "comedy",
+      "title": "泳池派对微缩滑板追逐（一镜到底）",
+      "prompt": "Use Image 1 only for the tiny skateboarder identity: exact face, hairstyle, skin tone, body build, and appearance. Preserve identity 100%. Adult male only. Stylish youthful streetwear: light bomber jacket or fitted overshirt, plain T-shirt, slim jeans, clean sneakers (waterproof sheen acceptable). Use Image 2 only for the giant child's appearance and behavior. Do not mix identities.\n\nCreate a 15-second cinematic miniature chase around a giant backyard pool deck during a kids' pool party. ONE continuous shot, NO cuts. A tiny real adult man rides a miniature skateboard across sun-warmed pool deck tiles while a giant child plays in and around the pool. He is a real human shrunk to miniature size, not a toy, doll, cartoon, or child. The child, pool floats, water splashes, and deck furniture feel enormous.\n\nCamera: ultra-low deck-level chase camera at skateboard height, tightly behind or slightly beside the rider. It moves forward along the pool deck path from start to finish. Never reset, jump, teleport, change scene, cut, hide cuts, montage, or transition. Camera accelerates with the skateboard, leans with turns, dips during dodges, and reacts to near-collisions.\n\nEnvironment: bright sunny poolside, warm textured pool deck tiles with wet reflective patches. Giant pool noodles, a beach ball, stacked towels, flip-flops, a cooler, scattered water puddles, pool toys near the edge. Cheerful, sunny, vibrant summer atmosphere. Keep one narrow continuous deck path.\n\nOnly ONE child exists as the active giant figure. No duplicate child, second kid, extra hands, or extra limbs. Any hand, arm, or partial body belongs to the same single child. The child stays in one consistent area ahead and slightly beside the path, never teleporting. Joyful and energetic, not violent.\n\nAction is one connected chain reaction. The skateboarder never stops. Start low behind him racing along the sunlit deck between giant pool toys. The child does a cannonball jump nearby, sending a giant wave of splashed water sliding across the deck path; he swerves through the spray by inches. The same child's momentum knocks a beach ball onto the dock, bouncing into the path. He carves tightly around the bouncing ball. The child kicks a floating pool noodle up onto the deck, it slides and blocks part of the path. He squeezes through the narrow gap beside it, wheels skimming a wet patch. The child reaches down for one final splash toward the tiny figure, giant hand and water droplets flying. He crouches low and slips beneath a stack of pool towels on a lounge chair by inches. Camera follows into a shaded gap behind the pool equipment shed. End with a split-second escape feeling.\n\nAudio: urgent cinematic tension music, fast suspense rhythm, summer fun energy. Sounds: skateboard wheels on wet tile, water splashing, ball bouncing, child laughter and movement, pool noodle slide, sharp carving turns.\n\nImportant: keep protagonist tiny, realistic, adult male, identity-locked. Keep child huge and singular. Maintain consistent scale, layout, and physical continuity. Preserve face whenever visible. Realistic cinematic lighting, shallow depth of field, natural motion blur, detailed textures, bright sunny grading, 8K realism.\n\nNegative prompt: cartoon, doll, toy person, plastic skin, female protagonist, adult-only crowd, changed face, wrong identity, duplicate child, second kid, extra hands, extra limbs, duplicated parts, teleporting child, cuts, montage, camera reset, inconsistent layout",
+      "tags": [
+        "veo-3",
+        "comedy",
+        "crowd"
+      ],
+      "params": {},
+      "source": {
+        "name": "sifuyik (Substack)",
+        "url": "https://sifuyik.substack.com/p/735-viral-video-prompt-miniature",
+        "tier": "reputable-3rd-party"
+      },
+      "notes": "9 月社区最强身份锁写法之一：Image 1 锁微缩骑手、Image 2 锁巨人小孩，15 秒无剪辑连续追逐 + 连锁反应动作链 + 详尽 negative prompt（通用型，模型无关）。"
+    },
+    {
+      "id": "so-022",
+      "model": "sora-2",
+      "category": "creative",
+      "title": "打破画框：从复古电视走进现实，再踏入黑边",
+      "prompt": "First Frame Image Prompt @Image 1\n\nA wide cinematic shot of a cozy, retro 1970s living room at night, warmly lit by a table lamp with a soft orange shade on the right and a stone fireplace with a glowing fire on the left. The room has earthy tones: warm brown wooden floor and furniture, a muted green mid-century armchair, built-in bookshelves filled with books behind it, and a patterned rug. On the right, a large vintage wooden television set sits on a low wooden console table, next to a rotary phone on a shelf. Inside the TV screen, an Asian man in his 30s, wearing a simple, timeless outfit (a button-up shirt and trousers), stands against a flat, light gray background, looking directly ahead with a calm, composed expression. Thick black cinematic letterbox bars frame the top and bottom of the image. The atmosphere is nostalgic, surreal, and warmly atmospheric.\n\nImage-to-Video Prompt\n\nTheme: A man breaks out of a vintage TV screen, crosses into the physical living room, and ultimately steps beyond the video frame itself into the black letterbox space\n\nVisuals: Cozy 1970s living room with warm lamp and fireplace lighting, vintage wooden TV, green armchair, bookshelves, patterned rug — contrasted against the sterile gray broadcast world inside the television. An Asian man with a calm, confident presence transitions from the flat TV image into a three-dimensional physical presence, with lighting realistically adapting from bright flat broadcast light to warm ambient room light\n\nCamera: Static wide shot holding the room, then a slow, smooth dolly zoom-in toward the man as they walk forward, tilting upward as they climb out of frame, ending on the man standing fully within the black bar space, facing the viewer\n\nStyle: Cinematic, magical realism, retro-futuristic, warm earthy color palette, soft atmospheric lighting, surreal fourth-wall break\n\nVO Voice Style: Calm, warm, slightly contemplative male voice — measured pacing, cinematic trailer tone, with a sense of quiet wonder building into inspiration\n\nAction + Sound Design:\n[0-2s] The man stands inside the vintage TV screen while the room remains still. Subtle electronic static hum and warm fireplace ambience.\nVO: \"We spend our whole lives... watching.\"\nOn-screen text appears: \"Who said you have to stay inside the lines?\"\n[2-7.5s] The man reaches forward, physically steps out through the TV screen into the living room, and begins walking calmly toward the camera. The lighting on his clothing and skin dynamically shifts from flat broadcast light to warm room light. Soft footsteps on wood, subtle electronic glitch sound as he crosses the threshold.\nVO: \"But somewhere along the way... we forgot we could step in.\" @Image 2\nOn-screen text appears: \"Break the frame.\"\n[7.5-10.5s] The man continues walking toward the camera, climb over the sofa and stepping directly into the black letterbox bar at the bottom of the frame. His full body — legs, torso, and head — crosses into the black space, now standing there as if it's solid ground.\nVO: \"The frame was never the limit.\"\nOn-screen text appears: \"Step outside.\"\n[10.5-12s] Now standing fully inside the black bar space, facing the viewer, the man raises his right hand and points his index finger directly at the camera, with a subtle, confident smile.\nVO: \"So— what's stopping you?\"\nFinal on-screen text appears: \"Make your own!\"",
+      "tags": [
+        "sora-2",
+        "creative",
+        "night"
+      ],
+      "params": {},
+      "source": {
+        "name": "sifuyik (Substack)",
+        "url": "https://sifuyik.substack.com/p/743-viral-video-prompt",
+        "tier": "reputable-3rd-party"
+      },
+      "notes": "第四面墙破框创意：首帧图 + I2V + VO + 屏幕文字的完整组合写法（通用型）；灯光从“电视平光”动态切换为“房间暖光”是关键细节。"
+    },
+    {
+      "id": "ve-027",
+      "model": "veo-3",
+      "category": "product-commercial",
+      "title": "奢华香水广告 10 秒（开盖→喷雾→闻香→产品英雄镜）",
+      "prompt": "Cinematic luxury perfume commercial, 10 seconds. A handsome, confident man with slicked-back dark hair @Image 1 and a light stubble, wearing a tailored black blazer over a black fitted shirt with the top button open, stands against a soft pale blue-grey studio background. He holds a glass bottle of Sifu Yik Eau de Parfum @Image 2 with both hands toward the camera, presenting it. Close-up of his strong hands removing the black cap, revealing the silver spray nozzle. He sprays a fine mist onto his inner wrist, with his sleeve cuff slightly pulled back, in a bright window-lit setting. He then lifts his wrist to his face, closes his eyes, and inhales the scent with a subtle satisfied smile. Final shot: the bottle fills the frame in sharp focus with the Sifu Yik logo clearly visible, while he is softly blurred behind it. Soft natural lighting, shallow depth of field, high-end fashion film aesthetic, slow elegant movements, premium commercial look.\nVoiceover: \"Getting ready, one final touch. Sifu Yik, make it yours.\"",
+      "tags": [
+        "veo-3",
+        "product-commercial",
+        "close-up"
+      ],
+      "params": {
+        "duration": "10s"
+      },
+      "source": {
+        "name": "sifuyik (Substack)",
+        "url": "https://sifuyik.substack.com/p/746-viral-video-prompt-perfume-ad",
+        "tier": "reputable-3rd-party"
+      },
+      "notes": "AI 香水广告的完整分镜写法：开盖/喷雾/闻香/英雄镜四镜一气呵成 + voiceover；@Image 1/2 分别锁人物与产品身份（通用型）。\n演示视频：https://sifuyik.substack.com/api/v1/video/upload/a66b7825-e192-4315-b3ad-e8df50c300b7/src?override_publication_id=7223942&preview=false&type=hls"
+    },
+    {
+      "id": "so-023",
+      "model": "sora-2",
+      "category": "image-to-video",
+      "title": "古地图活化成微缩世界（4 段定时）",
+      "prompt": "(来源仅给出描述，按其给出的完整描述转录) #745 Viral Video Prompt: Map to Live — a copy-paste vertical 9:16 4K HDR video prompt where an antique paper map physically transforms into a living miniature world. 4 timed scenes: 0 to 3 seconds macro hook of the ordinary map, 3 to 7 transformation, 7 to 11 dive into the world, 11 to 15 aerial reveal. Mountains rise, rivers carve and flow, forests grow, roads emerge and miniature towns build along them. A tiny vintage car drives through a mountain village with glowing windows and pedestrians. Final frame pulls up to reveal the whole living continent still sitting on the paper map. Strict consistency rules: no cuts, no teleporting, no cartoon look, the map stays recognizable throughout.",
+      "tags": [
+        "sora-2",
+        "image-to-video",
+        "aerial"
+      ],
+      "params": {
+        "aspect": "9:16",
+        "duration": "3s"
+      },
+      "source": {
+        "name": "sifuyik (Substack)",
+        "url": "https://sifuyik.substack.com/p/15-top-viral-ai-tools-and-tips-today-257",
+        "tier": "reputable-3rd-party"
+      },
+      "notes": "“等待-发生了什么”式病毒结构：古董纸地图 4 段定时转场成活微缩大陆，末帧拉回证明地图仍在；严格无剪辑一致性规则（通用型）。\n演示视频：https://sifuyik.substack.com/api/v1/video/upload/06424e34-e19b-456d-b21e-3bb31fb6d923/src?override_publication_id=7223942&preview=false&type=hls"
+    },
+    {
+      "id": "w2-001",
+      "model": "wan-2.6",
+      "category": "dialogue-driven",
+      "title": "Wan 2.6 R2V 多 reference 对白表演",
+      "prompt": "Video 1 holds Image 3 and plays a soothing country folk song on the chair from Image 4, saying: \"The weather is so nice today.\" Image 1, holding Image 2, walks past Video 1, places Image 2 on the table next to Video 1, and says: \"That sounds beautiful. Can you play it again?\"",
+      "tags": [
+        "wan-2.6",
+        "dialogue-driven"
+      ],
+      "params": {},
+      "source": {
+        "name": "阿里云文档",
+        "url": "https://help.aliyun.com/en/model-studio/video-to-video-guide",
+        "tier": "official"
+      },
+      "notes": "阿里云官方 Wan-R2V 文档示例：视频+图片+音频多 reference 联合驱动的多人对白表演，展示 Wan 2.6 代 reference-to-video 新范式\n演示视频：https://help-static-aliyun-doc.aliyuncs.com/file-manage-files/en-US/20260416/mncxqr/Wan2.7_Video_Reference_result.mp4"
+    },
+    {
+      "id": "ra-001",
+      "model": "runway-aleph-2.0",
+      "category": "video-edit",
+      "title": "Runway Aleph 2.0 锚点品牌替换",
+      "prompt": "Apply the brand identity shown in the reference image to the plain white sneaker. Keep the sneaker shape, the camera orbit, the matte surface, lighting, and framing exactly as in the source.",
+      "tags": [
+        "runway-aleph-2.0",
+        "video-edit",
+        "reference"
+      ],
+      "params": {},
+      "source": {
+        "name": "runware/runware-skills",
+        "url": "https://github.com/runware/runware-skills/blob/HEAD/skills/edit-video/references/examples.md",
+        "tier": "reputable-3rd-party"
+      },
+      "notes": "Aleph 2.0 anchor-frame 精确编辑范式：prompt 只命名变化、reference 首帧图定义精确外观，解决品牌级精确替换"
+    },
+    {
+      "id": "ra-002",
+      "model": "runway-aleph-2.0",
+      "category": "technique-snippet",
+      "title": "Aleph 2.0 外科手术式单点编辑",
+      "prompt": "Replace the gray sky with a blue sky with clouds",
+      "tags": [
+        "runway-aleph-2.0",
+        "technique-snippet"
+      ],
+      "params": {},
+      "source": {
+        "name": "explainx.ai",
+        "url": "https://explainx.ai/blog/runway-aleph-2-vs-gemini-omni-video-2026",
+        "tier": "unverified-3rd-party"
+      },
+      "notes": "Aleph 2.0 “surgical edit”一句话范式代表：只改一处、其余保持，区别于全片重绘的 remix 路线"
+    },
+    {
+      "id": "gm-011",
+      "model": "gemini-omni",
+      "category": "video-edit",
+      "title": "Gemini Omni 一句话转绘",
+      "prompt": "Turn this cooking video into a Studio Ghibli animation",
+      "tags": [
+        "gemini-omni",
+        "video-edit"
+      ],
+      "params": {},
+      "source": {
+        "name": "explainx.ai",
+        "url": "https://explainx.ai/blog/runway-aleph-2-vs-gemini-omni-video-2026",
+        "tier": "unverified-3rd-party"
+      },
+      "notes": "Gemini Omni “remix”重绘范式代表：一句话整体转绘，与 Aleph 精确编辑形成对照"
+    },
+    {
+      "id": "lu-001",
+      "model": "luma-ray-3.2",
+      "category": "quiet-moments",
+      "title": "Luma Ray 3.2 观察式短片公式",
+      "prompt": "Locked medium-wide shot of a red folding bicycle beside a rain-streaked café window. A barista enters from the left, closes the bicycle and carries it out of frame. Soft overcast daylight, realistic metal reflections, quiet observational film style. Keep the bicycle frame geometry and red color consistent.",
+      "tags": [
+        "luma-ray-3.2",
+        "quiet-moments",
+        "rain"
+      ],
+      "params": {},
+      "source": {
+        "name": "magichour.ai",
+        "url": "https://magichour.ai/blog/how-to-use-luma-ai-dream-machine",
+        "tier": "unverified-3rd-party"
+      },
+      "notes": "Ray 3.2 官方 shot-direction 公式示范（机位+主体+单一动作+场景+光影+风格+一致性约束），9-13 发布的 3.2 新模型"
+    },
+    {
+      "id": "lu-002",
+      "model": "luma-ray-3.2",
+      "category": "video-edit",
+      "title": "Luma Ray 3.2 表演迁移换装",
+      "prompt": "Keep the performer's timing and body motion. Change the jacket to a dark red raincoat and the setting to a quiet train platform.",
+      "tags": [
+        "luma-ray-3.2",
+        "video-edit",
+        "rain"
+      ],
+      "params": {},
+      "source": {
+        "name": "magichour.ai",
+        "url": "https://magichour.ai/blog/luma-dream-machine-review",
+        "tier": "unverified-3rd-party"
+      },
+      "notes": "Ray 3.2 Modify 范式：保留原片动作时序、只换服装与场景，展示 20 秒编辑能力"
+    },
+    {
+      "id": "gm-012",
+      "model": "gemini-omni",
+      "category": "nature",
+      "title": "Gemini Omni Vids 航拍雪山",
+      "prompt": "A cinematic aerial view of snow-covered mountains at sunrise, with clouds moving slowly through the valley and warm golden lighting.",
+      "tags": [
+        "gemini-omni",
+        "nature",
+        "aerial"
+      ],
+      "params": {},
+      "source": {
+        "name": "aitoolharbor.blogspot.com",
+        "url": "http://aitoolharbor.blogspot.com/2026/09/google-vids-ai-video-generator-2026.html",
+        "tier": "unknown"
+      },
+      "notes": "Google Vids 9-23 免费开放 Gemini Omni 1.1 Flash 后的官方写法示例，配合 exact duration 与 scene extension 新功能"
     }
   ],
   "tier_definitions": {

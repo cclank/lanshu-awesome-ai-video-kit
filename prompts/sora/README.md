@@ -1,4 +1,4 @@
-# Sora 2 · 提示词索引（20 条）
+# Sora 2 · 提示词索引（23 条）
 
 > **Sora 2**（OpenAI，2025 年 9 月 30 日发布）是 OpenAI 的旗舰视频模型。原生音画一体（含对白生成），支持 Cameos 真人客串、极致物理仿真。最大 20 秒、80-150 词最优。
 
@@ -13,6 +13,7 @@ OpenAI 官方提倡两套写法：**结构化分层（Shot List）** 和 **超�
 - [⚡ 动作与电影感](#-动作与电影感) (3)
 - [👻 恐怖与悬疑](#-恐怖与悬疑) (3)
 - [📰 纪录片](#-纪录片) (1)
+- [🆕 2026-10 新增](#🆕-2026-10-新增) (3)
 
 ---
 
@@ -222,6 +223,81 @@ A handheld "found footage" style shot of a long, dark hallway. A single red ball
 ```
 A single question answered by ten different faces.
 ```
+
+---
+
+## 🆕 2026-10 新增（3 条）
+
+### so-021 · 孔雀岛延时巨变：从热带荒岛到璀璨都市
+`sora-2` `cinematic` `close-up` `aerial` `drone` `night` · [sifuyik (Substack)](https://sifuyik.substack.com/p/726-viral-video-prompt-timelapse)
+
+```
+Theme: A lush tropical island shaped like a peacock undergoes rapid urbanization into a glittering megacity
+
+Visuals: Aerial view of a peacock-shaped island with natural vegetation forming tail-feather patterns, surrounded by turquoise ocean and blue sky. The island transforms through deforestation, construction, city-building, sunset, and finally a luminous night metropolis with a jewel-encrusted peacock head structure.
+
+Camera: Wide high-angle aerial drone view throughout, ending with a rapid zoom-in through the city streets to a low-angle close-up of the glowing peacock head.
+
+Style: Photorealistic, cinematic time-lapse, vibrant tropical colors shifting to warm sunset tones and finally cool night illumination.
+
+Action + Sound Design:
+[0-2s] Wide aerial shot of the pristine green peacock-shaped island, vegetation forming detailed eye-spot tail patterns, turquoise water and bright blue sky — calm orchestral strings, gentle ocean waves cut
+[2-7s] The island rapidly transforms: green vegetation recedes into brown earth, logging operations begin, heavy machinery and cargo ships appear, construction cranes rise across the landscape — sounds of chainsaws, heavy machinery, building ambience cut
+[7-10s] Skyscrapers and city infrastructure rise rapidly across the island, roads and buildings take shape, the peacock head structure begins forming, daylight shifts to late afternoon — construction sounds intensifying, uplifting orchestral build cut
+[10-13s] The city is fully built as the sun sets, casting fiery orange and gold light across the water and buildings, the peacock tail pattern now defined by roads and districts, a cruise ship passes in the background — warm sunset orchestral swell, distant city hum cut
+[13-16s] Night falls, the city lights turn on illuminating the peacock tail pattern with golden streetlights, the diamond peacock head structure glows brilliantly against the dark sky — nocturnal orchestral score, gentle ocean waves, distant traffic cut
+[16-18s] The camera rapidly zooms forward from the wide aerial view, flying through illuminated skyscrapers and busy highways toward the glowing peacock head — rushing wind, building orchestral crescendo cut
+[18-20s] Low-angle close-up of the intricate jewel-encrusted peacock head structure glowing magnificently against the night sky, city lights and ocean in the background — powerful orchestral finale, shimmering magical tone
+```
+
+> 💡 9 月病毒社区爆款：20 秒分段时间轴 + 全程音效同步的延时转场写法（通用型，Ve o 3/Sora 2 均可）；以异形岛屿形状做贯穿视觉锚点。
+
+### so-022 · 打破画框：从复古电视走进现实，再踏入黑边
+`sora-2` `creative` `night` · [sifuyik (Substack)](https://sifuyik.substack.com/p/743-viral-video-prompt)
+
+```
+First Frame Image Prompt @Image 1
+
+A wide cinematic shot of a cozy, retro 1970s living room at night, warmly lit by a table lamp with a soft orange shade on the right and a stone fireplace with a glowing fire on the left. The room has earthy tones: warm brown wooden floor and furniture, a muted green mid-century armchair, built-in bookshelves filled with books behind it, and a patterned rug. On the right, a large vintage wooden television set sits on a low wooden console table, next to a rotary phone on a shelf. Inside the TV screen, an Asian man in his 30s, wearing a simple, timeless outfit (a button-up shirt and trousers), stands against a flat, light gray background, looking directly ahead with a calm, composed expression. Thick black cinematic letterbox bars frame the top and bottom of the image. The atmosphere is nostalgic, surreal, and warmly atmospheric.
+
+Image-to-Video Prompt
+
+Theme: A man breaks out of a vintage TV screen, crosses into the physical living room, and ultimately steps beyond the video frame itself into the black letterbox space
+
+Visuals: Cozy 1970s living room with warm lamp and fireplace lighting, vintage wooden TV, green armchair, bookshelves, patterned rug — contrasted against the sterile gray broadcast world inside the television. An Asian man with a calm, confident presence transitions from the flat TV image into a three-dimensional physical presence, with lighting realistically adapting from bright flat broadcast light to warm ambient room light
+
+Camera: Static wide shot holding the room, then a slow, smooth dolly zoom-in toward the man as they walk forward, tilting upward as they climb out of frame, ending on the man standing fully within the black bar space, facing the viewer
+
+Style: Cinematic, magical realism, retro-futuristic, warm earthy color palette, soft atmospheric lighting, surreal fourth-wall break
+
+VO Voice Style: Calm, warm, slightly contemplative male voice — measured pacing, cinematic trailer tone, with a sense of quiet wonder building into inspiration
+
+Action + Sound Design:
+[0-2s] The man stands inside the vintage TV screen while the room remains still. Subtle electronic static hum and warm fireplace ambience.
+VO: "We spend our whole lives... watching."
+On-screen text appears: "Who said you have to stay inside the lines?"
+[2-7.5s] The man reaches forward, physically steps out through the TV screen into the living room, and begins walking calmly toward the camera. The lighting on his clothing and skin dynamically shifts from flat broadcast light to warm room light. Soft footsteps on wood, subtle electronic glitch sound as he crosses the threshold.
+VO: "But somewhere along the way... we forgot we could step in." @Image 2
+On-screen text appears: "Break the frame."
+[7.5-10.5s] The man continues walking toward the camera, climb over the sofa and stepping directly into the black letterbox bar at the bottom of the frame. His full body — legs, torso, and head — crosses into the black space, now standing there as if it's solid ground.
+VO: "The frame was never the limit."
+On-screen text appears: "Step outside."
+[10.5-12s] Now standing fully inside the black bar space, facing the viewer, the man raises his right hand and points his index finger directly at the camera, with a subtle, confident smile.
+VO: "So— what's stopping you?"
+Final on-screen text appears: "Make your own!"
+```
+
+> 💡 第四面墙破框创意：首帧图 + I2V + VO + 屏幕文字的完整组合写法（通用型）；灯光从“电视平光”动态切换为“房间暖光”是关键细节。
+
+### so-023 · 古地图活化成微缩世界（4 段定时）
+`sora-2` `image-to-video` `aerial` · 9:16 / 3s · [sifuyik (Substack)](https://sifuyik.substack.com/p/15-top-viral-ai-tools-and-tips-today-257)
+
+```
+(来源仅给出描述，按其给出的完整描述转录) #745 Viral Video Prompt: Map to Live — a copy-paste vertical 9:16 4K HDR video prompt where an antique paper map physically transforms into a living miniature world. 4 timed scenes: 0 to 3 seconds macro hook of the ordinary map, 3 to 7 transformation, 7 to 11 dive into the world, 11 to 15 aerial reveal. Mountains rise, rivers carve and flow, forests grow, roads emerge and miniature towns build along them. A tiny vintage car drives through a mountain village with glowing windows and pedestrians. Final frame pulls up to reveal the whole living continent still sitting on the paper map. Strict consistency rules: no cuts, no teleporting, no cartoon look, the map stays recognizable throughout.
+```
+
+> 💡 “等待-发生了什么”式病毒结构：古董纸地图 4 段定时转场成活微缩大陆，末帧拉回证明地图仍在；严格无剪辑一致性规则（通用型）。
+演示视频：https://sifuyik.substack.com/api/v1/video/upload/06424e34-e19b-456d-b21e-3bb31fb6d923/src?override_publication_id=7223942&preview=false&type=hls
 
 ---
 

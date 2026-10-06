@@ -1,27 +1,34 @@
-# 提示词库 · 543 条(433 分散 + 110 跨模型对照)
+# 提示词库 · 587 条(477 分散 + 110 跨模型对照)
 
 ## 概览
 
-### 📚 分散提示词(按单模型最佳实践)· 433 条 / 16 模型
+### 📚 分散提示词(按单模型最佳实践)· 477 条 / 22 模型
 
 | 模型 | 数量 | 索引 / JSON 前缀 |
 |---|---|---|
-| **Seedance 2.0** | 64 条 | [seedance/README.md](seedance/README.md) · `sd-*` |
-| **HappyHorse 1.0** | 57 条 | [happyhorse/README.md](happyhorse/README.md) · `hh-*` |
-| **Kling 3.0** | 36 条 | [kling/README.md](kling/README.md) · `kl-*` |
-| **Sora 2** ⚠️ | 20 条 | [sora/README.md](sora/README.md) · `so-*` |
-| **Veo 3.1** | 20 条 | [veo/README.md](veo/README.md) · `ve-*` |
-| **Runway Gen-4.5 / Aleph** | 12 条 | `rw-*` (仅在 JSON) |
-| **Pika 2.5** | 12 条 | `pk-*` (仅在 JSON) |
-| **Hailuo 02** | 12 条 | `hl-*` (仅在 JSON) |
-| **Hunyuan Video 1.5** | 12 条 | `hy-*` (仅在 JSON) |
-| **Wan 2.7** | 12 条 | `wn-*` (仅在 JSON) |
-| **即梦 AI** | 12 条 | `jm-*` (仅在 JSON) |
-| 🔓 **LTX-Video 0.9.7** | 8 条 | `lt-*` (仅在 JSON) |
-| 🔓 **Mochi 1** | 8 条 | `mo-*` (仅在 JSON) |
-| 🔓 **CogVideoX 5B / 1.5** | 8 条 | `cg-*` (仅在 JSON) |
-| 🔓 **Higgsfield Soul / DoP** | 8 条 | `hg-*` (仅在 JSON) |
-| **总计** | **301 条** | [data/all-prompts.json](data/all-prompts.json) |
+| **Doubao Seedance 2.0** | 117 条 | [seedance/README.md](seedance/README.md) · `se-*` |
+| **HappyHorse 1.0** | 90 条 | [happyhorse/README.md](happyhorse/README.md) · `ha-*` |
+| **Kling 3.0 (可灵)** | 72 条 | [kling/README.md](kling/README.md) · `kl-*` |
+| **Kling 4.0 (可灵)** | 12 条 | [kling-4.0/README.md](kling-4.0/README.md) · `kl-*` |
+| **Sora 2** | 23 条 | [sora/README.md](sora/README.md) · `so-*` |
+| **Veo 3.1** | 27 条 | [veo/README.md](veo/README.md) · `ve-*` |
+| **Runway Gen-4.5 / Aleph** | 12 条 | `runway-gen4` (仅在 JSON) |
+| **Runway Aleph 2.0** | 2 条 | [runway-aleph-2.0/README.md](runway-aleph-2.0/README.md) · `ru-*` |
+| **Pika 2.5** | 12 条 | `pika-2.5` (仅在 JSON) |
+| **Hailuo 02 (海螺)** | 12 条 | `hailuo-02` (仅在 JSON) |
+| **MiniMax H3** | 10 条 | [minimax-h3/README.md](minimax-h3/README.md) · `mi-*` |
+| **Hunyuan Video 1.5** | 12 条 | `hunyuan-video` (仅在 JSON) |
+| **Wan 2.7 (通义万相)** | 12 条 | `wan-2.5` (仅在 JSON) |
+| **Wan 2.6（万相）** | 1 条 | [wan-2.6/README.md](wan-2.6/README.md) · `wa-*` |
+| **即梦 AI (Seedance 2.0 引擎)** | 12 条 | `jimeng-3` (仅在 JSON) |
+| **Luma Ray 3.2** | 2 条 | [luma-ray-3.2/README.md](luma-ray-3.2/README.md) · `lu-*` |
+| **LTX-Video 0.9.7** | 8 条 | `ltx-video` (仅在 JSON) |
+| **Mochi 1** | 8 条 | `mochi-1` (仅在 JSON) |
+| **CogVideoX 5B / 1.5** | 8 条 | `cogvideox-5b` (仅在 JSON) |
+| **Higgsfield Soul 2.0 / DoP** | 9 条 | `higgsfield-soul` (仅在 JSON) |
+| **Gemini Omni (Omni Flash)** | 12 条 | [gemini-omni/README.md](gemini-omni/README.md) · `ge-*` |
+| **Seedance 2.5（即梦）** | 4 条 | [seedance-2.5/README.md](seedance-2.5/README.md) · `se-*` |
+| **总计** | **477 条** | [data/all-prompts.json](data/all-prompts.json) |
 
 ### 🔀 跨模型对照矩阵 · 110 条 / 10 场景 × 11 商业模型
 
