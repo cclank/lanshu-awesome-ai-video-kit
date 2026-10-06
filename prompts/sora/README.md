@@ -1,4 +1,4 @@
-# Sora 2 · 提示词索引（23 条）
+# Sora 2 · 提示词索引（26 条）
 
 > **Sora 2**（OpenAI，2025 年 9 月 30 日发布）是 OpenAI 的旗舰视频模型。原生音画一体（含对白生成），支持 Cameos 真人客串、极致物理仿真。最大 20 秒、80-150 词最优。
 
@@ -13,7 +13,7 @@ OpenAI 官方提倡两套写法：**结构化分层（Shot List）** 和 **超�
 - [⚡ 动作与电影感](#-动作与电影感) (3)
 - [👻 恐怖与悬疑](#-恐怖与悬疑) (3)
 - [📰 纪录片](#-纪录片) (1)
-- [🆕 2026-10 新增](#🆕-2026-10-新增) (3)
+- [🆕 2026-10 新增](#🆕-2026-10-新增) (6)
 
 ---
 
@@ -226,7 +226,7 @@ A single question answered by ten different faces.
 
 ---
 
-## 🆕 2026-10 新增（3 条）
+## 🆕 2026-10 新增（6 条）
 
 ### so-021 · 孔雀岛延时巨变：从热带荒岛到璀璨都市
 `sora-2` `cinematic` `close-up` `aerial` `drone` `night` · [sifuyik (Substack)](https://sifuyik.substack.com/p/726-viral-video-prompt-timelapse)
@@ -300,6 +300,109 @@ Final on-screen text appears: "Make your own!"
 演示视频：https://sifuyik.substack.com/api/v1/video/upload/06424e34-e19b-456d-b21e-3bb31fb6d923/src?override_publication_id=7223942&preview=false&type=hls
 
 ---
+
+### so-024 · 名人夜晚离场：旋转门签名+跑车疾驰 10 秒
+`sora-2` `cinematic` `night` `crowd` · [sifuyik (Substack)](https://sifuyik.substack.com/p/753-viral-video-prompt-celebrity)
+
+```
+Image-to-Video Prompt:
+
+Theme: A celebrity named "Sifu" exits a building at night, signs an autograph for fans behind a barricade, then makes a quick getaway in a sports car
+
+Visuals: Glass revolving door entrance with warm interior light spilling onto a wet dark pavement, a man in a grey shirt and dark trousers walking with two security guards in black suits, a crowd of fans and photographers behind a metal barrier holding up phones and cameras, camera flashes popping, velvet rope stanchions in the foreground, a sleek sports car waiting at the curb
+
+Camera: Handheld documentary/paparazzi style, eye-level medium shot, camera tracks gently forward and follows the man as he walks toward the lens and stops to sign, then pans/follows as he moves to the car and drives off
+
+Style: Realistic, cinematic nighttime street photography, high contrast between bright building interior and dark exterior, dynamic flash lighting, glossy wet ground reflections, energetic celebrity-arrival atmosphere
+
+Action + Sound Design:
+[0-1.5s] The man and two security guards emerge from the revolving door into the night, the crowd behind the barricade visible and cheering "Sifu", camera shutters clicking
+[1.5-4s] He walks toward the camera with a smile, waving to the fans, while camera flashes pop around him and the guards stay close on either side
+[4-7s] He stops, takes a pen, and signs an autograph on a white notebook held out from the lower left of frame, the guards waiting patiently beside him
+[7-8.5s] He finishes signing, hands the pen back, waves once more to the crowd, then turns and strides confidently toward the waiting sports car
+[8.5-10s] He swings open the door, hops into the driver's seat in one fluid motion, the engine roars to life, and the car peels away from the curb into the night, tail lights streaking across the wet pavement as the crowd reacts with surprise and excitement
+```
+
+> 💡 狗仔跟拍式现实主义短片模板：旋转门→签名→跑车离场一镜式调度，湿地面反光+闪光灯氛围，10 秒完整叙事弧，换脸即用
+（来源为模型无关 prompt，模型归属为编辑指派；日期为相对时间推算）
+
+### so-025 · 人类 vs 银背大猩猩：竞技场扇耳光大赛
+`sora-2` `image-to-video` `close-up` `slow-motion` `neon` `crowd` · [sifuyik (Substack)](https://sifuyik.substack.com/p/756-viral-video-prompt-slap-competition)
+
+```
+First-Frame Image Prompt:
+
+A wide, eye-level shot of a brightly lit indoor sports arena. In the center, a slap-fighting competition is about to begin. On the left stands a muscular man wearing a tight black t-shirt with "SLAP" written in white, black sweatpants, and red athletic shoes. On the right stands a massive, realistic silverback gorilla standing upright. Between them is a black cylindrical podium with neon green and pink accents and the text "10X." In the background, between the two competitors, stands a referee in a black polo shirt. Behind them, a large, slightly blurred crowd sits in stadium seating under bright, dramatic overhead lighting. Hyper-realistic, high-definition sports photography, cinematic arena atmosphere.
+
+Image-to-Video Prompt:
+
+Theme: Surreal human vs gorilla slap-fighting showdown in a professional sports arena
+
+Visuals: A packed indoor arena under dramatic overhead lighting, a black cylindrical slap podium with neon green/pink accents and "10X" branding, a muscular man in a tight black "SLAP" t-shirt and red shoes facing an enormous upright silverback gorilla, with a referee standing between them
+
+Camera: Wide establishing shot -> medium close-up on impact -> slow-motion close-up for the final strike
+
+Style: Hyper-realistic sports photography, high-intensity, dark arena atmosphere with spotlighted action, exaggerated impact physics, cinematic slow motion
+
+Action + Sound Design:
+[0-2.5s] Wide establishing shot of the arena. The referee raises a hand and shouts "Fight!" as the man and gorilla face off across the podium - ambient crowd noise, tense atmosphere [cut]
+[2.5-5s] Medium close-up of the man. The gorilla's massive hand swings in from the right and slaps the man's left cheek with extreme force, sending a cloud of white powder and sweat erupting from the impact - loud exaggerated smack sound + crowd gasp [cut]
+[5-7.5s] The man absorbs the blow, his face rippling but staying upright. He clenches his jaw, glares back with determination, and winds up his right arm - heavy breathing + dramatic low-frequency rumble [cut]
+[7.5-10s] Slow-motion close-up profile shot. The man's muscular arm swings forward and his open palm connects solidly with the side of the gorilla's face, sending a shockwave through the gorilla's fur and another puff of white powder into the air - heavy impact thud + deep bass drop
+```
+
+> 💡 荒诞对决类病毒喜剧：扇耳光竞技的慢动作冲击物理+粉尘爆发，四段式剪辑节奏，强视觉奇观易出爆款
+（来源为模型无关 prompt，模型归属为编辑指派；日期为相对时间推算）
+
+### so-026 · 倒霉青蛙 30 秒：珍珠→河狸→毛毛虫连环喜剧
+`sora-2` `comedy` `reference` `close-up` `comedy` · [sifuyik (Substack)](https://sifuyik.substack.com/p/757-viral-video-prompt-frog-adventure)
+
+```
+Reference Images (generate first):
+
+Frog Character Sheet:
+Character reference sheet of the green frog from the unlucky frog slapstick comedy. 3D Pixar/Dreamworks animation style, clean white background, multiple poses and expressions in a grid layout. Show front view, side view, 3/4 view, curious expression reaching for a pearl, nervous smile, pain expression with a swollen red finger, dazed expression after hitting a tree, and final close-up with comically enormous swollen bright red lips. Small plump green body, short limbs, large bulbous expressive eyes, wet glossy skin with lighter green highlights, wide mouth. High quality, detailed textures, vibrant colors, soft natural lighting.
+
+Otter Character Sheet:
+Character reference sheet of the grumpy brown otter with beaver-like features from the unlucky frog slapstick comedy. 3D Pixar/Dreamworks animation style, clean white background, multiple poses and expressions in a grid layout. Show front view, side view, 3/4 view, angry glare, chasing pose, tail-swinging batting pose, and with a clam balanced on its head. Stocky brown furry body, short brown fur, grumpy face with narrowed eyes and visible buck teeth, broad flat tail. High quality, detailed fur texture, vibrant colors, soft natural lighting.
+
+Caterpillar Character Sheet:
+Character reference sheet of the colorful spiky caterpillar from the unlucky frog slapstick comedy. 3D Pixar/Dreamworks animation style, clean white background, multiple views and poses in a grid layout. Show top view, side view, front view, curled pose, and stretched pose. Small segmented cylindrical body with bright multicolored segments in green, yellow, red, blue and orange, covered in sharp spikes and bristles. High quality, detailed texture, vibrant colors, soft natural lighting.
+
+Video Prompt:
+
+Theme: Unlucky green frog <<<Image2>>> slapstick comedy in a sunny pond
+
+Visuals: A small cartoon green frog with large expressive eyes, wet glossy skin, and a plump body; a grumpy brown beaver with buck teeth, a broad flat tail, and a clam balanced on its head; a tiny multicolored spiky caterpillar with green, yellow, red, orange, and blue segments; a serene pond with lily pads, tall reeds, a muddy bank, and a large tree trunk
+
+Camera: Wide establishing shot at the start, close-ups on facial reactions, quick cuts during the chase, a long tracking shot as the frog flies through the air, and a final extreme close-up on the swollen lips
+
+Style: 3D Pixar/Dreamworks feature animation, vibrant saturated colors, realistic textures on stylized characters, soft warm natural outdoor lighting, exaggerated cartoon physics, slapstick comedy timing
+
+Action + Sound Design:
+[0-2s] Wide establishing shot of a sunny pond. The green frog sits on the muddy bank, eyes wide and curious, slowly reaching toward a large glowing pink pearl inside an open clam shell. Soft ambient pond sounds: gentle water lapping, distant birds, light wind through reeds.
+[2-3s] Close-up on the frog's face: pupils dilated, tongue slightly out, finger hovering just above the pearl. Tense silence with a faint magical shimmer from the pearl.
+[3-4s] The clam snaps shut on the frog's finger with a sharp CLACK. The frog's eyes bulge, mouth drops open in shock. Loud snap sound.
+[4-6s] The frog yanks its hand back and hops backward, clutching its throbbing swollen red finger. Pained "YOW!" vocalization, rapid heartbeat sound.
+[6-8s] The frog stumbles and accidentally kicks the clam shell, sending it spinning into the air. Whoosh sound, panicked breathing.
+[8-9s] The clam arcs through the air and lands squarely on the head of a grumpy brown beaver <<<Image3>>> sitting nearby. Dull thud, beaver's surprised grunt.
+[9-11s] The beaver slowly turns its head toward the frog, eyes narrowing, buck teeth gritted, the clam still balanced on its head. Low ominous rumble.
+[11-13s] The frog looks up, frozen in fear, then forces a nervous toothy smile with a visible sweat drop. Awkward gulp, nervous giggle.
+[13-14s] The frog's smile drops; it spins around and sprints away in panic. Fast scurrying footsteps, splashing mud.
+[14-16s] The beaver snarls and charges after the frog on all fours, kicking up dust from the muddy bank. Heavy charging footsteps, angry growl.
+[16-18s] The frog leaps into the air trying to escape; the beaver pivots and swings its broad flat tail like a baseball bat. Tail swoosh, frog's scream.
+[18-19s] The frog is struck mid-air and spins wildly out of control. Impact smack, whoosh.
+[19-21s] Wide tracking shot: the frog flies across the pond in a high arc, limbs flailing, heading toward a large tree trunk on the far bank. Wind rushing sound.
+[21-22s] The frog splats flat against the tree trunk with a wet SPLAT, then peels off and slides down into the mud. Squish, mud splatter.
+[22-23s] The frog sits dazed in the mud, stars circling its head, tongue lolling out. Dizzy sound effect, tweeting birds.
+[23-25s] The frog's eyes refocus and spot a small bright multicolored spiky caterpillar <<<Image1>>> crawling on a nearby leaf. Curious "hmm" sound, leaf rustle.
+[25-27s] The frog's tongue shoots out fast, wraps around the caterpillar, and snaps back into its mouth. Tongue snap, slurp.
+[27-28s] The frog chews once, eyes widen in pain, and spits the caterpillar out in a puff of dust and spikes. Crunch, "OW!", spitting sound.
+[28-30s] Extreme close-up on the frog's face: its lips swell to enormous, glossy bright red proportions. Comic rubber-stretch swelling sound with a pop, ending on a sad groan.
+```
+
+> 💡 三角色设定表+30 秒逐秒分镜的完整动画短片方案：皮克斯风 slapstick，角色一致性用 reference sheet 锁定，喜剧号可直接开工
+（来源为模型无关 prompt，模型归属为编辑指派；日期为相对时间推算）
 
 ## 下一步
 

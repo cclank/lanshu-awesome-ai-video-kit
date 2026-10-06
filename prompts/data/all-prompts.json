@@ -1,7 +1,7 @@
 {
   "schema_version": "1.14",
   "updated": "2026-10-06",
-  "total": 477,
+  "total": 484,
   "models": {
     "seedance-2.0": {
       "name": "Doubao Seedance 2.0",
@@ -11689,6 +11689,156 @@
         "tier": "unknown"
       },
       "notes": "Google Vids 9-23 免费开放 Gemini Omni 1.1 Flash 后的官方写法示例，配合 exact duration 与 scene extension 新功能"
+    },
+    {
+      "id": "ve-028",
+      "model": "veo-3",
+      "category": "image-to-video",
+      "title": "Instagram 帖子互动：人物打破 feed 边界摸头杀",
+      "prompt": "First-Frame Image Prompt:\n\nCreate a photorealistic Instagram feed in exact 4:5 aspect ratio using the uploaded images as visual references. TOP POST. Use [TOP IMAGE]. Show [TOP CHARACTER] performing [TOP ACTION]. The subject must extend naturally beyond the bottom edge and interact with the bottom post.\n\nBOTTOM POST: Use [BOTTOM IMAGE]. Show [BOTTOM CHARACTER/SUBJECT] performing [BOTTOM ACTION]. The top subject must physically pass through the feed boundary and continue into the bottom image with realistic perspective, scale, lighting, depth, occlusion, and shadows.\n\nINSTAGRAM UI: Recreate a real Instagram dark-mode feed with accurate layout, typography, spacing, icons, alignment, and hierarchy. Engagement row: [LIKES] / [COMMENTS] / [SHARES]. Then: [LIKE ICON] Liked by [LIKED-BY NAME]. Caption: [USERNAME] [ONE-LINE CAPTION] [EMOJI]. Below: [PROFILE PICTURE] [USERNAME] (use the uploaded profile picture as the avatar).\n\nDESIGN & STRUCTURE:\n- Dark/black Instagram UI.\n- Two vertically stacked posts with no horizontal divider.\n- Square image corners; no rounded corners.\n- Both images extend fully from left to right edges with no side margins.\n- Keep the dark feed area between posts where the UI appears.\n- Top post: no author profile picture or username; show image, engagement row, liked-by, and caption only.\n- Bottom post: show only [PROFILE PICTURE], [USERNAME], and three-dot menu; no engagement row, liked-by, or caption.\n- The overlapping top subject must pass through the black UI area and appear physically in front of it.\n- Add realistic cast/contact shadows following the scene's lighting.\n- Preserve uploaded images, colors, composition, and important details.\n- Keep all text/icons sharp, aligned, and legible.\n- No unnecessary borders, distortions, extra UI, or random text.\n- Do not redesign or reinterpret the Instagram interface.\n- Make the interaction seamless and physically realistic, not like a graphic mockup.\n- Use the uploaded reference images for the exact feed composition and interaction style. Aspect ratio: 4:5\n\nImage-to-Video Prompt:\n\nStyle: Warm, playful, lighthearted social-media-style comedy. Soft studio lighting, neutral gray backdrop, smooth natural motion. The camera stays static, like a phone screen recording of an Instagram feed.\n\nFirst frame: Two stacked Instagram-style posts. The man in the white polo is in the top post, with his arm reaching out of the frame. His hand rests on the head of the woman in the bottom post. She has a small, smug smile.\n\nTimeline:\n0-2s: The man smiles warmly at the camera and gives the woman's head a few gentle, affectionate pats. The woman keeps her closed-lip smile, but her eyes slide sideways toward his hand. The like count ticks up from 8,432 to 8,433.\n2-4s: The woman's smile flattens into a deadpan look. She slowly turns her head and gives his hand a long, unimpressed side-eye. He keeps smiling and pats a little faster, pretending not to notice.\n4-6s: Fed up, she tilts her head up and blows a stray strand of hair off her face. The man's grin turns sheepish and he lifts his hand an inch. She quickly tilts her head back under it, as if she secretly wants the pats to continue.\n6-8s: The man laughs and ruffles her hair a little, and she scrunches her nose and tries not to smile. The caption \"Lucky to have you\" pulses softly. The comment count rises from 214 to 215.\n8-10s: The woman finally breaks into a big, genuine smile and leans into his hand. The man looks down at her with affection. The heart icon pops with a tiny animation, and the frame holds on the two of them.\n\nAudio: Light, cheerful ukulele or soft acoustic music. Subtle UI \"pop\" sounds when the likes and comments tick up. A soft chuckle from the man around 6s, and a quiet giggle from the woman at 8s. No dialogue.\n\nNegative prompt: No camera shake, no face morphing, no extra fingers, no text distortion, no sudden lighting changes, no changes to clothing or hairstyle.\n\n(Use the reference image as first frame.)",
+      "tags": [
+        "veo-3",
+        "image-to-video",
+        "dialogue",
+        "reference",
+        "comedy"
+      ],
+      "params": {
+        "aspect": "4:5"
+      },
+      "source": {
+        "name": "sifuyik (Substack)",
+        "url": "https://sifuyik.substack.com/p/751-viral-video-prompt-instagram",
+        "tier": "reputable-3rd-party"
+      },
+      "notes": "打破第四面墙的病毒格式：上方帖子人物伸手穿过 UI 摸下方人物头，点赞数实时跳动；首帧图+I2V 双 prompt 结构完整，Veo 3 文字渲染能力正好对口\n（来源为模型无关 prompt，模型归属为编辑指派；日期为相对时间推算）"
+    },
+    {
+      "id": "ve-029",
+      "model": "veo-3",
+      "category": "image-to-video",
+      "title": "三招食材新鲜度测试：三文鱼/整鱼/西兰花 30 秒教程",
+      "prompt": "First Frame Image Prompt (<<<Image1>>>):\n\nA medium close-up shot of a man, wearing a white distressed t-shirt with a USA flag graphic, standing in a bright sunroom or enclosed patio with large glass windows behind him showing a rainy green backyard. He holds a large raw salmon fillet over a clear rectangular glass tank filled with hot water on a marble countertop. The man looks directly at the camera with an instructional expression. Natural daylight, bright and clean, shallow depth of field, smartphone vertical video aesthetic, 720x1280 aspect ratio.\n\nImage-to-Video Prompt:\n\nTheme: Food quality and safety tutorial - three quick kitchen tests for salmon, whole fish, and broccoli\n\nVisuals: Bright sunroom with large glass windows, rainy green outdoor background, marble countertop, clear glass tanks and bowls, raw salmon fillet, whole silver fish, raw broccoli florets, wooden cutting board with raw chicken, salmon, and trout. Prominent yellow and white bold text overlays summarizing each tip. Natural daylight, clean and slightly overexposed smartphone look.\n\nCamera: Static medium close-up on the presenter and countertop for the entire video, with occasional slow digital zooms into the food reactions and close-ups of the water tank and broccoli bowl.\n\nStyle: Bright, informative, DIY social-media tutorial aesthetic; natural color grading with emphasis on orange salmon and green broccoli; bold yellow text overlays; vertical smartphone video format.\n\nAction + Sound Design:\n[0-8s] The man holds up a raw salmon fillet and lowers it into the clear tank of hot water. The salmon quickly begins to flake and break apart into small pieces in the water. He gestures toward the tank and speaks directly to camera. On-screen text appears: \"HOT WATER\" and \"IF IT FALLS APART EASILY THE MEAT ISN'T REAL.\" Sound: casual spoken narration + light water movement + soft ambient room tone\n[8-15s] He removes the salmon and places a whole silver fish into a clear tank of cold water. The fish sinks slowly to the bottom. He points at the tank while explaining the freshness test. On-screen text appears: \"COLD WATER,\" \"IF IT SINKS,\" and \"IF IT FLOATS IT'S BEEN SITTING ON THE SHELF.\" Sound: continued narration + gentle water splash + subtle tank tapping\n[15-23s] He places a glass bowl of raw broccoli florets on the counter and pours water over them, then adds a splash of white vinegar from a clear bottle. The camera slowly zooms in to reveal tiny white worm-like insects and eggs floating in the liquid. On-screen text appears: \"WATER WITH A SPLASH OF VINEGAR,\" \"ANY HIDDEN INSECTS AND THEIR EGGS WILL COME LOOSE IN THE WATER.\" Sound: narration + pouring water + light splashing + subtle vinegar bottle cap sound\n[23-30s] The man holds up a wooden cutting board displaying a whole raw chicken, several salmon pieces, and a whole fish. He smiles slightly and gestures toward the camera, encouraging viewers to save and follow. The camera slowly zooms in on the cutting board. On-screen text appears: \"SAVE THIS AND COMMENT WITH OTHER FOODS,\" \"FOR MORE FOLLOW,\" and \"DON'T MISS OUT.\" Sound: upbeat closing narration + light cutting board tap + ambient room tone",
+      "tags": [
+        "veo-3",
+        "image-to-video",
+        "close-up",
+        "rain",
+        "food",
+        "tutorial"
+      ],
+      "params": {},
+      "source": {
+        "name": "sifuyik (Substack)",
+        "url": "https://sifuyik.substack.com/p/752-viral-video-prompt-food-tips",
+        "tier": "reputable-3rd-party"
+      },
+      "notes": "30 秒竖屏教程类病毒模板：三段式食物测试+黄色大字报 overlay，手机实拍美学，科普/带货号可直接套用改食材\n（来源为模型无关 prompt，模型归属为编辑指派；日期为相对时间推算）"
+    },
+    {
+      "id": "so-024",
+      "model": "sora-2",
+      "category": "cinematic",
+      "title": "名人夜晚离场：旋转门签名+跑车疾驰 10 秒",
+      "prompt": "Image-to-Video Prompt:\n\nTheme: A celebrity named \"Sifu\" exits a building at night, signs an autograph for fans behind a barricade, then makes a quick getaway in a sports car\n\nVisuals: Glass revolving door entrance with warm interior light spilling onto a wet dark pavement, a man in a grey shirt and dark trousers walking with two security guards in black suits, a crowd of fans and photographers behind a metal barrier holding up phones and cameras, camera flashes popping, velvet rope stanchions in the foreground, a sleek sports car waiting at the curb\n\nCamera: Handheld documentary/paparazzi style, eye-level medium shot, camera tracks gently forward and follows the man as he walks toward the lens and stops to sign, then pans/follows as he moves to the car and drives off\n\nStyle: Realistic, cinematic nighttime street photography, high contrast between bright building interior and dark exterior, dynamic flash lighting, glossy wet ground reflections, energetic celebrity-arrival atmosphere\n\nAction + Sound Design:\n[0-1.5s] The man and two security guards emerge from the revolving door into the night, the crowd behind the barricade visible and cheering \"Sifu\", camera shutters clicking\n[1.5-4s] He walks toward the camera with a smile, waving to the fans, while camera flashes pop around him and the guards stay close on either side\n[4-7s] He stops, takes a pen, and signs an autograph on a white notebook held out from the lower left of frame, the guards waiting patiently beside him\n[7-8.5s] He finishes signing, hands the pen back, waves once more to the crowd, then turns and strides confidently toward the waiting sports car\n[8.5-10s] He swings open the door, hops into the driver's seat in one fluid motion, the engine roars to life, and the car peels away from the curb into the night, tail lights streaking across the wet pavement as the crowd reacts with surprise and excitement",
+      "tags": [
+        "sora-2",
+        "cinematic",
+        "night",
+        "crowd"
+      ],
+      "params": {},
+      "source": {
+        "name": "sifuyik (Substack)",
+        "url": "https://sifuyik.substack.com/p/753-viral-video-prompt-celebrity",
+        "tier": "reputable-3rd-party"
+      },
+      "notes": "狗仔跟拍式现实主义短片模板：旋转门→签名→跑车离场一镜式调度，湿地面反光+闪光灯氛围，10 秒完整叙事弧，换脸即用\n（来源为模型无关 prompt，模型归属为编辑指派；日期为相对时间推算）"
+    },
+    {
+      "id": "ve-030",
+      "model": "veo-3",
+      "category": "image-to-video",
+      "title": "Wants vs Needs：红绿双柱信息图励志口播",
+      "prompt": "First Frame Image Prompt:\n\nThe man sits at a dark wooden table against a plain solid light gray background. He looks directly at the camera with an open, engaging expression, hands resting on the table. Above his head is a clean infographic layout: on the left, bold red text reads \"YOU WANT\" above a vertical stack of five rounded red rectangular bars, with the top bar labeled \"money\" in white text; on the right, bold green text reads \"YOU NEED\" above a vertical stack of five rounded green rectangular bars, with the top bar labeled \"skills\" in white text. The lighting is bright, even, and professional, like a studio talking-head setup. The composition is vertical 9:16, clean and minimal, suitable for short-form social media content.\n\nImage-to-Video Prompt:\n\nTheme: Motivational \"wants vs needs\" self-help breakdown - a direct-to-camera speaker explains the real price behind common desires.\n\nVisuals: A clean talking-head setup with a middle-aged man in a light blue t-shirt sitting at a dark wooden table against a solid light gray wall. Above his head, two infographic columns display stacked colored bars: red \"YOU WANT\" on the left, green \"YOU NEED\" on the right. Text labels appear one by one on the bars as he speaks.\n\nCamera: Static medium close-up shot, chest-up framing, vertical 9:16, centered on the speaker, sharp focus on his face with the graphic overlay occupying the upper portion of the frame.\n\nStyle: Bright, clean, professional studio lighting, modern short-form educational/motivational content aesthetic, minimal background, bold typography.\n\nAction + Sound Design:\nThe man begins speaking directly to camera with calm, confident energy - clean studio audio, no background music\n[0-3s] The top red bar under \"YOU WANT\" is labeled \"money\" and the top green bar under \"YOU NEED\" is labeled \"skills\" as he says: \"If you want money, you have to have valuable skills.\"\n[3-6s] The second red bar is labeled \"success\" and the second green bar is labeled \"risk\" as he says: \"If you want success, you have to take risk.\"\n[6-9s] The third red bar is labeled \"respect\" and the third green bar is labeled \"lead\" as he says: \"If you want respect, you're gonna have to lead by example.\"\n[9-13s] The fourth red bar is labeled \"time\" and the fourth green bar is labeled \"no control\" as he says: \"If you want more time, this one's gonna hurt, you're gonna have to let go of control.\"\n[13-16s] The bottom red bar is labeled \"grow\" and the bottom green bar is labeled \"let go\" as he says: \"If you wanna grow your future, you're gonna have to let go of your past.\"\n[16-19s] A bright warm flash transition wipes away all graphics, leaving only the man at the table, and on-screen captions appear as he says: \"And if you wanna learn how, follow me for more.\" - friendly, inviting delivery\n\n(Use the reference image as first frame.)",
+      "tags": [
+        "veo-3",
+        "image-to-video",
+        "reference",
+        "close-up"
+      ],
+      "params": {
+        "aspect": "9:16"
+      },
+      "source": {
+        "name": "sifuyik (Substack)",
+        "url": "https://sifuyik.substack.com/p/755-viral-video-prompt-motivational",
+        "tier": "reputable-3rd-party"
+      },
+      "notes": "对口型+信息图叠加的标准励志号模板：红绿双柱随台词逐条点亮，首帧图锁定排版，成长/知识号改词即复用\n（来源为模型无关 prompt，模型归属为编辑指派；日期为相对时间推算）"
+    },
+    {
+      "id": "so-025",
+      "model": "sora-2",
+      "category": "image-to-video",
+      "title": "人类 vs 银背大猩猩：竞技场扇耳光大赛",
+      "prompt": "First-Frame Image Prompt:\n\nA wide, eye-level shot of a brightly lit indoor sports arena. In the center, a slap-fighting competition is about to begin. On the left stands a muscular man wearing a tight black t-shirt with \"SLAP\" written in white, black sweatpants, and red athletic shoes. On the right stands a massive, realistic silverback gorilla standing upright. Between them is a black cylindrical podium with neon green and pink accents and the text \"10X.\" In the background, between the two competitors, stands a referee in a black polo shirt. Behind them, a large, slightly blurred crowd sits in stadium seating under bright, dramatic overhead lighting. Hyper-realistic, high-definition sports photography, cinematic arena atmosphere.\n\nImage-to-Video Prompt:\n\nTheme: Surreal human vs gorilla slap-fighting showdown in a professional sports arena\n\nVisuals: A packed indoor arena under dramatic overhead lighting, a black cylindrical slap podium with neon green/pink accents and \"10X\" branding, a muscular man in a tight black \"SLAP\" t-shirt and red shoes facing an enormous upright silverback gorilla, with a referee standing between them\n\nCamera: Wide establishing shot -> medium close-up on impact -> slow-motion close-up for the final strike\n\nStyle: Hyper-realistic sports photography, high-intensity, dark arena atmosphere with spotlighted action, exaggerated impact physics, cinematic slow motion\n\nAction + Sound Design:\n[0-2.5s] Wide establishing shot of the arena. The referee raises a hand and shouts \"Fight!\" as the man and gorilla face off across the podium - ambient crowd noise, tense atmosphere [cut]\n[2.5-5s] Medium close-up of the man. The gorilla's massive hand swings in from the right and slaps the man's left cheek with extreme force, sending a cloud of white powder and sweat erupting from the impact - loud exaggerated smack sound + crowd gasp [cut]\n[5-7.5s] The man absorbs the blow, his face rippling but staying upright. He clenches his jaw, glares back with determination, and winds up his right arm - heavy breathing + dramatic low-frequency rumble [cut]\n[7.5-10s] Slow-motion close-up profile shot. The man's muscular arm swings forward and his open palm connects solidly with the side of the gorilla's face, sending a shockwave through the gorilla's fur and another puff of white powder into the air - heavy impact thud + deep bass drop",
+      "tags": [
+        "sora-2",
+        "image-to-video",
+        "close-up",
+        "slow-motion",
+        "neon",
+        "crowd"
+      ],
+      "params": {},
+      "source": {
+        "name": "sifuyik (Substack)",
+        "url": "https://sifuyik.substack.com/p/756-viral-video-prompt-slap-competition",
+        "tier": "reputable-3rd-party"
+      },
+      "notes": "荒诞对决类病毒喜剧：扇耳光竞技的慢动作冲击物理+粉尘爆发，四段式剪辑节奏，强视觉奇观易出爆款\n（来源为模型无关 prompt，模型归属为编辑指派；日期为相对时间推算）"
+    },
+    {
+      "id": "so-026",
+      "model": "sora-2",
+      "category": "comedy",
+      "title": "倒霉青蛙 30 秒：珍珠→河狸→毛毛虫连环喜剧",
+      "prompt": "Reference Images (generate first):\n\nFrog Character Sheet:\nCharacter reference sheet of the green frog from the unlucky frog slapstick comedy. 3D Pixar/Dreamworks animation style, clean white background, multiple poses and expressions in a grid layout. Show front view, side view, 3/4 view, curious expression reaching for a pearl, nervous smile, pain expression with a swollen red finger, dazed expression after hitting a tree, and final close-up with comically enormous swollen bright red lips. Small plump green body, short limbs, large bulbous expressive eyes, wet glossy skin with lighter green highlights, wide mouth. High quality, detailed textures, vibrant colors, soft natural lighting.\n\nOtter Character Sheet:\nCharacter reference sheet of the grumpy brown otter with beaver-like features from the unlucky frog slapstick comedy. 3D Pixar/Dreamworks animation style, clean white background, multiple poses and expressions in a grid layout. Show front view, side view, 3/4 view, angry glare, chasing pose, tail-swinging batting pose, and with a clam balanced on its head. Stocky brown furry body, short brown fur, grumpy face with narrowed eyes and visible buck teeth, broad flat tail. High quality, detailed fur texture, vibrant colors, soft natural lighting.\n\nCaterpillar Character Sheet:\nCharacter reference sheet of the colorful spiky caterpillar from the unlucky frog slapstick comedy. 3D Pixar/Dreamworks animation style, clean white background, multiple views and poses in a grid layout. Show top view, side view, front view, curled pose, and stretched pose. Small segmented cylindrical body with bright multicolored segments in green, yellow, red, blue and orange, covered in sharp spikes and bristles. High quality, detailed texture, vibrant colors, soft natural lighting.\n\nVideo Prompt:\n\nTheme: Unlucky green frog <<<Image2>>> slapstick comedy in a sunny pond\n\nVisuals: A small cartoon green frog with large expressive eyes, wet glossy skin, and a plump body; a grumpy brown beaver with buck teeth, a broad flat tail, and a clam balanced on its head; a tiny multicolored spiky caterpillar with green, yellow, red, orange, and blue segments; a serene pond with lily pads, tall reeds, a muddy bank, and a large tree trunk\n\nCamera: Wide establishing shot at the start, close-ups on facial reactions, quick cuts during the chase, a long tracking shot as the frog flies through the air, and a final extreme close-up on the swollen lips\n\nStyle: 3D Pixar/Dreamworks feature animation, vibrant saturated colors, realistic textures on stylized characters, soft warm natural outdoor lighting, exaggerated cartoon physics, slapstick comedy timing\n\nAction + Sound Design:\n[0-2s] Wide establishing shot of a sunny pond. The green frog sits on the muddy bank, eyes wide and curious, slowly reaching toward a large glowing pink pearl inside an open clam shell. Soft ambient pond sounds: gentle water lapping, distant birds, light wind through reeds.\n[2-3s] Close-up on the frog's face: pupils dilated, tongue slightly out, finger hovering just above the pearl. Tense silence with a faint magical shimmer from the pearl.\n[3-4s] The clam snaps shut on the frog's finger with a sharp CLACK. The frog's eyes bulge, mouth drops open in shock. Loud snap sound.\n[4-6s] The frog yanks its hand back and hops backward, clutching its throbbing swollen red finger. Pained \"YOW!\" vocalization, rapid heartbeat sound.\n[6-8s] The frog stumbles and accidentally kicks the clam shell, sending it spinning into the air. Whoosh sound, panicked breathing.\n[8-9s] The clam arcs through the air and lands squarely on the head of a grumpy brown beaver <<<Image3>>> sitting nearby. Dull thud, beaver's surprised grunt.\n[9-11s] The beaver slowly turns its head toward the frog, eyes narrowing, buck teeth gritted, the clam still balanced on its head. Low ominous rumble.\n[11-13s] The frog looks up, frozen in fear, then forces a nervous toothy smile with a visible sweat drop. Awkward gulp, nervous giggle.\n[13-14s] The frog's smile drops; it spins around and sprints away in panic. Fast scurrying footsteps, splashing mud.\n[14-16s] The beaver snarls and charges after the frog on all fours, kicking up dust from the muddy bank. Heavy charging footsteps, angry growl.\n[16-18s] The frog leaps into the air trying to escape; the beaver pivots and swings its broad flat tail like a baseball bat. Tail swoosh, frog's scream.\n[18-19s] The frog is struck mid-air and spins wildly out of control. Impact smack, whoosh.\n[19-21s] Wide tracking shot: the frog flies across the pond in a high arc, limbs flailing, heading toward a large tree trunk on the far bank. Wind rushing sound.\n[21-22s] The frog splats flat against the tree trunk with a wet SPLAT, then peels off and slides down into the mud. Squish, mud splatter.\n[22-23s] The frog sits dazed in the mud, stars circling its head, tongue lolling out. Dizzy sound effect, tweeting birds.\n[23-25s] The frog's eyes refocus and spot a small bright multicolored spiky caterpillar <<<Image1>>> crawling on a nearby leaf. Curious \"hmm\" sound, leaf rustle.\n[25-27s] The frog's tongue shoots out fast, wraps around the caterpillar, and snaps back into its mouth. Tongue snap, slurp.\n[27-28s] The frog chews once, eyes widen in pain, and spits the caterpillar out in a puff of dust and spikes. Crunch, \"OW!\", spitting sound.\n[28-30s] Extreme close-up on the frog's face: its lips swell to enormous, glossy bright red proportions. Comic rubber-stretch swelling sound with a pop, ending on a sad groan.",
+      "tags": [
+        "sora-2",
+        "comedy",
+        "reference",
+        "close-up",
+        "comedy"
+      ],
+      "params": {},
+      "source": {
+        "name": "sifuyik (Substack)",
+        "url": "https://sifuyik.substack.com/p/757-viral-video-prompt-frog-adventure",
+        "tier": "reputable-3rd-party"
+      },
+      "notes": "三角色设定表+30 秒逐秒分镜的完整动画短片方案：皮克斯风 slapstick，角色一致性用 reference sheet 锁定，喜剧号可直接开工\n（来源为模型无关 prompt，模型归属为编辑指派；日期为相对时间推算）"
+    },
+    {
+      "id": "ve-031",
+      "model": "veo-3",
+      "category": "comedy",
+      "title": "人体饮料机：鼻孔倒可乐的荒诞咖啡馆广告",
+      "prompt": "First Frame Image Prompt:\n\nA hilarious, exaggerated caricature-style 3D-rendered novelty beverage dispenser modeled after the man in the reference photo. He has an oversized round head with the man's recognizable face, short black hair, thick black bushy mustache, huge wide-open surprised cartoon eyes, and an open circular \"O\" shaped mouth. He wears a shiny metallic pot-like hat on his head with a big round red button on top. His body is a massive transparent spherical bowl belly divided vertically in half - left side filled with dark cola-brown soda and ice cubes showing a Coca-Cola-style red script logo, right side filled with bright orange soda and ice cubes showing a Fanta-style orange logo. His arms are comically tiny and stubby, resting proudly on the sides of his giant belly. He wears a stretched white short-sleeved polo shirt with a small chest logo that barely fits around the round transparent torso. Two empty clear drinking glasses sit on a metal grate drip tray at the base. The dispenser stands on a warm wooden counter in a cozy rustic cafe, with a softly blurred chalkboard sign in the background reading \"Good Drink, Good Mood.\" Warm soft directional lighting, glossy glass and liquid textures, shallow depth of field, centered static frontal composition, cinematic product-shot aesthetic, highly comical and absurd tone.\n\nImage-to-Video Prompt:\n\nTheme: A comical caricature beverage dispenser modeled after a real man absurdly serves iced cola and orange soda from his mouth and nostrils in a cozy cafe\n\nVisuals: Warm rustic cafe counter, wooden surface, soft bokeh background with a chalkboard sign reading \"Good Drink, Good Mood,\" an exaggerated cartoonish man-shaped dispenser with oversized round head, bushy mustache, huge surprised eyes, open \"O\" mouth, shiny metal pot hat with a big red button, massive transparent spherical belly split into cola and orange soda halves, comically tiny stubby arms resting proudly on the belly, stretched white polo shirt, two empty clear glasses on a metal drip tray\n\nCamera: Static, locked-off centered shot with no pan, tilt, or zoom; tight framing on the dispenser and glasses throughout\n\nStyle: Hyper-realistic 3D animation mixed with caricature exaggeration, whimsical and absurd, warm color grading with rich browns, dark cola tones, vibrant orange soda, soft cinematic lighting, glossy liquid and glass textures, comedic product-shot aesthetic\n\nAction + Sound Design:\n[0-1s] A human hand enters from the top right of the frame and presses the big red button on top of the metal hat - sharp mechanical click and whirring sound\n[1-4.5s] The character's eyes widen further and his open mouth violently ejects a chaotic flurry of ice cubes, splitting into two streams that fill both empty glasses about halfway - loud clattering and spitting ice sounds\n[4.5-14s] Two solid streams of liquid begin pouring directly from the character's nostrils: dark brown cola from the left nostril into the left glass, bright orange soda from the right nostril into the right glass, steadily filling both glasses over the ice - steady pouring liquid sound with a subtle comical slurp\n[14-15s] The liquid streams stop abruptly, leaving two perfectly full iced drinks sitting on the tray while the character holds his static, proud-yet-surprised expression - soft final drip and ambient cafe quietness",
+      "tags": [
+        "veo-3",
+        "comedy",
+        "reference",
+        "product"
+      ],
+      "params": {},
+      "source": {
+        "name": "sifuyik (Substack)",
+        "url": "https://sifuyik.substack.com/p/758-viral-video-prompt",
+        "tier": "reputable-3rd-party"
+      },
+      "notes": "以真人脸做夸张 3D 漫画像饮料机的病毒创意：鼻孔倒可乐+冰块喷射，静态机位+精确到 0.5s 的音效设计，猎奇感拉满\n（来源为模型无关 prompt，模型归属为编辑指派；日期为相对时间推算）"
     }
   ],
   "tier_definitions": {

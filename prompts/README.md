@@ -1,8 +1,8 @@
-# 提示词库 · 587 条(477 分散 + 110 跨模型对照)
+# 提示词库 · 594 条(484 分散 + 110 跨模型对照)
 
 ## 概览
 
-### 📚 分散提示词(按单模型最佳实践)· 477 条 / 22 模型
+### 📚 分散提示词(按单模型最佳实践)· 484 条 / 22 模型
 
 | 模型 | 数量 | 索引 / JSON 前缀 |
 |---|---|---|
@@ -10,8 +10,8 @@
 | **HappyHorse 1.0** | 90 条 | [happyhorse/README.md](happyhorse/README.md) · `ha-*` |
 | **Kling 3.0 (可灵)** | 72 条 | [kling/README.md](kling/README.md) · `kl-*` |
 | **Kling 4.0 (可灵)** | 12 条 | [kling-4.0/README.md](kling-4.0/README.md) · `kl-*` |
-| **Sora 2** | 23 条 | [sora/README.md](sora/README.md) · `so-*` |
-| **Veo 3.1** | 27 条 | [veo/README.md](veo/README.md) · `ve-*` |
+| **Sora 2** | 26 条 | [sora/README.md](sora/README.md) · `so-*` |
+| **Veo 3.1** | 31 条 | [veo/README.md](veo/README.md) · `ve-*` |
 | **Runway Gen-4.5 / Aleph** | 12 条 | `runway-gen4` (仅在 JSON) |
 | **Runway Aleph 2.0** | 2 条 | [runway-aleph-2.0/README.md](runway-aleph-2.0/README.md) · `ru-*` |
 | **Pika 2.5** | 12 条 | `pika-2.5` (仅在 JSON) |
@@ -28,7 +28,7 @@
 | **Higgsfield Soul 2.0 / DoP** | 9 条 | `higgsfield-soul` (仅在 JSON) |
 | **Gemini Omni (Omni Flash)** | 12 条 | [gemini-omni/README.md](gemini-omni/README.md) · `ge-*` |
 | **Seedance 2.5（即梦）** | 4 条 | [seedance-2.5/README.md](seedance-2.5/README.md) · `se-*` |
-| **总计** | **477 条** | [data/all-prompts.json](data/all-prompts.json) |
+| **总计** | **484 条** | [data/all-prompts.json](data/all-prompts.json) |
 
 ### 🔀 跨模型对照矩阵 · 110 条 / 10 场景 × 11 商业模型
 

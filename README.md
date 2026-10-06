@@ -2,15 +2,15 @@
 
 <!-- Hero Banner -->
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,2,30&height=200&section=header&text=lanshu-awesome-ai-video-kit&fontSize=42&fontColor=ffffff&fontAlignY=38&desc=AI%20Video%20Prompt%20Engineering%20Kit%20·%2022%20Models%20·%20587%20Prompts&descSize=15&descAlignY=62&descColor=cccccc">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,2,30&height=200&section=header&text=lanshu-awesome-ai-video-kit&fontSize=42&fontColor=ffffff&fontAlignY=38&desc=AI%20Video%20Prompt%20Engineering%20Kit%20·%2022%20Models%20·%20587%20Prompts&descSize=15&descAlignY=62&descColor=ffffff" alt="banner" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,2,30&height=200&section=header&text=lanshu-awesome-ai-video-kit&fontSize=42&fontColor=ffffff&fontAlignY=38&desc=AI%20Video%20Prompt%20Engineering%20Kit%20·%2022%20Models%20·%20594%20Prompts&descSize=15&descAlignY=62&descColor=cccccc">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,2,30&height=200&section=header&text=lanshu-awesome-ai-video-kit&fontSize=42&fontColor=ffffff&fontAlignY=38&desc=AI%20Video%20Prompt%20Engineering%20Kit%20·%2022%20Models%20·%20594%20Prompts&descSize=15&descAlignY=62&descColor=ffffff" alt="banner" width="100%">
 </picture>
 
 # 🎬 lanshu-awesome-ai-video-kit
 
 **做企业 AI 视频项目逼出来的开源工具包**
 
-587 精选 prompt · 22 模型 · 7 Claude Skill · 21 篇方法论 · GitHub Action 每周自动监控官方端点
+594 精选 prompt · 22 模型 · 7 Claude Skill · 21 篇方法论 · GitHub Action 每周自动监控官方端点
 
 [🇨🇳 中文](README.md) · [🇬🇧 English](README.en.md) · [🌐 **Live Demo**](https://lanshu-awesome-ai-video-kit.lank.workers.dev) · [⚡ awesome 投稿](awesome.md)
 
@@ -27,7 +27,7 @@
 
 <!-- Content stats badges -->
 [![Models](https://img.shields.io/badge/Models-22-8b5cf6?style=flat-square&logo=googlegemini&logoColor=white)](#-22-模型一览)
-[![Prompts](https://img.shields.io/badge/Prompts-587-fb923c?style=flat-square)](prompts/)
+[![Prompts](https://img.shields.io/badge/Prompts-594-fb923c?style=flat-square)](prompts/)
 [![Skills](https://img.shields.io/badge/Claude_Skills-7-d97757?style=flat-square&logo=anthropic&logoColor=white)](skills/)
 [![Methodology](https://img.shields.io/badge/SOP-21-34d399?style=flat-square)](methodology/)
 [![Categories](https://img.shields.io/badge/Categories-29-f472b6?style=flat-square)](prompts/data/all-prompts.json)
@@ -68,7 +68,7 @@
 ## 🎯 数据规模(v0.9.0 · 2026-05)
 
 ```
-587 条 prompt   (477 单模型最佳实践 + 110 跨模型对照矩阵)
+594 条 prompt   (484 单模型最佳实践 + 110 跨模型对照矩阵)
  15 个 模型      (11 商业旗舰 + 4 开源 / 友好开源)
   7 个 Claude Skill  (含 model-selector + prompt-translator 跨模型核心)
  21 篇 方法论 SOP    (+ 玩法集合 #1 FPV 航拍路径绘制)
@@ -210,7 +210,7 @@ done
 
 | 工具 | 路径 | 卖点 |
 |---|---|---|
-| **Prompt Browser** | [`tools/prompt-browser/`](tools/prompt-browser/) | 587 prompt 浏览器 · 15 模型彩虹筛选 · URL 状态分享 · 键盘导航(`/`/`j`/`k`/`Enter`/`c`)|
+| **Prompt Browser** | [`tools/prompt-browser/`](tools/prompt-browser/) | 594 prompt 浏览器 · 15 模型彩虹筛选 · URL 状态分享 · 键盘导航(`/`/`j`/`k`/`Enter`/`c`)|
 | **Cross-Model Matrix** ★ | [`tools/cross-model/`](tools/cross-model/) | 10 场景 × 11 模型 = 110 横向对照 · `prompt-translator` 的查表基准 |
 | **Markdown Viewer** | [`viewer.html`](viewer.html) | 所有 .md 文件渲染成漂亮 web 文档 · 自动 TOC + 代码高亮 |
 
@@ -246,7 +246,7 @@ lanshu-awesome-ai-video-kit/
 ├── serve.py                        # 本地 dev server(UTF-8 + .md redirect)
 │
 ├── prompts/
-│   ├── data/all-prompts.json       # 单一数据源(587 条)
+│   ├── data/all-prompts.json       # 单一数据源(594 条)
 │   ├── data/cross-model-matrix.json # 110 条跨模型对照
 │   └── {seedance,happyhorse,kling,sora,veo}/README.md
 │
@@ -271,7 +271,7 @@ lanshu-awesome-ai-video-kit/
 │   └── ISSUE_TEMPLATE/             # 4 个贡献表单
 │
 ├── tools/
-│   ├── prompt-browser/             # 587 prompt 浏览器
+│   ├── prompt-browser/             # 594 prompt 浏览器
 │   └── cross-model/                # 跨模型对照矩阵
 │
 ├── viewer.html                     # Markdown viewer

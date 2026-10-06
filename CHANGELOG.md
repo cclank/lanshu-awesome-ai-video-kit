@@ -4,6 +4,11 @@
 
 ## [Unreleased]
 
+### Added · 2026-10-06 晚间增补（10-03 ~ 10-06 新内容扫描）
+- **+7 条提示词**（484 条分散 prompt）：Veo 3（ve-028..031）、Sora 2（so-024..026）
+- 来源：sifuyik Substack 病毒视频 prompt 系列 #751–#758（reputable-3rd-party）；来源为模型无关 prompt，模型归属为编辑指派，日期为相对时间推算
+- Reka Rho-1（10-05）仅 research preview，无公开访问，未入库
+
 ### Added · 2026-10-06 prompt 集中收录（近 3 个月，重点 9-06 ~ 10-06）
 - **+44 条提示词**（477 条分散 prompt；另修复 9 条历史分类断裂引用 `dialogue`→`dialogue-driven`、`character-animation`→`portrait`）
 - **+6 新模型**：Kling 4.0（k4-001..012）、MiniMax H3（mx-001..010）、Seedance 2.5（se-001..004）、Wan 2.6（w2-001）、Runway Aleph 2.0（ra-001..002）、Luma Ray 3.2（lu-001..002）
