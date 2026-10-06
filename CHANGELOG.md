@@ -4,6 +4,12 @@
 
 ## [Unreleased]
 
+### Fixed · 2026-10-07 模型规格勘误（用户指正）
+- **Seedance 2.5**：`max_duration` 15s → **30s**（官方规格 4–30s，可延长）
+- **MiniMax H3**：`max_duration` 4s → **15s**（官方规格 4–15s）
+- **新增 Wan 3.0（通义万相）**：2026-08-24 正式发布，30s 单次生成，文档/多模态输入；prompt 收集中（0 条）
+- 模型总数 22 → 23
+
 ### Added · 2026-10-06 晚间增补（10-03 ~ 10-06 新内容扫描）
 - **+7 条提示词**（484 条分散 prompt）：Veo 3（ve-028..031）、Sora 2（so-024..026）
 - 来源：sifuyik Substack 病毒视频 prompt 系列 #751–#758（reputable-3rd-party）；来源为模型无关 prompt，模型归属为编辑指派，日期为相对时间推算

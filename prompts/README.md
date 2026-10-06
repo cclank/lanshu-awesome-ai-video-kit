@@ -2,7 +2,7 @@
 
 ## 概览
 
-### 📚 分散提示词(按单模型最佳实践)· 484 条 / 22 模型
+### 📚 分散提示词(按单模型最佳实践)· 484 条 / 23 模型
 
 | 模型 | 数量 | 索引 / JSON 前缀 |
 |---|---|---|
@@ -20,6 +20,7 @@
 | **Hunyuan Video 1.5** | 12 条 | `hunyuan-video` (仅在 JSON) |
 | **Wan 2.7 (通义万相)** | 12 条 | `wan-2.5` (仅在 JSON) |
 | **Wan 2.6（万相）** | 1 条 | [wan-2.6/README.md](wan-2.6/README.md) · `wa-*` |
+| **Wan 3.0（通义万相）** | 0 条（收集中） | [wan-3.0/README.md](wan-3.0/README.md) · `w3-*` |
 | **即梦 AI (Seedance 2.0 引擎)** | 12 条 | `jimeng-3` (仅在 JSON) |
 | **Luma Ray 3.2** | 2 条 | [luma-ray-3.2/README.md](luma-ray-3.2/README.md) · `lu-*` |
 | **LTX-Video 0.9.7** | 8 条 | `ltx-video` (仅在 JSON) |

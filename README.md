@@ -10,7 +10,7 @@
 
 **做企业 AI 视频项目逼出来的开源工具包**
 
-594 精选 prompt · 22 模型 · 7 Claude Skill · 21 篇方法论 · GitHub Action 每周自动监控官方端点
+594 精选 prompt · 23 模型 · 7 Claude Skill · 21 篇方法论 · GitHub Action 每周自动监控官方端点
 
 [🇨🇳 中文](README.md) · [🇬🇧 English](README.en.md) · [🌐 **Live Demo**](https://lanshu-awesome-ai-video-kit.lank.workers.dev) · [⚡ awesome 投稿](awesome.md)
 
@@ -26,7 +26,7 @@
 [![Issues](https://img.shields.io/github/issues/cclank/lanshu-awesome-ai-video-kit?style=flat-square&color=ef4444)](https://github.com/cclank/lanshu-awesome-ai-video-kit/issues)
 
 <!-- Content stats badges -->
-[![Models](https://img.shields.io/badge/Models-22-8b5cf6?style=flat-square&logo=googlegemini&logoColor=white)](#-22-模型一览)
+[![Models](https://img.shields.io/badge/Models-23-8b5cf6?style=flat-square&logo=googlegemini&logoColor=white)](#-23-模型一览)
 [![Prompts](https://img.shields.io/badge/Prompts-594-fb923c?style=flat-square)](prompts/)
 [![Skills](https://img.shields.io/badge/Claude_Skills-7-d97757?style=flat-square&logo=anthropic&logoColor=white)](skills/)
 [![Methodology](https://img.shields.io/badge/SOP-21-34d399?style=flat-square)](methodology/)
@@ -101,7 +101,7 @@ python3 serve.py 8000
 - [✨ 为什么是这个项目](#-为什么是这个项目)
 - [🎯 数据规模](#-数据规模v090--2026-05)
 - [🚀 5 秒上手](#-5-秒上手)
-- [📦 22 模型一览](#-22-模型一览)
+- [📦 23 模型一览](#-23-模型一览)
 - [🛠️ 7 个 Claude Code Skill](#%EF%B8%8F-7-个-claude-code-skill)
 - [📖 21 篇方法论 SOP](#-21-篇方法论-sop)
 - [🌐 3 个 Web 工具](#-3-个-web-工具)
@@ -113,7 +113,7 @@ python3 serve.py 8000
 
 ---
 
-## 📦 22 模型一览
+## 📦 23 模型一览
 
 > 📅 **2026 年 10 月版本** · 数据每月人工 review + GitHub Action 每周巡检
 

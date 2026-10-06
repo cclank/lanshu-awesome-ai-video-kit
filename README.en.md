@@ -9,7 +9,7 @@
 # 🎬 lanshu-awesome-ai-video-kit
 
 **An awesome curated kit for AI video prompt engineering.**
-**The most complete AI video prompt library on the web — 22 models / 484 standalone + 110 cross-model = 594 curated prompts / 7 Claude Skills / 21 methodology docs**
+**The most complete AI video prompt library on the web — 23 models / 484 standalone + 110 cross-model = 594 curated prompts / 7 Claude Skills / 21 methodology docs**
 
 🇨🇳 **[中文 README →](README.md)**
 
@@ -53,7 +53,7 @@ Structured into 4 categories of practical resources:
 
 | Resource | Content | Best for |
 |---|---|---|
-| 📚 [prompts/](prompts/) | **594 curated prompts** across 22 models / 29 scenarios, with official samples + recommended params | Copy & tweak |
+| 📚 [prompts/](prompts/) | **594 curated prompts** across 23 models / 29 scenarios, with official samples + recommended params | Copy & tweak |
 | 📖 [methodology/](methodology/) | **21 methodology SOPs**: advanced formula / storyboarding / emotion externalization / 5 model-specific guides + 6-model quick reference + **4 open source quick reference** + cross-model comparison + 12 pitfalls | Learn to "direct shots" |
 | 🛠️ [skills/](skills/) | **7 Claude Code Skills** — Seedance ×3 + HappyHorse + Kling + **model-selector** (15-model shopping advisor) + **prompt-translator** (cross-model converter) | Let Claude pick/write/fix/translate |
 | 🌐 [tools/prompt-browser/](tools/prompt-browser/) | Single-page HTML browser (15-model rainbow filter + URL state sharing + keyboard nav + Drawer details) | If you don't want to read markdown |
@@ -63,7 +63,7 @@ Structured into 4 categories of practical resources:
 ## 📑 Contents
 
 - [✨ What is this?](#-what-is-this)
-- [🎯 22 Models at a Glance](#-15-models-at-a-glance)
+- [🎯 23 Models at a Glance](#-23-models-at-a-glance)
 - [🚀 Quick Start](#-quick-start)
 - [📚 Prompts by Model](#-prompts-by-model)
 - [📖 Methodology Index](#-methodology-index)
@@ -76,7 +76,7 @@ Structured into 4 categories of practical resources:
 
 ---
 
-## 🎯 22 Models at a Glance
+## 🎯 23 Models at a Glance
 
 > 📅 **May 2026 snapshot** — Data refreshed monthly. A weekly GitHub Action auto-monitors all 32 official endpoints and files issues when versions change.
 
@@ -219,7 +219,7 @@ See [skills/README.md](skills/README.md) for the decision tree.
 | [Cross-Model Matrix](tools/cross-model/index.html) | 10 scenarios × 11 commercial models = 110 cross-model prompts + video slots | `tools/cross-model/` |
 
 Features:
-- **Hero stats**: 594 / 22 / 7 / 21 live counts
+- **Hero stats**: 594 / 23 / 7 / 21 live counts
 - **15-model rainbow filter** — each model has its own glowing color dot
 - **3D filtering**: model + category + tags (multi-select)
 - **Keyword search** — title / prompt body / tags / notes
@@ -243,7 +243,7 @@ lanshu-awesome-ai-video-kit/
 ├── awesome.md                      # awesome-list submission entry
 ├── LICENSE                         # MIT
 │
-├── prompts/                        # 594 prompts (22 models)
+├── prompts/                        # 594 prompts (23 models)
 │   ├── data/all-prompts.json       # Single source of truth (web tools consume this)
 │   ├── data/cross-model-matrix.json # 110 cross-model prompts (10 × 11)
 │   ├── seedance/README.md          # 64 Seedance prompts index

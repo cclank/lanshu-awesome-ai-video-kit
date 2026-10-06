@@ -249,7 +249,7 @@
     "minimax-h3": {
       "name": "MiniMax H3",
       "vendor": "MiniMax",
-      "max_duration": "4s（社区案例 3–4s）",
+      "max_duration": "15s（官方规格 4–15s）",
       "prompt_length": "短文本 + 音视频统一 reference",
       "audio": "原生音频：角色音色授权 + 环境音分离 + 口型自动同步",
       "strengths": [
@@ -261,7 +261,7 @@
     "seedance-2.5": {
       "name": "Seedance 2.5（即梦）",
       "vendor": "字节跳动",
-      "max_duration": "15s（一镜到底叙事）",
+      "max_duration": "30s（官方规格 4–30s，可延长）",
       "prompt_length": "中英文自由文本",
       "audio": "原生对白 + 配乐时间轴",
       "strengths": [
@@ -305,6 +305,19 @@
         "单动作聚焦",
         "一致性约束写法"
       ]
+    },
+    "wan-3.0": {
+      "name": "Wan 3.0（通义万相）",
+      "vendor": "阿里通义实验室",
+      "max_duration": "30s（官方规格，单次生成）",
+      "prompt_length": "文本/图片/音频/视频/文档（PDF/PPT/表格/网页）多模态输入",
+      "audio": "原生音频：多语言配音 + 表情同步",
+      "strengths": [
+        "30s 单次生成",
+        "文档转视频（PDF/PPT/表格/网页）",
+        "多模态 reference 输入"
+      ],
+      "notice": "2026-08-24 正式发布（08-06 公测）；API 按秒计费"
     }
   },
   "categories": [
