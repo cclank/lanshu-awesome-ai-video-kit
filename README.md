@@ -2,15 +2,15 @@
 
 <!-- Hero Banner -->
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,2,30&height=200&section=header&text=lanshu-awesome-ai-video-kit&fontSize=42&fontColor=ffffff&fontAlignY=38&desc=AI%20Video%20Prompt%20Engineering%20Kit%20·%2022%20Models%20·%20594%20Prompts&descSize=15&descAlignY=62&descColor=cccccc">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,2,30&height=200&section=header&text=lanshu-awesome-ai-video-kit&fontSize=42&fontColor=ffffff&fontAlignY=38&desc=AI%20Video%20Prompt%20Engineering%20Kit%20·%2022%20Models%20·%20594%20Prompts&descSize=15&descAlignY=62&descColor=ffffff" alt="banner" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,2,30&height=200&section=header&text=lanshu-awesome-ai-video-kit&fontSize=42&fontColor=ffffff&fontAlignY=38&desc=AI%20Video%20Prompt%20Engineering%20Kit%20·%2022%20Models%20·%20604%20Prompts&descSize=15&descAlignY=62&descColor=cccccc">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,2,30&height=200&section=header&text=lanshu-awesome-ai-video-kit&fontSize=42&fontColor=ffffff&fontAlignY=38&desc=AI%20Video%20Prompt%20Engineering%20Kit%20·%2022%20Models%20·%20604%20Prompts&descSize=15&descAlignY=62&descColor=ffffff" alt="banner" width="100%">
 </picture>
 
 # 🎬 lanshu-awesome-ai-video-kit
 
 **做企业 AI 视频项目逼出来的开源工具包**
 
-594 精选 prompt · 23 模型 · 7 Claude Skill · 21 篇方法论 · GitHub Action 每周自动监控官方端点
+594 精选 prompt · 24 模型 · 7 Claude Skill · 21 篇方法论 · GitHub Action 每周自动监控官方端点
 
 [🇨🇳 中文](README.md) · [🇬🇧 English](README.en.md) · [🌐 **Live Demo**](https://lanshu-awesome-ai-video-kit.lank.workers.dev) · [⚡ awesome 投稿](awesome.md)
 
@@ -26,8 +26,8 @@
 [![Issues](https://img.shields.io/github/issues/cclank/lanshu-awesome-ai-video-kit?style=flat-square&color=ef4444)](https://github.com/cclank/lanshu-awesome-ai-video-kit/issues)
 
 <!-- Content stats badges -->
-[![Models](https://img.shields.io/badge/Models-23-8b5cf6?style=flat-square&logo=googlegemini&logoColor=white)](#-23-模型一览)
-[![Prompts](https://img.shields.io/badge/Prompts-594-fb923c?style=flat-square)](prompts/)
+[![Models](https://img.shields.io/badge/Models-24-8b5cf6?style=flat-square&logo=googlegemini&logoColor=white)](#-24-模型一览)
+[![Prompts](https://img.shields.io/badge/Prompts-604-fb923c?style=flat-square)](prompts/)
 [![Skills](https://img.shields.io/badge/Claude_Skills-7-d97757?style=flat-square&logo=anthropic&logoColor=white)](skills/)
 [![Methodology](https://img.shields.io/badge/SOP-21-34d399?style=flat-square)](methodology/)
 [![Categories](https://img.shields.io/badge/Categories-29-f472b6?style=flat-square)](prompts/data/all-prompts.json)
@@ -68,7 +68,7 @@
 ## 🎯 数据规模(v0.9.0 · 2026-05)
 
 ```
-594 条 prompt   (484 单模型最佳实践 + 110 跨模型对照矩阵)
+604 条 prompt   (494 单模型最佳实践 + 110 跨模型对照矩阵)
  15 个 模型      (11 商业旗舰 + 4 开源 / 友好开源)
   7 个 Claude Skill  (含 model-selector + prompt-translator 跨模型核心)
  21 篇 方法论 SOP    (+ 玩法集合 #1 FPV 航拍路径绘制)
@@ -101,7 +101,7 @@ python3 serve.py 8000
 - [✨ 为什么是这个项目](#-为什么是这个项目)
 - [🎯 数据规模](#-数据规模v090--2026-05)
 - [🚀 5 秒上手](#-5-秒上手)
-- [📦 23 模型一览](#-23-模型一览)
+- [📦 24 模型一览](#-24-模型一览)
 - [🛠️ 7 个 Claude Code Skill](#%EF%B8%8F-7-个-claude-code-skill)
 - [📖 21 篇方法论 SOP](#-21-篇方法论-sop)
 - [🌐 3 个 Web 工具](#-3-个-web-工具)
@@ -113,7 +113,7 @@ python3 serve.py 8000
 
 ---
 
-## 📦 23 模型一览
+## 📦 24 模型一览
 
 > 📅 **2026 年 10 月版本** · 数据每月人工 review + GitHub Action 每周巡检
 
@@ -125,7 +125,7 @@ python3 serve.py 8000
 | **HappyHorse 1.0** | 阿里巴巴 | 紧凑短片专精 + 30-55 词 + 8s 时序节拍 + 原生环境音 | 15s（默认 5s） | ★★★ | ★★ | ★★ |
 | **Kling 3.0** | 快手 · 可灵 | **S 级** · 中文 + 图生视频 + 48fps 1080p + lip-sync | 2m | ★★★★★ | ★★★★ | ★★★★ |
 | **Veo 3.1** | Google DeepMind | **S 级** · 原生音频最强 + 多人对话 | 148s chained | ★★ | ★★★★★ | ★★★ |
-| **Sora 2** ⚠️ | OpenAI | 电影艺术片 + Cameos · **⚠️ web/app 已停 2026-04-26** | 25s (Pro) | ★★ | ★★★★ | ★★★★★ |
+| **Sora 2** 🛑 | OpenAI | 电影艺术片 + Cameos · **🛑 API 已停服 2026-09-24；Foundry 最后部署退役 2026-10-15** | 25s (Pro) | ★★ | ★★★★ | ★★★★★ |
 | **Runway Gen-4.5 / Aleph** | Runway | **ELO 综合第一** + Aleph 视频编辑独家 | 10s / Aleph 5s | ★★★ | — | ★★★ |
 | **Pika 2.5** | Pika Labs | 性价比之王 + Pikaffects 15+ 创意特效 | 25s | ★★ | ★ | ★★ |
 | **Hailuo 02** | MiniMax | **物理仿真业界第一** + 1080p | 10s | ★★★ | — | ★★★★★ |
@@ -142,13 +142,13 @@ python3 serve.py 8000
 | **CogVideoX 5B / 1.5** | Apache 2.0 | 智谱清华出品 · 226 token 长 prompt · T2V/I2V 双权重 | 10s |
 | **Higgsfield Soul / DoP** | 部分开源 | **Soul ID 角色一致性** + Soul Cinema | 15s / 60s 长片 |
 
-### 🆕 2026-10 新增模型（6)
+### 🆕 2026-10 新增模型（7)
 
 | 模型 | 厂商 | 看家本领 | 收录 prompt | 索引 |
 |---|---|---|---|---|
 | **Kling 4.0** | 快手 | omni reference 多引用叙事 · match-cut 藏转场 · 9 语言 lip sync | 12 条 | [kling-4.0/](prompts/kling-4.0/README.md) |
-| **MiniMax H3** | MiniMax | 音视频统一 reference · 原生精准台词 · 口型自动同步 | 10 条 | [minimax-h3/](prompts/minimax-h3/README.md) |
-| **Seedance 2.5** | 字节跳动 | 微表情连续变化 · 一镜到底情绪戏 | 4 条 | [seedance-2.5/](prompts/seedance-2.5/README.md) |
+| **MiniMax H3** | MiniMax | 音视频统一 reference · 原生精准台词 · 口型自动同步 | 16 条 | [minimax-h3/](prompts/minimax-h3/README.md) |
+| **Seedance 2.5** | 字节跳动 | 微表情连续变化 · 一镜到底情绪戏 | 8 条 | [seedance-2.5/](prompts/seedance-2.5/README.md) |
 | **Wan 2.6** | 阿里 | reference-to-video（R2V）· 视频+图片+音频多引用 | 1 条 | [wan-2.6/](prompts/wan-2.6/README.md) |
 | **Runway Aleph 2.0** | Runway | anchor-frame 精确编辑 · 品牌级替换 | 2 条 | [runway-aleph-2.0/](prompts/runway-aleph-2.0/README.md) |
 | **Luma Ray 3.2** | Luma AI | shot-direction 公式 · 单动作聚焦 | 2 条 | [luma-ray-3.2/](prompts/luma-ray-3.2/README.md) |
@@ -210,7 +210,7 @@ done
 
 | 工具 | 路径 | 卖点 |
 |---|---|---|
-| **Prompt Browser** | [`tools/prompt-browser/`](tools/prompt-browser/) | 594 prompt 浏览器 · 15 模型彩虹筛选 · URL 状态分享 · 键盘导航(`/`/`j`/`k`/`Enter`/`c`)|
+| **Prompt Browser** | [`tools/prompt-browser/`](tools/prompt-browser/) | 604 prompt 浏览器 · 15 模型彩虹筛选 · URL 状态分享 · 键盘导航(`/`/`j`/`k`/`Enter`/`c`)|
 | **Cross-Model Matrix** ★ | [`tools/cross-model/`](tools/cross-model/) | 10 场景 × 11 模型 = 110 横向对照 · `prompt-translator` 的查表基准 |
 | **Markdown Viewer** | [`viewer.html`](viewer.html) | 所有 .md 文件渲染成漂亮 web 文档 · 自动 TOC + 代码高亮 |
 
@@ -246,7 +246,7 @@ lanshu-awesome-ai-video-kit/
 ├── serve.py                        # 本地 dev server(UTF-8 + .md redirect)
 │
 ├── prompts/
-│   ├── data/all-prompts.json       # 单一数据源(594 条)
+│   ├── data/all-prompts.json       # 单一数据源(604 条)
 │   ├── data/cross-model-matrix.json # 110 条跨模型对照
 │   └── {seedance,happyhorse,kling,sora,veo}/README.md
 │
@@ -271,7 +271,7 @@ lanshu-awesome-ai-video-kit/
 │   └── ISSUE_TEMPLATE/             # 4 个贡献表单
 │
 ├── tools/
-│   ├── prompt-browser/             # 594 prompt 浏览器
+│   ├── prompt-browser/             # 604 prompt 浏览器
 │   └── cross-model/                # 跨模型对照矩阵
 │
 ├── viewer.html                     # Markdown viewer

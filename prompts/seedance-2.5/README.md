@@ -1,4 +1,4 @@
-# Seedance 2.5（即梦） · 提示词索引（4 条）
+# Seedance 2.5（即梦） · 提示词索引（8 条）
 
 > **Seedance 2.5（即梦）**（字节跳动）—— 2026-10-06 首次收录。微表情连续变化、一镜到底叙事、情绪表演。
 
@@ -10,6 +10,9 @@
 - [🌌 奇幻与科幻](#fantasy-scifi) (1)
 - [🏁 体育、赛车与武术](#sports) (1)
 - [🍵 安静时刻与生活切片](#quiet-moments) (1)
+- [👂 ASMR 与感官体验](#asmr) (1)
+- [📱 社交媒体爆款](#social-viral) (2)
+- [🎬 电影叙事与戏剧场景](#cinematic) (1)
 
 ---
 
@@ -166,5 +169,89 @@ Natural movements only—nothing overly choreographed.
 
 > 💡 2.5 的反精致真实感美学：明确要求自动对焦漂移、压缩伪影、手持不稳和小失误——让 AI 视频摆脱广告味的关键 prompt 写法
 演示视频：https://goodcase.ai/cases/seedance-2-5-eba905fedcff
+
+---
+
+## 👂 ASMR 与感官体验
+
+### se-005 · 美食 ASMR 喜剧反转
+`seedance-2.5` `asmr` `dialogue` `food` · 30s · [X 原帖（经聚合站存档）](https://x.com/Goodmanprotocol/status/2099186117769822462)
+
+```
+Create a 30-second animated cooking sketch inside a gently rocking wooden galley. Keep one apron-wearing cook and one curious green bird recognizable in every shot. Warm lanterns illuminate tactile food surfaces.
+
+0–6s: the bird approaches a vegetable; the cook slides the chopping board away and raises an eyebrow.
+6–13s: intercut knife contact, oil ripples and bubbling sauce; synchronize each sound with the visible action.
+13–22s: the bird nudges an empty serving bowl toward the cook, then waits conspicuously.
+22–30s: the cook fills a small dish; both settle beside the window.
+
+Use expressive original character designs, quiet sea ambience and a single closing musical accent. Leave dialogue and lettering out.
+```
+
+> 💡 9 月最新；食物音效与角色喜剧 payoff 的时间轴写法；prompt 为聚合站改编版，原作者全文见 X 原帖；日期由 post ID 推算
+（聚合站为改编版，X 原帖需登录查看；日期由 X snowflake ID 推算）
+演示视频：https://video.twimg.com/amplify_video/2099186062715404288/vid/avc1/1920x1080/H8uxwKxVsSU09_LW.mp4?tag=29
+
+---
+
+## 📱 社交媒体爆款
+
+### se-006 · 雨天自拍被小猫打断
+`seedance-2.5` `social-viral` `rain` `portrait` · 30s · [X 原帖（经聚合站存档）](https://x.com/Strength04_X/status/2098256490238755226)
+
+```
+Make a 30-second phone selfie beside a rain-covered window. One adult holds one tabby kitten securely. Use the supplied portrait only to preserve the person's appearance. Keep window light soft and neutral.
+
+0–7s: the person glances down at the kitten while rain continues behind them.
+7–15s: a cloth loop at the cuff attracts one paw; the person moves it aside and chuckles.
+15–23s: the kitten shifts toward the supported shoulder; the phone tilts slightly as the person adjusts their grip.
+23–30s: whiskers approach the lens, focus briefly softens, and the shot ends during a laugh.
+
+Use room sound and rain. Preserve one continuous viewpoint and the same animal.
+```
+
+> 💡 一镜到底自拍+宠物互动，UGC 真实感与主体计数的写法；prompt 为聚合站改编版，原作者全文见 X 原帖；日期由 post ID 推算
+（聚合站为改编版，X 原帖需登录查看；日期由 X snowflake ID 推算）
+演示视频：https://video.twimg.com/amplify_video/2098256097547309056/vid/avc1/1920x1080/mPxvxfjQ4VcrZg5r.mp4?tag=29
+
+### se-007 · 双人便利店 Vlog
+`seedance-2.5` `social-viral` · 30s · [X 原帖（经聚合站存档）](https://x.com/Strength04_X/status/2097968347430482177)
+
+```
+Create a 30-second evening convenience-store Vlog with two adult friends. Image 1 defines the shopper; Image 2 defines the friend filming. Keep clothing and one drink bottle consistent.
+
+0–8s: rear-camera view follows the shopper noticing a chilled drink and taking it from the refrigerator.
+8–15s: the shopper shows the bottle to the lens, then carries it to the counter; the operator speaks off-screen.
+15–23s: cut to a front-camera two-shot outside. One friend offers the other a small sip, with a visible handover.
+23–30s: they laugh and leave together, the bottle remaining with its current holder.
+
+Use modest phone shake, short conversational pauses and shop ambience. No external observer angle or music.
+```
+
+> 💡 双 reference 身份锁定+前后摄分工，vlog 连贯性写法；prompt 为聚合站改编版，原作者全文见 X 原帖；日期由 post ID 推算
+（聚合站为改编版，X 原帖需登录查看；日期由 X snowflake ID 推算）
+演示视频：https://video.twimg.com/amplify_video/2097967562604875776/vid/avc1/1920x1080/EB48uw1_u7MU2RJl.mp4?tag=29
+
+---
+
+## 🎬 电影叙事与戏剧场景
+
+### se-008 · 善意微故事：物权连续性
+`seedance-2.5` `cinematic` `rain` · 15s · [X 原帖（经聚合站存档）](https://x.com/AIwithkhan/status/2096424933366931946)
+
+```
+Create a 15-second neighborhood micro-story with two fictional adults. A cyclist wearing a blue raincoat has dropped one yellow glove beside a bench. A passerby carrying a red tote notices it.
+
+0–4s: show the glove on the pavement and the cyclist looking back from the bicycle. Establish both people in one wide shot.
+4–9s: the passerby bends, picks up the glove with the right hand and approaches. Keep the red tote on the left shoulder.
+9–12s: show both hands in frame during the transfer. The cyclist closes the left hand around the glove before the passerby releases it.
+12–15s: the cyclist says 'Thanks!' and places the glove in the front basket.
+
+Use one gentle handheld move, neighborhood ambience and no music. Exactly one glove throughout; preserve its color, location and holder.
+```
+
+> 💡 交接前后物权归属的显式描述，连续性控制的进阶技巧；prompt 为聚合站改编版，原作者全文见 X 原帖；日期由 post ID 推算
+（聚合站为改编版，X 原帖需登录查看；日期由 X snowflake ID 推算）
+演示视频：https://video.twimg.com/amplify_video/2096424851888300032/vid/avc1/1280x720/LYNMJekyiU57XaaC.mp4?tag=29
 
 ---

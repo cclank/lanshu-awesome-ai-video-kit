@@ -2,21 +2,21 @@
 
 <!-- Banner -->
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,2,30&height=180&section=header&text=lanshu-awesome-ai-video-kit&fontSize=38&fontColor=ffffff&fontAlignY=38&desc=AI%20Video%20Prompt%20Engineering%20·%2022%20Models%20·%20594%20Prompts&descSize=16&descAlignY=62&descColor=cccccc">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,2,30&height=180&section=header&text=lanshu-awesome-ai-video-kit&fontSize=38&fontColor=ffffff&fontAlignY=38&desc=AI%20Video%20Prompt%20Engineering%20·%2022%20Models%20·%20594%20Prompts&descSize=16&descAlignY=62&descColor=ffffff" alt="banner" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,2,30&height=180&section=header&text=lanshu-awesome-ai-video-kit&fontSize=38&fontColor=ffffff&fontAlignY=38&desc=AI%20Video%20Prompt%20Engineering%20·%2022%20Models%20·%20604%20Prompts&descSize=16&descAlignY=62&descColor=cccccc">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,2,30&height=180&section=header&text=lanshu-awesome-ai-video-kit&fontSize=38&fontColor=ffffff&fontAlignY=38&desc=AI%20Video%20Prompt%20Engineering%20·%2022%20Models%20·%20604%20Prompts&descSize=16&descAlignY=62&descColor=ffffff" alt="banner" width="100%">
 </picture>
 
 # 🎬 lanshu-awesome-ai-video-kit
 
 **An awesome curated kit for AI video prompt engineering.**
-**The most complete AI video prompt library on the web — 23 models / 484 standalone + 110 cross-model = 594 curated prompts / 7 Claude Skills / 21 methodology docs**
+**The most complete AI video prompt library on the web — 23 models / 494 standalone + 110 cross-model = 604 curated prompts / 7 Claude Skills / 21 methodology docs**
 
 🇨🇳 **[中文 README →](README.md)**
 
 <p>
   <img alt="Awesome" src="https://img.shields.io/badge/-Awesome-fc60a8?style=flat&logo=awesome-lists&logoColor=white">
   <img alt="Models" src="https://img.shields.io/badge/models-15-8b5cf6?style=flat">
-  <img alt="Prompts" src="https://img.shields.io/badge/prompts-594-f97316?style=flat">
+  <img alt="Prompts" src="https://img.shields.io/badge/prompts-604-f97316?style=flat">
   <img alt="Skills" src="https://img.shields.io/badge/skills-7-06b6d4?style=flat">
   <img alt="Docs" src="https://img.shields.io/badge/methodology-21-34d399?style=flat">
   <img alt="License" src="https://img.shields.io/badge/license-MIT-cccccc?style=flat">
@@ -25,7 +25,7 @@
 
 <p>
   <a href="#-quick-start">🚀 Quick Start</a> ·
-  <a href="prompts/README.md">📚 594 Prompts</a> ·
+  <a href="prompts/README.md">📚 604 Prompts</a> ·
   <a href="methodology/README.md">📖 21 Methodology Docs</a> ·
   <a href="skills/README.md">🛠️ 7 Skills</a> ·
   <a href="tools/prompt-browser/index.html">🌐 Web Browser</a> ·
@@ -53,7 +53,7 @@ Structured into 4 categories of practical resources:
 
 | Resource | Content | Best for |
 |---|---|---|
-| 📚 [prompts/](prompts/) | **594 curated prompts** across 23 models / 29 scenarios, with official samples + recommended params | Copy & tweak |
+| 📚 [prompts/](prompts/) | **604 curated prompts** across 23 models / 29 scenarios, with official samples + recommended params | Copy & tweak |
 | 📖 [methodology/](methodology/) | **21 methodology SOPs**: advanced formula / storyboarding / emotion externalization / 5 model-specific guides + 6-model quick reference + **4 open source quick reference** + cross-model comparison + 12 pitfalls | Learn to "direct shots" |
 | 🛠️ [skills/](skills/) | **7 Claude Code Skills** — Seedance ×3 + HappyHorse + Kling + **model-selector** (15-model shopping advisor) + **prompt-translator** (cross-model converter) | Let Claude pick/write/fix/translate |
 | 🌐 [tools/prompt-browser/](tools/prompt-browser/) | Single-page HTML browser (15-model rainbow filter + URL state sharing + keyboard nav + Drawer details) | If you don't want to read markdown |
@@ -63,7 +63,7 @@ Structured into 4 categories of practical resources:
 ## 📑 Contents
 
 - [✨ What is this?](#-what-is-this)
-- [🎯 23 Models at a Glance](#-23-models-at-a-glance)
+- [🎯 24 Models at a Glance](#-24-models-at-a-glance)
 - [🚀 Quick Start](#-quick-start)
 - [📚 Prompts by Model](#-prompts-by-model)
 - [📖 Methodology Index](#-methodology-index)
@@ -76,7 +76,7 @@ Structured into 4 categories of practical resources:
 
 ---
 
-## 🎯 23 Models at a Glance
+## 🎯 24 Models at a Glance
 
 > 📅 **May 2026 snapshot** — Data refreshed monthly. A weekly GitHub Action auto-monitors all 32 official endpoints and files issues when versions change.
 
@@ -88,7 +88,7 @@ Structured into 4 categories of practical resources:
 | **HappyHorse 1.0** | Alibaba | Tight short-form specialist · 30-55 words · 8s beat structure · native ambient audio | 15s (default 5s) | ★★★ | ★★ | ★★ | — | ✓ |
 | **Kling 3.0** | Kuaishou | **S-tier** · CJK + I2V + 48fps 1080p + lip-sync | 2m | ★★★★★ | ★★★★ | ★★★★ | ✓ | ✓ |
 | **Veo 3.1** | Google DeepMind | **S-tier** · best native audio + multi-speaker dialogue | 148s chained | ★★ | ★★★★★ | ★★★ | — | △ |
-| **Sora 2** ⚠️ | OpenAI | Cinematic + Cameos · **⚠️ web/app sunset 2026-04-26** | 25s (Pro) | ★★ | ★★★★ | ★★★★★ | — | △ |
+| **Sora 2** 🛑 | OpenAI | Cinematic + Cameos · **🛑 API shut down 2026-09-24; last Foundry deployment retires 2026-10-15** | 25s (Pro) | ★★ | ★★★★ | ★★★★★ | — | △ |
 | **Runway Gen-4.5 / Aleph** | Runway | **#1 ELO overall** + Aleph edit-only features | 10s / Aleph 5s | ★★★ | — | ★★★ | ★★★★★ | ✓ |
 | **Pika 2.5** | Pika Labs | **Best price $8/mo** + 15+ Pikaffects | 25s | ★★ | ★ | ★★ | — | ✓ |
 | **Hailuo 02** | MiniMax | **#1 physics simulation** + 1080p (also 2.3 budget) | 10s | ★★★ | — | ★★★★★ | — | ✓ |
@@ -219,7 +219,7 @@ See [skills/README.md](skills/README.md) for the decision tree.
 | [Cross-Model Matrix](tools/cross-model/index.html) | 10 scenarios × 11 commercial models = 110 cross-model prompts + video slots | `tools/cross-model/` |
 
 Features:
-- **Hero stats**: 594 / 23 / 7 / 21 live counts
+- **Hero stats**: 604 / 23 / 7 / 21 live counts
 - **15-model rainbow filter** — each model has its own glowing color dot
 - **3D filtering**: model + category + tags (multi-select)
 - **Keyword search** — title / prompt body / tags / notes
@@ -243,7 +243,7 @@ lanshu-awesome-ai-video-kit/
 ├── awesome.md                      # awesome-list submission entry
 ├── LICENSE                         # MIT
 │
-├── prompts/                        # 594 prompts (23 models)
+├── prompts/                        # 604 prompts (23 models)
 │   ├── data/all-prompts.json       # Single source of truth (web tools consume this)
 │   ├── data/cross-model-matrix.json # 110 cross-model prompts (10 × 11)
 │   ├── seedance/README.md          # 64 Seedance prompts index

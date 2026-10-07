@@ -1,4 +1,4 @@
-# MiniMax H3 · 提示词索引（10 条）
+# MiniMax H3 · 提示词索引（16 条）
 
 > **MiniMax H3**（MiniMax）—— 2026-10-06 首次收录。音视频统一 reference、精准台词生成、多角色音色区分。
 
@@ -6,13 +6,15 @@
 
 ## 目录
 
-- [💬 对话驱动（原生音频）](#dialogue-driven) (2)
-- [🎵 音乐 MV 与表演](#music-video) (3)
-- [⚡ 动作、格斗与追逐](#action) (1)
+- [💬 对话驱动（原生音频）](#dialogue-driven) (3)
+- [🎵 音乐 MV 与表演](#music-video) (4)
+- [⚡ 动作、格斗与追逐](#action) (2)
 - [🖼️ 图生视频专项](#image-to-video) (1)
-- [😄 喜剧与概念性](#comedy) (1)
+- [😄 喜剧与概念性](#comedy) (2)
 - [🛍️ 产品与商业广告](#product-commercial) (1)
 - [🧩 技巧片段与提示词语法](#technique-snippet) (1)
+- [🎥 纪录片与采访](#documentary) (1)
+- [🌀 创意与实验性](#creative) (1)
 
 ---
 
@@ -55,6 +57,35 @@ Use slight stop-motion cadence, consistent eye lines, and one speaker at a time.
 ```
 
 > 💡 H3 音视频统一 reference 的教科书：图像定角色场景，Audio 1/2 分别授权两个角色的音色，Audio 3 只管雨声环境，一人一句配对口型
+
+### mx-015 · 老友记：AI 能取代乔伊吗
+`minimax-h3` `dialogue-driven` `dialogue` · [X 原帖（经聚合站存档）](https://x.com/TechieBySA/status/2084600512180113820)
+
+```
+“Joey and Chandler sit side by side on the couch with coffee cups. Joey turns to Chandler with a completely sincere, concerned expression.
+
+DIALOGUE:
+
+JOEY: “Could AI replace us?”
+
+Chandler slowly looks up from his coffee. Pauses. Looks Joey dead in the eye.
+
+CHANDLER: “Joey, AI cannot replace you. Nothing can replace you.”
+
+Joey nods slowly. Visibly relieved. Processing.
+
+JOEY: “Because I’m too good?”
+
+Chandler stares at him. Long beat. He looks down at his coffee, then back up.
+
+CHANDLER: “…Sure. Let’s go with that.”
+
+STYLE: Warm 90s sitcom aesthetic, steady handheld feel, natural performances, characters in casual clothing. Joey played completely straight — zero irony. Chandler delivers every line with exhausted deadpan sarcasm. Hold on Chandler’s face after the final line for a full beat before cut.”
+```
+
+> 💡 双人情景对话+精确台词+表演指导（deadpan sarcasm），原生对白类 prompt 范本；日期由 post ID 推算
+（日期由 X snowflake ID 推算）
+演示视频：https://raw.githubusercontent.com/callirra-ai/awesome-minimax-h3/main/videos/x-mm-h3-08.mp4
 
 ---
 
@@ -99,6 +130,51 @@ Keep exact voice-to-face ownership, natural breathing, intelligible pronunciatio
 ```
 
 > 💡 H3 多语音色绑定的音乐用法：中文+西班牙语两段歌声各有授权音色，规定发声者归属与聆听者闭嘴——双语演唱的可复现模板
+
+### mx-016 · 音乐卡点角色展示
+`minimax-h3` `music-video` `reference` `aerial` `rain` · 15s · [X 原帖（经聚合站存档）](https://x.com/aimikoda/status/2086553240448241802)
+
+```
+Use @[char ref] as the strict character reference and @[audio ref] as the timing, rhythm and editing reference.
+
+Keep the character’s exact identity, proportions, hairstyle, outfit, colors and overall style consistent throughout.
+
+Create a 15-second cinematic burst-cut video showcasing the character across 5 different environments that naturally fit their design, vibe and world.
+
+AUDIO SYNC
+Synchronize the entire edit to @[audio ref]. Cuts, camera accents, transitions and environment changes should land precisely on strong beats, half-beats and musical accents. Let audio1 control the pacing and intensity of the montage.
+
+STRUCTURE
+- 5 environments total
+- 3 seconds per environment
+- 6 burst-cut shots per environment
+- 30 shots total
+
+Each environment must be clearly different in atmosphere, lighting, scale and visual language.
+
+Show each environment through rapid cinematic angles: wide establishing shots, aerials, low angles, side views, tracking shots, close environmental details, medium shots and hero frames.
+
+Every cut must reveal a new angle, distance, composition or spatial relationship. Avoid repeated framing. Mix static shots, push-ins, pull-backs, tracking, orbit and crane-like movement.
+
+Keep character movement subtle and natural. The focus is environmental variety, cinematic framing and tight synchronization with audio1.
+
+Hard constraints:
+- exactly 5 environments
+- exactly 6 shots per environment
+- exactly 30 shots total
+- environment changes must follow audio1’s musical phrasing
+- cuts and motion accents synchronized to audio1
+- no outfit changes
+- no character duplication
+- no morphing
+- no text or UI
+- no blurry unreadable frames
+- maintain strict character consistency
+```
+
+> 💡 音频 reference 驱动剪辑节奏（5 环境×6 镜头=30 卡点），H3 音视频统一 reference 教科书；日期由 post ID 推算
+（日期由 X snowflake ID 推算）
+演示视频：https://raw.githubusercontent.com/callirra-ai/awesome-minimax-h3/main/videos/x-mm-h3-07.mp4
 
 ---
 
@@ -227,6 +303,19 @@ No subtitles, titles, logos, watermarks, additional racers, pedestrians, creatur
 
 > 💡 H3 多模态 reference 范式标杆：5 张图片各司其职（身份/载具/动作/场景/座舱）+ 原生立体声音轨描述，附结果视频
 
+### mx-011 · 悬崖城市飞车追逐：一镜到底
+`minimax-h3` `action` `rain` · [X 原帖（经聚合站存档）](https://x.com/umesh_ai/status/2082499539735588916)
+
+```
+Speeder chase across a cliff city (single continuous shot) From a monumental cliffside city carved into stone, the camera dives toward a tiny streak of light ripping along a narrow ledge-road. Lock-on: a speeder hugging the wall at insane speed. The camera slingshots ahead, whips back, then drops tight to the rear thrusters: heat haze, grit snapping off the ledge, warning lights flashing. A collapsing balcony rains debris; the rider snaps a last-inch swerve under a falling arch, then threads through hanging laundry lines and open windows in one fluid line. The camera darts through the same openings, staying glued to the motion. One final bend and sudden calm: the camera blasts outward into a reveal of the city opening onto a boundless waterfall-fed valley, mist turning into rainbow.
+
+@Hailuo_AI  #MiniMaxH3
+```
+
+> 💡 一镜到底飞车追逐，镜头语言密集（slingshot/whip/drop），动作场面 prompt 范本；日期由 post ID 推算
+（日期由 X snowflake ID 推算）
+演示视频：https://raw.githubusercontent.com/callirra-ai/awesome-minimax-h3/main/videos/x-mm-h3-03.mp4
+
 ---
 
 ## 🖼️ 图生视频专项
@@ -295,6 +384,17 @@ No CGI, no digital-looking robots, no morphing, no extra people, no duplicated c
 
 > 💡 图生视频喜剧范例：锁定开场图身份/服装/文字，靠群戏调度+喜剧音效设计驱动笑点，展示 H3 原生音频与群戏一致性
 
+### mx-014 · 办公室金正恩 NG 片段
+`minimax-h3` `comedy` `dance` · [X 原帖（经聚合站存档）](https://x.com/techhalla/status/2084838553943449908)
+
+```
+(Blooper take): The Office & Kim Jong Un. Entrance. 0:00–0:04 — Medium shot at the entrance of Dunder Mifflin. MICHAEL SCOTT opens the door with a huge excited smile as KIM JONG UN steps in. Michael immediately starts singing in a playful, childish sing-song voice while pointing at him: “Kim Jong Un, Kim Jong Un… the coolest guy under the sun!” doing a little rhythmic dance with his hands. 0:04–0:07 — Michael keeps the song going and starts giving soft friendly punches to Kim’s stomach to the rhythm: “Kim Jong Un, Kim Jong Un… don’t be sad, just have some fun!” 0:07–0:10 — Kim tries hard to keep a straight face, his lips tightly pressed together, but his shoulders start shaking. He can’t hold it anymore and bursts out laughing. 0:10–0:13 — Michael freezes mid-punch, looks at Kim laughing, and immediately cracks up too. 0:13–0:15 — Both of them are laughing hard. Michael can barely stand while still holding one fist up. The video ends on the two of them completely breaking character.
+```
+
+> 💡 情景喜剧 blooper 结构+逐秒分镜，名人恶搞类病毒视频模板；日期由 post ID 推算
+（日期由 X snowflake ID 推算）
+演示视频：https://raw.githubusercontent.com/callirra-ai/awesome-minimax-h3/main/videos/x-mm-h3-05.mp4
+
 ---
 
 ## 🛍️ 产品与商业广告
@@ -332,5 +432,187 @@ Preserve the exact silhouette, circular grille, cork panels, seam placement, amb
 ```
 
 > 💡 H3 视频 reference 的新玩法：只迁移参考视频的抽象运镜语法（景别/加速度/切点），不复制其内容——解决版权风险的实用技巧
+
+---
+
+## 🎥 纪录片与采访
+
+### mx-012 · 街头摄影师抓拍瞬间
+`minimax-h3` `documentary` · [X 原帖（经聚合站存档）](https://x.com/aiwithaly/status/2087102541146522089)
+
+```
+A young Western female street photographer walks through a lively downtown street and notices an elderly man sitting outside a café with his small dog. She carefully composes the candid moment through her camera, captures the photo, then turns the camera toward the viewer to proudly show the shot she just took. She smiles, says “Look at that,” then continues walking through the city. Ultra-photorealistic visuals, natural handheld documentary movement, realistic camera interaction, authentic facial expressions, accurate hand movements, realistic dog behavior, natural daylight, cinematic depth of field, continuous character consistency, immersive city ambience, premium documentary realism.
+```
+
+> 💡 纪实跟拍+相机交互+人物转镜对视，vlog 真实感写法标杆；日期由 post ID 推算
+（日期由 X snowflake ID 推算）
+演示视频：https://raw.githubusercontent.com/callirra-ai/awesome-minimax-h3/main/videos/x-mm-h3-02.mp4
+
+---
+
+## 🌀 创意与实验性
+
+### mx-013 · ABC 字母启蒙动画
+`minimax-h3` `creative` · 15s · [X 原帖（经聚合站存档）](https://x.com/umesh_ai/status/2084227244533411987)
+
+```
+Create a 15-second animated educational video that teaches young children the letters A, B, C, and D.
+
+The learning pattern for every letter must be:
+
+LETTER → SOUND → OBJECT → PLAYFUL ACTION → OBJECT NAME
+
+Target audience: children ages 3 to 6.
+
+Visual style:
+Use adorable rounded 3D characters, soft pastel colors, gentle facial expressions, and simple recognizable objects. Combine this with a premium minimalist technology aesthetic featuring clean white space, elegant composition, soft studio lighting, subtle reflections, smooth gradients, rounded geometry, crisp typography, and extremely polished transitions.
+
+The animation should feel playful and child-friendly while remaining calm, uncluttered, and beautifully designed.
+
+Use a clean off-white background with a different soft color glow behind each letter.
+
+0:00–0:01 | Introduction
+A small smiling star mascot bounces into the center of the screen.
+
+Colorful letters briefly float around it.
+
+Display the text:
+
+“Let’s learn!”
+
+The mascot taps the screen, creating a soft ripple that reveals the first letter.
+
+0:01–0:04 | A is for Apple
+
+Show a large uppercase “A” and smaller lowercase “a” beside it.
+Use thick, rounded, highly readable typography.
+
+The narrator says:
+
+“A. A says ah. A is for Apple.”
+
+The uppercase A gently inflates and transforms into a shiny red apple.
+
+Its top point becomes the apple stem, and a small green leaf unfolds from the side.
+
+The apple gains a cute smiling face and performs one soft bounce.
+
+Display the word:
+
+“APPLE”
+
+Highlight the first letter A in red.
+
+Add a soft pop and a tiny crunchy sound.
+
+0:04–0:07 | B is for Ball
+
+The apple rolls across the screen and leaves behind a curved red trail.
+
+The trail loops twice and forms a large uppercase “B,” with a lowercase “b” appearing beside it.
+The narrator says:
+
+“B. B says buh. B is for Ball.”
+
+The two rounded sections of the B expand and merge into a colorful striped ball.
+
+The ball bounces twice with playful squash-and-stretch animation.
+
+Display the word:
+
+“BALL”
+
+Highlight the first letter B in blue.
+
+Synchronize each bounce with a soft musical note.
+
+0:07–0:10 | C is for Cat
+
+On its final bounce, the ball stretches into a curved shape and becomes a large uppercase “C.”
+
+A lowercase “c” slides gently into place beside it.
+
+The narrator says:
+“C. C says kuh. C is for Cat.”
+
+The C rotates and becomes the curled tail of a cute orange cat.
+
+The rest of the cat forms from soft rounded shapes.
+
+The cat stretches, blinks, and gives one gentle wave with its paw.
+
+Display the word:
+
+“CAT”
+
+Highlight the first letter C in orange.
+
+Add a quiet and friendly “meow.”
+
+0:10–0:13 | D is for Duck
+
+The cat’s tail uncurls and transforms into the curved side of a large uppercase “D.”
+
+A lowercase “d” pops up beside it.
+
+The narrator says:
+
+“D. D says duh. D is for Duck.”
+The straight line of the D becomes the duck’s neck.
+
+The curved section becomes its round yellow body.
+
+A small orange beak and two tiny wings pop into place.
+
+The duck waddles forward, flaps its wings, and gives one cheerful quack.
+
+Display the word:
+
+“DUCK”
+
+Highlight the first letter D in yellow.
+
+Add tiny water ripples beneath its feet.
+
+0:13–0:15 | Recap
+
+The apple, ball, cat, and duck slide into four clean rounded tiles.
+
+Place their letters above them:
+
+“A  B  C  D”
+
+The mascot returns and points to each object as they bounce once in sequence.
+
+Narrator:
+“A, B, C, D. Great job!”
+
+Finish with the text:
+
+“Great job!”
+
+Use a small sparkle animation and a warm musical chime.
+
+Animation requirements:
+
+Keep each letter fully visible for a moment before it transforms.
+
+Show uppercase and lowercase versions clearly.
+
+Make every object instantly recognizable.
+
+Use smooth shape morphing so children can visually understand how the letter becomes the object.
+
+Maintain stable spelling, clean letterforms, accurate object shapes, and consistent character design.
+
+Use gentle squash-and-stretch, soft motion blur, subtle shadows, polished lighting, and precisely synchronized sound effects.
+Avoid fast camera movement, cluttered backgrounds, harsh colors, tiny text, warped letters, random symbols, duplicated objects, scary expressions, or overly complex transformations.
+
+The final video should feel cute, educational, memorable, calming, and exceptionally polished.
+```
+
+> 💡 字母→发音→物体→动作的固定学习模式+逐秒分镜，教育类动画完整模板；日期由 post ID 推算
+（日期由 X snowflake ID 推算）
+演示视频：https://raw.githubusercontent.com/callirra-ai/awesome-minimax-h3/main/videos/x-mm-h3-01.mp4
 
 ---

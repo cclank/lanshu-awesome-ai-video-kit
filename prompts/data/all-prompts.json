@@ -1,7 +1,7 @@
 {
   "schema_version": "1.14",
-  "updated": "2026-10-06",
-  "total": 484,
+  "updated": "2026-10-07",
+  "total": 494,
   "models": {
     "seedance-2.0": {
       "name": "Doubao Seedance 2.0",
@@ -59,7 +59,7 @@
         "极致物理仿真",
         "技术参数化提示词"
       ],
-      "notice": "⚠️ OpenAI 已宣布 Sora web/app 于 2026-04-26 停止。生产建议迁移到 Veo 3.1 / Kling 3.0 / Runway Gen-4.5 / Seedance 2.0"
+      "notice": "⚠️ OpenAI Videos API（含 sora-2 / sora-2-pro）已于 2026-09-24 停服，无替代模型；web/app 早前已于 2026-04-26 停止。Microsoft Foundry 最后一个部署 sora-2 (2025-12-08) 将于 2026-10-15 退役。新作品建议迁移到 Veo 3.1 / Seedance 2.5 / Wan 3.0"
     },
     "veo-3": {
       "name": "Veo 3.1",
@@ -237,7 +237,7 @@
     "kling-4.0": {
       "name": "Kling 4.0 (可灵)",
       "vendor": "快手",
-      "max_duration": "15s（社区案例 8–15s）",
+      "max_duration": "30s（官方规格，原生单次；实验性 120s 长视频模式）",
       "prompt_length": "结构化长文本（[OUTPUT]/[REFERENCE ROLES]/[CONTINUITY ANCHORS] 区块）",
       "audio": "原生对白 + 9 语言 lip sync",
       "strengths": [
@@ -11852,6 +11852,209 @@
         "tier": "reputable-3rd-party"
       },
       "notes": "以真人脸做夸张 3D 漫画像饮料机的病毒创意：鼻孔倒可乐+冰块喷射，静态机位+精确到 0.5s 的音效设计，猎奇感拉满\n（来源为模型无关 prompt，模型归属为编辑指派；日期为相对时间推算）"
+    },
+    {
+      "id": "mx-011",
+      "model": "minimax-h3",
+      "category": "action",
+      "title": "悬崖城市飞车追逐：一镜到底",
+      "prompt": "Speeder chase across a cliff city (single continuous shot) From a monumental cliffside city carved into stone, the camera dives toward a tiny streak of light ripping along a narrow ledge-road. Lock-on: a speeder hugging the wall at insane speed. The camera slingshots ahead, whips back, then drops tight to the rear thrusters: heat haze, grit snapping off the ledge, warning lights flashing. A collapsing balcony rains debris; the rider snaps a last-inch swerve under a falling arch, then threads through hanging laundry lines and open windows in one fluid line. The camera darts through the same openings, staying glued to the motion. One final bend and sudden calm: the camera blasts outward into a reveal of the city opening onto a boundless waterfall-fed valley, mist turning into rainbow.\n\n@Hailuo_AI  #MiniMaxH3",
+      "tags": [
+        "minimax-h3",
+        "action",
+        "rain"
+      ],
+      "params": {},
+      "source": {
+        "name": "X 原帖（经聚合站存档）",
+        "url": "https://x.com/umesh_ai/status/2082499539735588916",
+        "tier": "reputable-3rd-party"
+      },
+      "notes": "一镜到底飞车追逐，镜头语言密集（slingshot/whip/drop），动作场面 prompt 范本；日期由 post ID 推算\n（日期由 X snowflake ID 推算）\n演示视频：https://raw.githubusercontent.com/callirra-ai/awesome-minimax-h3/main/videos/x-mm-h3-03.mp4"
+    },
+    {
+      "id": "mx-012",
+      "model": "minimax-h3",
+      "category": "documentary",
+      "title": "街头摄影师抓拍瞬间",
+      "prompt": "A young Western female street photographer walks through a lively downtown street and notices an elderly man sitting outside a café with his small dog. She carefully composes the candid moment through her camera, captures the photo, then turns the camera toward the viewer to proudly show the shot she just took. She smiles, says “Look at that,” then continues walking through the city. Ultra-photorealistic visuals, natural handheld documentary movement, realistic camera interaction, authentic facial expressions, accurate hand movements, realistic dog behavior, natural daylight, cinematic depth of field, continuous character consistency, immersive city ambience, premium documentary realism.",
+      "tags": [
+        "minimax-h3",
+        "documentary"
+      ],
+      "params": {},
+      "source": {
+        "name": "X 原帖（经聚合站存档）",
+        "url": "https://x.com/aiwithaly/status/2087102541146522089",
+        "tier": "reputable-3rd-party"
+      },
+      "notes": "纪实跟拍+相机交互+人物转镜对视，vlog 真实感写法标杆；日期由 post ID 推算\n（日期由 X snowflake ID 推算）\n演示视频：https://raw.githubusercontent.com/callirra-ai/awesome-minimax-h3/main/videos/x-mm-h3-02.mp4"
+    },
+    {
+      "id": "mx-013",
+      "model": "minimax-h3",
+      "category": "creative",
+      "title": "ABC 字母启蒙动画",
+      "prompt": "Create a 15-second animated educational video that teaches young children the letters A, B, C, and D.\n\nThe learning pattern for every letter must be:\n\nLETTER → SOUND → OBJECT → PLAYFUL ACTION → OBJECT NAME\n\nTarget audience: children ages 3 to 6.\n\nVisual style:\nUse adorable rounded 3D characters, soft pastel colors, gentle facial expressions, and simple recognizable objects. Combine this with a premium minimalist technology aesthetic featuring clean white space, elegant composition, soft studio lighting, subtle reflections, smooth gradients, rounded geometry, crisp typography, and extremely polished transitions.\n\nThe animation should feel playful and child-friendly while remaining calm, uncluttered, and beautifully designed.\n\nUse a clean off-white background with a different soft color glow behind each letter.\n\n0:00–0:01 | Introduction\nA small smiling star mascot bounces into the center of the screen.\n\nColorful letters briefly float around it.\n\nDisplay the text:\n\n“Let’s learn!”\n\nThe mascot taps the screen, creating a soft ripple that reveals the first letter.\n\n0:01–0:04 | A is for Apple\n\nShow a large uppercase “A” and smaller lowercase “a” beside it.\nUse thick, rounded, highly readable typography.\n\nThe narrator says:\n\n“A. A says ah. A is for Apple.”\n\nThe uppercase A gently inflates and transforms into a shiny red apple.\n\nIts top point becomes the apple stem, and a small green leaf unfolds from the side.\n\nThe apple gains a cute smiling face and performs one soft bounce.\n\nDisplay the word:\n\n“APPLE”\n\nHighlight the first letter A in red.\n\nAdd a soft pop and a tiny crunchy sound.\n\n0:04–0:07 | B is for Ball\n\nThe apple rolls across the screen and leaves behind a curved red trail.\n\nThe trail loops twice and forms a large uppercase “B,” with a lowercase “b” appearing beside it.\nThe narrator says:\n\n“B. B says buh. B is for Ball.”\n\nThe two rounded sections of the B expand and merge into a colorful striped ball.\n\nThe ball bounces twice with playful squash-and-stretch animation.\n\nDisplay the word:\n\n“BALL”\n\nHighlight the first letter B in blue.\n\nSynchronize each bounce with a soft musical note.\n\n0:07–0:10 | C is for Cat\n\nOn its final bounce, the ball stretches into a curved shape and becomes a large uppercase “C.”\n\nA lowercase “c” slides gently into place beside it.\n\nThe narrator says:\n“C. C says kuh. C is for Cat.”\n\nThe C rotates and becomes the curled tail of a cute orange cat.\n\nThe rest of the cat forms from soft rounded shapes.\n\nThe cat stretches, blinks, and gives one gentle wave with its paw.\n\nDisplay the word:\n\n“CAT”\n\nHighlight the first letter C in orange.\n\nAdd a quiet and friendly “meow.”\n\n0:10–0:13 | D is for Duck\n\nThe cat’s tail uncurls and transforms into the curved side of a large uppercase “D.”\n\nA lowercase “d” pops up beside it.\n\nThe narrator says:\n\n“D. D says duh. D is for Duck.”\nThe straight line of the D becomes the duck’s neck.\n\nThe curved section becomes its round yellow body.\n\nA small orange beak and two tiny wings pop into place.\n\nThe duck waddles forward, flaps its wings, and gives one cheerful quack.\n\nDisplay the word:\n\n“DUCK”\n\nHighlight the first letter D in yellow.\n\nAdd tiny water ripples beneath its feet.\n\n0:13–0:15 | Recap\n\nThe apple, ball, cat, and duck slide into four clean rounded tiles.\n\nPlace their letters above them:\n\n“A  B  C  D”\n\nThe mascot returns and points to each object as they bounce once in sequence.\n\nNarrator:\n“A, B, C, D. Great job!”\n\nFinish with the text:\n\n“Great job!”\n\nUse a small sparkle animation and a warm musical chime.\n\nAnimation requirements:\n\nKeep each letter fully visible for a moment before it transforms.\n\nShow uppercase and lowercase versions clearly.\n\nMake every object instantly recognizable.\n\nUse smooth shape morphing so children can visually understand how the letter becomes the object.\n\nMaintain stable spelling, clean letterforms, accurate object shapes, and consistent character design.\n\nUse gentle squash-and-stretch, soft motion blur, subtle shadows, polished lighting, and precisely synchronized sound effects.\nAvoid fast camera movement, cluttered backgrounds, harsh colors, tiny text, warped letters, random symbols, duplicated objects, scary expressions, or overly complex transformations.\n\nThe final video should feel cute, educational, memorable, calming, and exceptionally polished.",
+      "tags": [
+        "minimax-h3",
+        "creative"
+      ],
+      "params": {
+        "duration": "15s"
+      },
+      "source": {
+        "name": "X 原帖（经聚合站存档）",
+        "url": "https://x.com/umesh_ai/status/2084227244533411987",
+        "tier": "reputable-3rd-party"
+      },
+      "notes": "字母→发音→物体→动作的固定学习模式+逐秒分镜，教育类动画完整模板；日期由 post ID 推算\n（日期由 X snowflake ID 推算）\n演示视频：https://raw.githubusercontent.com/callirra-ai/awesome-minimax-h3/main/videos/x-mm-h3-01.mp4"
+    },
+    {
+      "id": "mx-014",
+      "model": "minimax-h3",
+      "category": "comedy",
+      "title": "办公室金正恩 NG 片段",
+      "prompt": "(Blooper take): The Office & Kim Jong Un. Entrance. 0:00–0:04 — Medium shot at the entrance of Dunder Mifflin. MICHAEL SCOTT opens the door with a huge excited smile as KIM JONG UN steps in. Michael immediately starts singing in a playful, childish sing-song voice while pointing at him: “Kim Jong Un, Kim Jong Un… the coolest guy under the sun!” doing a little rhythmic dance with his hands. 0:04–0:07 — Michael keeps the song going and starts giving soft friendly punches to Kim’s stomach to the rhythm: “Kim Jong Un, Kim Jong Un… don’t be sad, just have some fun!” 0:07–0:10 — Kim tries hard to keep a straight face, his lips tightly pressed together, but his shoulders start shaking. He can’t hold it anymore and bursts out laughing. 0:10–0:13 — Michael freezes mid-punch, looks at Kim laughing, and immediately cracks up too. 0:13–0:15 — Both of them are laughing hard. Michael can barely stand while still holding one fist up. The video ends on the two of them completely breaking character.",
+      "tags": [
+        "minimax-h3",
+        "comedy",
+        "dance"
+      ],
+      "params": {},
+      "source": {
+        "name": "X 原帖（经聚合站存档）",
+        "url": "https://x.com/techhalla/status/2084838553943449908",
+        "tier": "reputable-3rd-party"
+      },
+      "notes": "情景喜剧 blooper 结构+逐秒分镜，名人恶搞类病毒视频模板；日期由 post ID 推算\n（日期由 X snowflake ID 推算）\n演示视频：https://raw.githubusercontent.com/callirra-ai/awesome-minimax-h3/main/videos/x-mm-h3-05.mp4"
+    },
+    {
+      "id": "mx-015",
+      "model": "minimax-h3",
+      "category": "dialogue-driven",
+      "title": "老友记：AI 能取代乔伊吗",
+      "prompt": "“Joey and Chandler sit side by side on the couch with coffee cups. Joey turns to Chandler with a completely sincere, concerned expression.\n\nDIALOGUE:\n\nJOEY: “Could AI replace us?”\n\nChandler slowly looks up from his coffee. Pauses. Looks Joey dead in the eye.\n\nCHANDLER: “Joey, AI cannot replace you. Nothing can replace you.”\n\nJoey nods slowly. Visibly relieved. Processing.\n\nJOEY: “Because I’m too good?”\n\nChandler stares at him. Long beat. He looks down at his coffee, then back up.\n\nCHANDLER: “…Sure. Let’s go with that.”\n\nSTYLE: Warm 90s sitcom aesthetic, steady handheld feel, natural performances, characters in casual clothing. Joey played completely straight — zero irony. Chandler delivers every line with exhausted deadpan sarcasm. Hold on Chandler’s face after the final line for a full beat before cut.”",
+      "tags": [
+        "minimax-h3",
+        "dialogue-driven",
+        "dialogue"
+      ],
+      "params": {},
+      "source": {
+        "name": "X 原帖（经聚合站存档）",
+        "url": "https://x.com/TechieBySA/status/2084600512180113820",
+        "tier": "reputable-3rd-party"
+      },
+      "notes": "双人情景对话+精确台词+表演指导（deadpan sarcasm），原生对白类 prompt 范本；日期由 post ID 推算\n（日期由 X snowflake ID 推算）\n演示视频：https://raw.githubusercontent.com/callirra-ai/awesome-minimax-h3/main/videos/x-mm-h3-08.mp4"
+    },
+    {
+      "id": "mx-016",
+      "model": "minimax-h3",
+      "category": "music-video",
+      "title": "音乐卡点角色展示",
+      "prompt": "Use @[char ref] as the strict character reference and @[audio ref] as the timing, rhythm and editing reference.\n\nKeep the character’s exact identity, proportions, hairstyle, outfit, colors and overall style consistent throughout.\n\nCreate a 15-second cinematic burst-cut video showcasing the character across 5 different environments that naturally fit their design, vibe and world.\n\nAUDIO SYNC\nSynchronize the entire edit to @[audio ref]. Cuts, camera accents, transitions and environment changes should land precisely on strong beats, half-beats and musical accents. Let audio1 control the pacing and intensity of the montage.\n\nSTRUCTURE\n- 5 environments total\n- 3 seconds per environment\n- 6 burst-cut shots per environment\n- 30 shots total\n\nEach environment must be clearly different in atmosphere, lighting, scale and visual language.\n\nShow each environment through rapid cinematic angles: wide establishing shots, aerials, low angles, side views, tracking shots, close environmental details, medium shots and hero frames.\n\nEvery cut must reveal a new angle, distance, composition or spatial relationship. Avoid repeated framing. Mix static shots, push-ins, pull-backs, tracking, orbit and crane-like movement.\n\nKeep character movement subtle and natural. The focus is environmental variety, cinematic framing and tight synchronization with audio1.\n\nHard constraints:\n- exactly 5 environments\n- exactly 6 shots per environment\n- exactly 30 shots total\n- environment changes must follow audio1’s musical phrasing\n- cuts and motion accents synchronized to audio1\n- no outfit changes\n- no character duplication\n- no morphing\n- no text or UI\n- no blurry unreadable frames\n- maintain strict character consistency",
+      "tags": [
+        "minimax-h3",
+        "music-video",
+        "reference",
+        "aerial",
+        "rain"
+      ],
+      "params": {
+        "duration": "15s"
+      },
+      "source": {
+        "name": "X 原帖（经聚合站存档）",
+        "url": "https://x.com/aimikoda/status/2086553240448241802",
+        "tier": "reputable-3rd-party"
+      },
+      "notes": "音频 reference 驱动剪辑节奏（5 环境×6 镜头=30 卡点），H3 音视频统一 reference 教科书；日期由 post ID 推算\n（日期由 X snowflake ID 推算）\n演示视频：https://raw.githubusercontent.com/callirra-ai/awesome-minimax-h3/main/videos/x-mm-h3-07.mp4"
+    },
+    {
+      "id": "se-005",
+      "model": "seedance-2.5",
+      "category": "asmr",
+      "title": "美食 ASMR 喜剧反转",
+      "prompt": "Create a 30-second animated cooking sketch inside a gently rocking wooden galley. Keep one apron-wearing cook and one curious green bird recognizable in every shot. Warm lanterns illuminate tactile food surfaces.\n\n0–6s: the bird approaches a vegetable; the cook slides the chopping board away and raises an eyebrow.\n6–13s: intercut knife contact, oil ripples and bubbling sauce; synchronize each sound with the visible action.\n13–22s: the bird nudges an empty serving bowl toward the cook, then waits conspicuously.\n22–30s: the cook fills a small dish; both settle beside the window.\n\nUse expressive original character designs, quiet sea ambience and a single closing musical accent. Leave dialogue and lettering out.",
+      "tags": [
+        "seedance-2.5",
+        "asmr",
+        "dialogue",
+        "food"
+      ],
+      "params": {
+        "duration": "30s"
+      },
+      "source": {
+        "name": "X 原帖（经聚合站存档）",
+        "url": "https://x.com/Goodmanprotocol/status/2099186117769822462",
+        "tier": "reputable-3rd-party"
+      },
+      "notes": "9 月最新；食物音效与角色喜剧 payoff 的时间轴写法；prompt 为聚合站改编版，原作者全文见 X 原帖；日期由 post ID 推算\n（聚合站为改编版，X 原帖需登录查看；日期由 X snowflake ID 推算）\n演示视频：https://video.twimg.com/amplify_video/2099186062715404288/vid/avc1/1920x1080/H8uxwKxVsSU09_LW.mp4?tag=29"
+    },
+    {
+      "id": "se-006",
+      "model": "seedance-2.5",
+      "category": "social-viral",
+      "title": "雨天自拍被小猫打断",
+      "prompt": "Make a 30-second phone selfie beside a rain-covered window. One adult holds one tabby kitten securely. Use the supplied portrait only to preserve the person's appearance. Keep window light soft and neutral.\n\n0–7s: the person glances down at the kitten while rain continues behind them.\n7–15s: a cloth loop at the cuff attracts one paw; the person moves it aside and chuckles.\n15–23s: the kitten shifts toward the supported shoulder; the phone tilts slightly as the person adjusts their grip.\n23–30s: whiskers approach the lens, focus briefly softens, and the shot ends during a laugh.\n\nUse room sound and rain. Preserve one continuous viewpoint and the same animal.",
+      "tags": [
+        "seedance-2.5",
+        "social-viral",
+        "rain",
+        "portrait"
+      ],
+      "params": {
+        "duration": "30s"
+      },
+      "source": {
+        "name": "X 原帖（经聚合站存档）",
+        "url": "https://x.com/Strength04_X/status/2098256490238755226",
+        "tier": "reputable-3rd-party"
+      },
+      "notes": "一镜到底自拍+宠物互动，UGC 真实感与主体计数的写法；prompt 为聚合站改编版，原作者全文见 X 原帖；日期由 post ID 推算\n（聚合站为改编版，X 原帖需登录查看；日期由 X snowflake ID 推算）\n演示视频：https://video.twimg.com/amplify_video/2098256097547309056/vid/avc1/1920x1080/mPxvxfjQ4VcrZg5r.mp4?tag=29"
+    },
+    {
+      "id": "se-007",
+      "model": "seedance-2.5",
+      "category": "social-viral",
+      "title": "双人便利店 Vlog",
+      "prompt": "Create a 30-second evening convenience-store Vlog with two adult friends. Image 1 defines the shopper; Image 2 defines the friend filming. Keep clothing and one drink bottle consistent.\n\n0–8s: rear-camera view follows the shopper noticing a chilled drink and taking it from the refrigerator.\n8–15s: the shopper shows the bottle to the lens, then carries it to the counter; the operator speaks off-screen.\n15–23s: cut to a front-camera two-shot outside. One friend offers the other a small sip, with a visible handover.\n23–30s: they laugh and leave together, the bottle remaining with its current holder.\n\nUse modest phone shake, short conversational pauses and shop ambience. No external observer angle or music.",
+      "tags": [
+        "seedance-2.5",
+        "social-viral"
+      ],
+      "params": {
+        "duration": "30s"
+      },
+      "source": {
+        "name": "X 原帖（经聚合站存档）",
+        "url": "https://x.com/Strength04_X/status/2097968347430482177",
+        "tier": "reputable-3rd-party"
+      },
+      "notes": "双 reference 身份锁定+前后摄分工，vlog 连贯性写法；prompt 为聚合站改编版，原作者全文见 X 原帖；日期由 post ID 推算\n（聚合站为改编版，X 原帖需登录查看；日期由 X snowflake ID 推算）\n演示视频：https://video.twimg.com/amplify_video/2097967562604875776/vid/avc1/1920x1080/EB48uw1_u7MU2RJl.mp4?tag=29"
+    },
+    {
+      "id": "se-008",
+      "model": "seedance-2.5",
+      "category": "cinematic",
+      "title": "善意微故事：物权连续性",
+      "prompt": "Create a 15-second neighborhood micro-story with two fictional adults. A cyclist wearing a blue raincoat has dropped one yellow glove beside a bench. A passerby carrying a red tote notices it.\n\n0–4s: show the glove on the pavement and the cyclist looking back from the bicycle. Establish both people in one wide shot.\n4–9s: the passerby bends, picks up the glove with the right hand and approaches. Keep the red tote on the left shoulder.\n9–12s: show both hands in frame during the transfer. The cyclist closes the left hand around the glove before the passerby releases it.\n12–15s: the cyclist says 'Thanks!' and places the glove in the front basket.\n\nUse one gentle handheld move, neighborhood ambience and no music. Exactly one glove throughout; preserve its color, location and holder.",
+      "tags": [
+        "seedance-2.5",
+        "cinematic",
+        "rain"
+      ],
+      "params": {
+        "duration": "15s"
+      },
+      "source": {
+        "name": "X 原帖（经聚合站存档）",
+        "url": "https://x.com/AIwithkhan/status/2096424933366931946",
+        "tier": "reputable-3rd-party"
+      },
+      "notes": "交接前后物权归属的显式描述，连续性控制的进阶技巧；prompt 为聚合站改编版，原作者全文见 X 原帖；日期由 post ID 推算\n（聚合站为改编版，X 原帖需登录查看；日期由 X snowflake ID 推算）\n演示视频：https://video.twimg.com/amplify_video/2096424851888300032/vid/avc1/1280x720/LYNMJekyiU57XaaC.mp4?tag=29"
     }
   ],
   "tier_definitions": {

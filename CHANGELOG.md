@@ -4,7 +4,18 @@
 
 ## [Unreleased]
 
+### Added · 2026-10-07 X 挖矿 10 条（用户指定来源）
+- **+10 条提示词**（494 条分散 prompt）：MiniMax H3（mx-011..016，2026-07~08 X 病毒帖）、Seedance 2.5（se-005..008，2026-09 X 病毒帖）
+- 来源：X 原帖经 MIT 聚合站存档（callirra-ai/awesome-minimax-h3、seaimagineai/awesome-seedance-2-5-prompts），10 条演示视频链接已验 200
+- Seedance 4 条为聚合站改编版（X 原帖需登录），已在 notes 注明；日期由 X snowflake ID 推算
+
+### Changed · 2026-10-07 Sora 2 停服状态更新
+- **Sora 2**：OpenAI Videos API（含 sora-2 / sora-2-pro）已于 **2026-09-24 停服**，无替代模型；web/app 早前已于 2026-04-26 停止
+- Microsoft Foundry 最后一个部署 `sora-2 (2025-12-08)` 将于 **2026-10-15 退役**（Microsoft 官方退役排期）—— 此后无第一方 Sora 2 通道
+- 更新：`all-prompts.json` 模型 `notice`、README 中/英模型表、端点监控 `model_endpoints.yaml` 状态、`prompts/sora/README.md` 顶部横幅；26 条 prompt 保留作写法参考
+
 ### Fixed · 2026-10-07 模型规格勘误（用户指正）
+
 - **Seedance 2.5**：`max_duration` 15s → **30s**（官方规格 4–30s，可延长）
 - **MiniMax H3**：`max_duration` 4s → **15s**（官方规格 4–15s）
 - **新增 Wan 3.0（通义万相）**：2026-08-24 正式发布，30s 单次生成，文档/多模态输入；prompt 收集中（0 条）

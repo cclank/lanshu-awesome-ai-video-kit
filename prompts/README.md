@@ -1,8 +1,8 @@
-# 提示词库 · 594 条(484 分散 + 110 跨模型对照)
+# 提示词库 · 604 条(494 分散 + 110 跨模型对照)
 
 ## 概览
 
-### 📚 分散提示词(按单模型最佳实践)· 484 条 / 23 模型
+### 📚 分散提示词(按单模型最佳实践)· 484 条 / 24 模型
 
 | 模型 | 数量 | 索引 / JSON 前缀 |
 |---|---|---|
@@ -16,7 +16,7 @@
 | **Runway Aleph 2.0** | 2 条 | [runway-aleph-2.0/README.md](runway-aleph-2.0/README.md) · `ru-*` |
 | **Pika 2.5** | 12 条 | `pika-2.5` (仅在 JSON) |
 | **Hailuo 02 (海螺)** | 12 条 | `hailuo-02` (仅在 JSON) |
-| **MiniMax H3** | 10 条 | [minimax-h3/README.md](minimax-h3/README.md) · `mi-*` |
+| **MiniMax H3** | 16 条 | [minimax-h3/README.md](minimax-h3/README.md) · `mi-*` |
 | **Hunyuan Video 1.5** | 12 条 | `hunyuan-video` (仅在 JSON) |
 | **Wan 2.7 (通义万相)** | 12 条 | `wan-2.5` (仅在 JSON) |
 | **Wan 2.6（万相）** | 1 条 | [wan-2.6/README.md](wan-2.6/README.md) · `wa-*` |
@@ -28,8 +28,8 @@
 | **CogVideoX 5B / 1.5** | 8 条 | `cogvideox-5b` (仅在 JSON) |
 | **Higgsfield Soul 2.0 / DoP** | 9 条 | `higgsfield-soul` (仅在 JSON) |
 | **Gemini Omni (Omni Flash)** | 12 条 | [gemini-omni/README.md](gemini-omni/README.md) · `ge-*` |
-| **Seedance 2.5（即梦）** | 4 条 | [seedance-2.5/README.md](seedance-2.5/README.md) · `se-*` |
-| **总计** | **484 条** | [data/all-prompts.json](data/all-prompts.json) |
+| **Seedance 2.5（即梦）** | 8 条 | [seedance-2.5/README.md](seedance-2.5/README.md) · `se-*` |
+| **总计** | **494 条** | [data/all-prompts.json](data/all-prompts.json) |
 
 ### 🔀 跨模型对照矩阵 · 110 条 / 10 场景 × 11 商业模型
 

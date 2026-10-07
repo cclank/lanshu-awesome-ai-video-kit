@@ -1,3 +1,5 @@
+> 🛑 **Sora 2 已停服**：OpenAI Videos API（含 sora-2 / sora-2-pro）已于 2026-09-24 关闭，无替代模型；Microsoft Foundry 上最后一个部署（sora-2 2025-12-08）将于 2026-10-15 退役。以下 prompt 作为写法参考保留（Shot List / 参数化公式仍有学习价值），新作品请改用 Veo 3.1 / Seedance 2.5 / Wan 3.0。
+
 # Sora 2 · 提示词索引（26 条）
 
 > **Sora 2**（OpenAI，2025 年 9 月 30 日发布）是 OpenAI 的旗舰视频模型。原生音画一体（含对白生成），支持 Cameos 真人客串、极致物理仿真。最大 20 秒、80-150 词最优。

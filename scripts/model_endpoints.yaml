@@ -25,7 +25,7 @@ models:
   sora-2:
     vendor: OpenAI
     current_version: "2"
-    current_status: "⚠️ Possibly EOL by 2026 Q3 — monitor migration paths"
+    current_status: "🛑 EOL: OpenAI Videos API 停服 2026-09-24；Foundry sora-2 (2025-12-08) 退役 2026-10-15"
     endpoints:
       - https://openai.com/sora/
       - https://developers.openai.com/cookbook/examples/sora/sora2_prompting_guide
