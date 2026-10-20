@@ -138,6 +138,7 @@
 - [VEED · Kling AI Prompting Guide](https://www.veed.io/learn/kling-ai-prompting-guide) — 含 Kling 子版本对比
 - [WaveSpeed · Sora 2 Tips](https://wavespeed.ai/blog/posts/sora-2-prompting-tips-better-videos-2026/)
 - [Phygital+ · Kling 3 for Filmmaking](https://phygital.plus/blog/kling-3-ai-video-prompts-guide/)
+- [VideoCreate · 商业短片生成案例](https://videocreate.org/ai-commercial-generator) — 第三方模型生成的三例商业短片，附原提示词、积分成本与局限；非受控比较。
 
 ---
 
