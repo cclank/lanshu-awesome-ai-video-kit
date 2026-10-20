@@ -120,6 +120,7 @@
 
 ### 综合公式
 - 本仓库 [methodology/](methodology/) — 12 篇方法论 SOP（基础公式/进阶公式/分镜时序/情绪外化/运镜词典/约束词/特殊字符/避坑12问/Kling/跨模型对比/Sora/Veo）
+- [imgmov AI Video Prompt Guide](https://imgmov.com/blog/2026-07-08-ai-video-prompts) — Publisher-authored scene examples, including product shots, with guidance on subject motion, camera movement and lighting.
 
 ### 单模型深入
 | 模型 | 推荐资源 |
