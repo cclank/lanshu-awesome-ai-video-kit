@@ -171,6 +171,7 @@
 - **OpenAI Playground** — Sora 在线体验
 - **Replicate Playground** — 多模型快速对比
 - **AlchemyStudio / Leonardo.Ai** — 集成多模型 + 提示词市场
+- **[PowerTokens Video Studio](https://github.com/PowerTokens/video-studio)** — 免费 MIT 桌面+网页端多模型文生视频工作台（Wan/Seedance/Kling 等），分镜批量对比与可恢复 Task ID；亦可 [网页版](https://powertokens.github.io/video-studio-web/)
 
 ---
 
