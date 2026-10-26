@@ -215,7 +215,7 @@ done
 | **Markdown Viewer** | [`viewer.html`](viewer.html) | 所有 .md 文件渲染成漂亮 web 文档 · 自动 TOC + 代码高亮 |
 
 ---
-
+- [Ideoy](https://ideoy.ai) - Remake this week's memes with one selfie (AI image-to-video, freemium, adults only, AI-labeled).
 ## 🤖 自动监控机制
 
 模型迭代太快,人记不住 — 仓库自己醒着:
