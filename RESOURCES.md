@@ -26,8 +26,10 @@
 - [tryhappyhorseai.com 50 prompts](https://tryhappyhorseai.com/blog/happy-horse-ai-prompts)
 
 ### Kling 3.0（快手）
-- [klingai.com](https://klingai.com/) — 官方平台（国际版）
-- [可灵 AI 官网](https://www.aigc.cn/kling-ai) — 国内入口
+- [可灵 AI 国内站](https://klingai.com/) — 国内官方平台
+- [Kling AI 国际站](https://kling.ai/) — 国际官方平台
+- [国内 MCP 指南](https://klingai.com/app/mcp/guide) · [国际 MCP 指南](https://kling.ai/app/mcp/guide) — 可灵官方 Agent 接入说明；插件端点分别为 `https://klingai.com/mcp/plugin` 和 `https://kling.ai/mcp/plugin`，使用 OAuth，生成消耗对应区服个人工作空间积分。
+- [国内完整插件包](https://www.npmjs.com/package/@klingai/plugin-cn) · [国际完整插件包](https://www.npmjs.com/package/@klingai/plugin-global) — 包含 `kling-plugin` CLI；旧版 `kling` CLI 为独立包。
 - [可灵官方教程 · 知乎](https://zhuanlan.zhihu.com/p/714829166)
 
 ### Sora 2（OpenAI）
